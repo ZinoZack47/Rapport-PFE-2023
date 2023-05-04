@@ -1,0 +1,47 @@
+2023-05-04 09:41:16,090Z INFO  initexmf - this is MiKTeX Configuration Utility 4.4.1 (MiKTeX 21.6)
+2023-05-04 09:41:16,090Z INFO  initexmf - this process (7) started by 'pdflatex' with command line: initexmf --enable-installer --quiet --update-fndb
+2023-05-04 09:41:16,091Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
+2023-05-04 09:41:16,091Z INFO  initexmf - Creating fndb for user root directory (/miktex/.miktex/texmfs/config)...
+2023-05-04 09:41:16,166Z INFO  initexmf - Creating fndb for user root directory (/miktex/.miktex/texmfs/data)...
+2023-05-04 09:41:16,267Z INFO  initexmf - Creating fndb for user root directory (/miktex/.miktex/texmfs/install)...
+2023-05-04 09:41:16,344Z INFO  initexmf - Skipping common root directory (/var/lib/miktex-texmf)...
+2023-05-04 09:41:16,345Z INFO  initexmf - Skipping common root directory (/var/cache/miktex-texmf)...
+2023-05-04 09:41:16,345Z INFO  initexmf - Skipping common root directory (/usr/local/share/miktex-texmf)...
+2023-05-04 09:41:16,345Z INFO  initexmf - Creating fndb for MPM...
+2023-05-04 09:41:16,782Z INFO  initexmf - this process (7) finishes with exit code 0
+2023-05-04 09:41:25,573Z INFO  initexmf - this is MiKTeX Configuration Utility 4.4.1 (MiKTeX 21.6)
+2023-05-04 09:41:25,574Z INFO  initexmf - this process (8) started by 'pdflatex' with command line: initexmf --enable-installer --quiet --mkmaps
+2023-05-04 09:41:25,575Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
+2023-05-04 09:41:25,584Z INFO  initexmf - running: mkfntmap --enable-installer --miktex-disable-maintenance --miktex-disable-diagnose
+2023-05-04 09:41:25,612Z INFO  initexmf.core - forking...
+2023-05-04 09:41:25,614Z INFO  initexmf.core - execv: "/usr/bin/mkfntmap", [ "mkfntmap", "--enable-installer", "--miktex-disable-maintenance", "--miktex-disable-diagnose" ]
+2023-05-04 09:41:38,522Z INFO  initexmf - this process (8) finishes with exit code 0
+2023-05-04 09:41:46,606Z INFO  initexmf - this is MiKTeX Configuration Utility 4.4.1 (MiKTeX 21.6)
+2023-05-04 09:41:46,607Z INFO  initexmf - this process (11) started by 'pdflatex' with command line: initexmf --enable-installer --dump-by-name=pdflatex --engine=pdftex
+2023-05-04 09:41:46,607Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
+2023-05-04 09:41:46,619Z INFO  initexmf - running: miktex-makefmt --engine=pdftex --dest-name=pdflatex --no-dump pdflatex.ini --engine-option=-tcx=cp227.tcx --enable-installer --miktex-disable-maintenance --miktex-disable-diagnose
+2023-05-04 09:41:46,646Z INFO  initexmf.core - forking...
+2023-05-04 09:41:46,649Z INFO  initexmf.core - execv: "/usr/bin/miktex-makefmt", [ "miktex-makefmt", "--engine=pdftex", "--dest-name=pdflatex", "--no-dump", "pdflatex.ini", "--engine-option=-tcx=cp227.tcx", "--enable-installer", "--miktex-disable-maintenance", "--miktex-disable-diagnose" ]
+2023-05-04 09:42:05,236Z INFO  initexmf - this is MiKTeX Configuration Utility 4.4.1 (MiKTeX 21.6)
+2023-05-04 09:42:05,237Z INFO  initexmf - this process (17) started by 'miktex-makefmt' with command line: initexmf --mkmaps
+2023-05-04 09:42:05,237Z INFO  initexmf.packagemanager - starting migration: /miktex/.miktex/texmfs/install/tpm/packages -> /miktex/.miktex/texmfs/install/miktex/config/package-manifests.ini
+2023-05-04 09:42:05,237Z INFO  initexmf.packagemanager - successfully migrated 1 package manifest files
+2023-05-04 09:42:05,238Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
+2023-05-04 09:42:05,251Z INFO  initexmf - running: mkfntmap --enable-installer --miktex-disable-maintenance --miktex-disable-diagnose
+2023-05-04 09:42:05,284Z INFO  initexmf.core - forking...
+2023-05-04 09:42:05,286Z INFO  initexmf.core - execv: "/usr/bin/mkfntmap", [ "mkfntmap", "--enable-installer", "--miktex-disable-maintenance", "--miktex-disable-diagnose" ]
+2023-05-04 09:42:35,298Z INFO  initexmf - this process (17) finishes with exit code 0
+2023-05-04 09:42:45,069Z INFO  initexmf - this is MiKTeX Configuration Utility 4.4.1 (MiKTeX 21.6)
+2023-05-04 09:42:45,069Z INFO  initexmf - this process (22) started by 'miktex-makefmt' with command line: initexmf --mkmaps
+2023-05-04 09:42:45,070Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
+2023-05-04 09:42:45,081Z INFO  initexmf - running: mkfntmap --enable-installer --miktex-disable-maintenance --miktex-disable-diagnose
+2023-05-04 09:42:45,125Z INFO  initexmf.core - forking...
+2023-05-04 09:42:45,127Z INFO  initexmf.core - execv: "/usr/bin/mkfntmap", [ "mkfntmap", "--enable-installer", "--miktex-disable-maintenance", "--miktex-disable-diagnose" ]
+2023-05-04 09:43:11,164Z INFO  initexmf - this process (22) finishes with exit code 0
+2023-05-04 09:43:29,470Z INFO  initexmf - this is MiKTeX Configuration Utility 4.4.1 (MiKTeX 21.6)
+2023-05-04 09:43:29,470Z INFO  initexmf - this process (29) started by 'miktex-pdftex' with command line: initexmf --mkmaps
+2023-05-04 09:43:29,471Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
+2023-05-04 09:43:29,481Z INFO  initexmf - running: mkfntmap --enable-installer --miktex-disable-maintenance --miktex-disable-diagnose
+2023-05-04 09:43:29,509Z INFO  initexmf.core - forking...
+2023-05-04 09:43:29,511Z INFO  initexmf.core - execv: "/usr/bin/mkfntmap", [ "mkfntmap", "--enable-installer", "--miktex-disable-maintenance", "--miktex-disable-diagnose" ]
+2023-05-04 09:44:02,546Z INFO  initexmf - this process (29) finishes with exit code 0

@@ -1,0 +1,22 @@
+2023-05-04 09:41:08,131Z INFO  pdflatex - this process (1) started by 'unknown process' with command line: pdflatex C:/Users/ziyad/Downloads/00-IID_templte_latex/main.tex
+2023-05-04 09:41:08,134Z WARN  pdflatex - security risk: running with elevated privileges
+2023-05-04 09:41:08,151Z INFO  pdflatex - running 'initexmf' to refresh the file name database
+2023-05-04 09:41:08,152Z INFO  pdflatex.core - forking...
+2023-05-04 09:41:08,153Z INFO  pdflatex.core - execv: "/usr/bin/initexmf", [ "initexmf", "--enable-installer", "--quiet", "--update-fndb" ]
+2023-05-04 09:41:16,787Z INFO  pdflatex - running 'initexmf' to create font map files
+2023-05-04 09:41:16,793Z INFO  pdflatex.core - forking...
+2023-05-04 09:41:16,794Z INFO  pdflatex.core - execv: "/usr/bin/initexmf", [ "initexmf", "--enable-installer", "--quiet", "--mkmaps" ]
+2023-05-04 09:41:38,564Z INFO  pdflatex - allowing known shell commands
+2023-05-04 09:41:38,999Z INFO  pdflatex - going to create file: pdflatex.fmt
+2023-05-04 09:41:39,027Z INFO  pdflatex.core - forking...
+2023-05-04 09:41:39,029Z INFO  pdflatex.core - execv: "/usr/bin/initexmf", [ "initexmf", "--enable-installer", "--dump-by-name=pdflatex", "--engine=pdftex" ]
+2023-05-04 09:44:05,576Z ERROR pdflatex - /usr/bin/initexmf could not be started
+2023-05-04 09:44:05,576Z FATAL pdflatex.core - The memory dump file could not be found.
+2023-05-04 09:44:05,577Z FATAL pdflatex.core - Data: fileName="pdflatex.fmt"
+2023-05-04 09:44:05,577Z FATAL pdflatex.core - Source: Libraries/MiKTeX/TeXAndFriends/texmfapp.cpp:717
+2023-05-04 09:44:05,577Z FATAL pdflatex - The memory dump file could not be found.
+2023-05-04 09:44:05,578Z FATAL pdflatex - Info: fileName="pdflatex.fmt"
+2023-05-04 09:44:05,578Z FATAL pdflatex - Source: Libraries/MiKTeX/TeXAndFriends/texmfapp.cpp
+2023-05-04 09:44:05,578Z FATAL pdflatex - Line: 717
+2023-05-04 09:44:05,579Z INFO  pdflatex - this process (1) finishes with exit code 1
+2023-05-04 09:44:05,660Z FATAL pdflatex - major issue: So far, no MiKTeX administrator has checked for updates.

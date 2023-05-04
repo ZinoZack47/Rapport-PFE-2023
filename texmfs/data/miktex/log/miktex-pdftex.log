@@ -1,0 +1,37 @@
+2023-05-04 09:43:11,735Z INFO  miktex-pdftex - this process (25) started by 'miktex-makefmt' with command line: miktex-pdftex --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --initialize --interaction=nonstopmode --halt-on-error --alias=pdflatex --job-name=pdflatex -tcx=cp227.tcx --enable-etex pdflatex.ini
+2023-05-04 09:43:11,738Z WARN  miktex-pdftex - security risk: running with elevated privileges
+2023-05-04 09:43:11,750Z INFO  miktex-pdftex - allowing known shell commands
+2023-05-04 09:43:11,922Z INFO  miktex-pdftex - installing package ltxbase triggered by tex/latex/base/latex.ltx
+2023-05-04 09:43:11,923Z INFO  miktex-pdftex.packagemanager - going to download https://api2.miktex.org/repositories?&releaseState=Stable&orderBy=ranking&take=1&onlySecure=true
+2023-05-04 09:43:14,592Z INFO  miktex-pdftex - mpm: starting package maintenance...
+2023-05-04 09:43:14,593Z INFO  miktex-pdftex - mpm: installation directory: /miktex/.miktex/texmfs/install
+2023-05-04 09:43:14,594Z INFO  miktex-pdftex - mpm: package repository: https://mirror.marwan.ma/ctan/systems/win32/miktex/tm/packages/
+2023-05-04 09:43:18,994Z INFO  miktex-pdftex - mpm: package repository digest: 010db613f602f857e3207ae2aa49768c
+2023-05-04 09:43:18,994Z INFO  miktex-pdftex - mpm: going to download 230818 bytes
+2023-05-04 09:43:18,995Z INFO  miktex-pdftex - mpm: going to install 166 file(s) (1 package(s))
+2023-05-04 09:43:19,005Z INFO  miktex-pdftex.packagemanager - installing package ltxbase
+2023-05-04 09:43:19,006Z INFO  miktex-pdftex - mpm: downloading https://mirror.marwan.ma/ctan/systems/win32/miktex/tm/packages/ltxbase.tar.lzma...
+2023-05-04 09:43:19,006Z INFO  miktex-pdftex.packagemanager - going to download https://mirror.marwan.ma/ctan/systems/win32/miktex/tm/packages/ltxbase.tar.lzma
+2023-05-04 09:43:21,660Z INFO  miktex-pdftex - mpm: 0.23 MB, 144.05 Mbit/s
+2023-05-04 09:43:21,662Z INFO  miktex-pdftex - mpm: extracting files from ltxbase.tar.lzma...
+2023-05-04 09:43:24,353Z INFO  miktex-pdftex.core - forking...
+2023-05-04 09:43:24,355Z INFO  miktex-pdftex.core - execv: "/usr/bin/initexmf", [ "initexmf", "--mkmaps" ]
+2023-05-04 09:44:02,992Z INFO  miktex-pdftex - installing package l3kernel triggered by tex/latex/l3kernel/expl3.ltx
+2023-05-04 09:44:02,993Z INFO  miktex-pdftex.packagemanager - going to download https://api2.miktex.org/repositories/976aefacac0cd257b723690eca476fde
+2023-05-04 09:44:03,689Z INFO  miktex-pdftex - mpm: starting package maintenance...
+2023-05-04 09:44:03,689Z INFO  miktex-pdftex - mpm: installation directory: /miktex/.miktex/texmfs/install
+2023-05-04 09:44:03,690Z INFO  miktex-pdftex - mpm: package repository: https://mirror.marwan.ma/ctan/systems/win32/miktex/tm/packages/
+2023-05-04 09:44:03,855Z INFO  miktex-pdftex - mpm: package repository digest: 010db613f602f857e3207ae2aa49768c
+2023-05-04 09:44:03,856Z INFO  miktex-pdftex - mpm: going to download 175721 bytes
+2023-05-04 09:44:03,856Z INFO  miktex-pdftex - mpm: going to install 25 file(s) (1 package(s))
+2023-05-04 09:44:03,863Z INFO  miktex-pdftex.packagemanager - installing package l3kernel
+2023-05-04 09:44:03,864Z INFO  miktex-pdftex - mpm: downloading https://mirror.marwan.ma/ctan/systems/win32/miktex/tm/packages/l3kernel.tar.lzma...
+2023-05-04 09:44:03,865Z INFO  miktex-pdftex.packagemanager - going to download https://mirror.marwan.ma/ctan/systems/win32/miktex/tm/packages/l3kernel.tar.lzma
+2023-05-04 09:44:04,500Z INFO  miktex-pdftex - mpm: 0.18 MB, 371.01 Mbit/s
+2023-05-04 09:44:04,502Z INFO  miktex-pdftex - mpm: extracting files from l3kernel.tar.lzma...
+2023-05-04 09:44:05,172Z INFO  miktex-pdftex.core - forking...
+2023-05-04 09:44:05,175Z INFO  miktex-pdftex.core - execv: "/usr/bin/initexmf", [ "initexmf", "--mkmaps" ]
+2023-05-04 09:44:05,579Z FATAL miktex-pdftex - The executed process did not succeed.
+2023-05-04 09:44:05,579Z FATAL miktex-pdftex - Info: exitCode="-1", fileName="/usr/bin/initexmf"
+2023-05-04 09:44:05,579Z FATAL miktex-pdftex - Source: 
+2023-05-04 09:44:05,580Z FATAL miktex-pdftex - Line: 0

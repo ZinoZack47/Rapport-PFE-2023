@@ -1,0 +1,5 @@
+-doc-v3beta.sty:tex/latex/base
++doc-2016-02-15.sty:tex/latex/base:ltxbase
++ltxdoc.cfg:tex/latex/base:ltxbase
++doc-2021-06-01.sty:tex/latex/base:ltxbase
+-l3deprecation.def:tex/latex/l3kernel

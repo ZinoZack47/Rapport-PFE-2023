@@ -1,0 +1,3 @@
+Notes:
+
+Data lakes answered this problem with their low-cost of storage and ability to handle data in various formats. Furthermore, their ability to manage data in multiple formats makes data lake architecture applicable to different use cases like analytics and machine learning systems. That said, data lakes have limitations, too; their storage of data as files without a defined schema makes it challenging to perform critical data management to enable ETL transactions and leads to the creation of orphaned data. This is where the need for lakehouses like Delta Lake arose.
