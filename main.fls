@@ -2743,7 +2743,6 @@ OUTPUT main.mtc11
 OUTPUT main.mtc12
 OUTPUT main.mtc13
 OUTPUT main.mtc14
-OUTPUT main.mtc15
 INPUT .\main.toc
 INPUT main.toc
 INPUT main.toc
@@ -2770,6 +2769,9 @@ INPUT .\2-4-listedessigles.tex
 INPUT 2-4-listedessigles.tex
 INPUT .\2-4-listedessigles.tex
 INPUT 2-4-listedessigles.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplrc8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplrc8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
 INPUT .\3-introduction.tex
 INPUT .\3-introduction.tex
 INPUT .\3-introduction.tex
@@ -2827,11 +2829,8 @@ INPUT .\images\delta_lake_architecture.png
 INPUT .\images\delta_lake_architecture.png
 INPUT .\images\delta_lake_architecture.png
 INPUT .\images\delta_lake_architecture.png
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplrc8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr8c.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplrc8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
 INPUT .\3-partie\1-fichier.tex
 INPUT .\3-partie\1-fichier.tex
 INPUT .\3-partie\1-fichier.tex
@@ -2839,11 +2838,44 @@ INPUT 3-partie\1-fichier.tex
 INPUT .\3-partie\1-fichier.tex
 INPUT .\3-partie\1-fichier.tex
 INPUT 3-partie\1-fichier.tex
+INPUT .\images\trino_architecture.png
+INPUT .\images\trino_architecture.png
+INPUT images\trino_architecture.png
+INPUT .\images\trino_architecture.png
+INPUT .\images\trino_architecture.png
+INPUT .\images\trino_architecture.png
+INPUT .\images\trino_architecture.png
+INPUT .\images\trino_communication.png
+INPUT .\images\trino_communication.png
+INPUT images\trino_communication.png
+INPUT .\images\trino_communication.png
+INPUT .\images\trino_communication.png
+INPUT .\images\trino_communication.png
+INPUT .\images\trino_communication.png
+INPUT .\images\trino_communication_processing.png
+INPUT .\images\trino_communication_processing.png
+INPUT images\trino_communication_processing.png
+INPUT .\images\trino_communication_processing.png
+INPUT .\images\trino_communication_processing.png
+INPUT .\images\trino_communication_processing.png
+INPUT .\images\trino_communication_processing.png
+INPUT .\images\trino_workers.png
+INPUT .\images\trino_workers.png
+INPUT images\trino_workers.png
+INPUT .\images\trino_workers.png
+INPUT .\images\trino_workers.png
+INPUT .\images\trino_workers.png
+INPUT .\images\trino_workers.png
+INPUT .\images\trino_connector.png
+INPUT .\images\trino_connector.png
+INPUT images\trino_connector.png
+INPUT .\images\trino_connector.png
+INPUT .\images\trino_connector.png
+INPUT .\images\trino_connector.png
+INPUT .\images\trino_connector.png
 INPUT .\4-conclusion.tex
 INPUT .\4-conclusion.tex
 INPUT .\4-conclusion.tex
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplb8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplb8r.tfm
 OUTPUT 4-conclusion.aux
 INPUT .\4-conclusion.tex
 INPUT .\4-conclusion.tex
@@ -2894,10 +2926,6 @@ INPUT 4-conclusion.aux
 INPUT 4-conclusion.aux
 INPUT .\main.out
 INPUT .\main.out
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb

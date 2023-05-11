@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.4)  4 MAY 2023 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.4)  11 MAY 2023 12:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1269,7 +1269,7 @@ LaTeX Font Info:    Trying to load font information for T1+phv on input line 50.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-<images/logo_univ_D_usms.png, id=119, 135.8676pt x 148.3944pt>
+<images/logo_univ_D_usms.png, id=127, 135.8676pt x 148.3944pt>
 File: images/logo_univ_D_usms.png Graphic file (type png)
 <use images/logo_univ_D_usms.png>
 Package pdftex.def Info: images/logo_univ_D_usms.png  used on input line 50.
@@ -1277,7 +1277,7 @@ Package pdftex.def Info: images/logo_univ_D_usms.png  used on input line 50.
  (C:\Program Files\MiKTeX\tex/latex/ucs/data\uni-0.def
 File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
 )
-<images/logo_univ_G_ensa.png, id=121, 135.8676pt x 148.3944pt>
+<images/logo_univ_G_ensa.png, id=129, 135.8676pt x 148.3944pt>
 File: images/logo_univ_G_ensa.png Graphic file (type png)
 <use images/logo_univ_G_ensa.png>
 Package pdftex.def Info: images/logo_univ_G_ensa.png  used on input line 50.
@@ -1285,7 +1285,7 @@ Package pdftex.def Info: images/logo_univ_G_ensa.png  used on input line 50.
  (C:\Program Files\MiKTeX\tex/latex/ucs/data\uni-32.def
 File: uni-32.def 2022/08/07 UCS: Unicode data U+2000..U+20FF
 )
-<images/logoIID.png, id=122, 505.89pt x 313.17pt>
+<images/logoIID.png, id=130, 505.89pt x 313.17pt>
 File: images/logoIID.png Graphic file (type png)
 <use images/logoIID.png>
 Package pdftex.def Info: images/logoIID.png  used on input line 50.
@@ -1437,10 +1437,6 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc14.
 \openout5 = `main.mtc14'.
 
-Package minitoc Info: I0033
-(minitoc)             Writing main.mtc15.
-\openout5 = `main.mtc15'.
-
  (main.toc [7
 
 
@@ -1461,11 +1457,7 @@ Package minitoc Info: I0033
 
  (2-4-listedessigles.tex) [11
 
-
 ]
-Overfull \vbox (16.39412pt too high) has occurred while \output is active []
-
- [12]
 \openout2 = `3-introduction.aux'.
 
  (3-introduction.tex)
@@ -1518,7 +1510,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 14
  (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<images/delta_lake_architecture.png, id=262, 1027.84pt x 458.71375pt>
+<images/delta_lake_architecture.png, id=281, 1027.84pt x 458.71375pt>
 File: images/delta_lake_architecture.png Graphic file (type png)
 <use images/delta_lake_architecture.png>
 Package pdftex.def Info: images/delta_lake_architecture.png  used on input line 35.
@@ -1530,12 +1522,41 @@ Chapitre 3.
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 1.
 
-) [7
+<images/trino_architecture.png, id=296, 219.9417pt x 157.5486pt>
+File: images/trino_architecture.png Graphic file (type png)
+<use images/trino_architecture.png>
+Package pdftex.def Info: images/trino_architecture.png  used on input line 17.
+(pdftex.def)             Requested size: 483.69687pt x 346.48535pt.
+[7
 
-]
+] [8 <./images/trino_architecture.png (PNG copy)>]
+<images/trino_communication.png, id=305, 161.403pt x 99.2508pt>
+File: images/trino_communication.png Graphic file (type png)
+<use images/trino_communication.png>
+Package pdftex.def Info: images/trino_communication.png  used on input line 33.
+(pdftex.def)             Requested size: 483.69687pt x 297.48808pt.
+ [9 <./images/trino_communication.png (PNG copy)>]
+<images/trino_communication_processing.png, id=314, 196.0926pt x 111.2958pt>
+File: images/trino_communication_processing.png Graphic file (type png)
+<use images/trino_communication_processing.png>
+Package pdftex.def Info: images/trino_communication_processing.png  used on input line 50.
+(pdftex.def)             Requested size: 483.69687pt x 274.5706pt.
+ [10 <./images/trino_communication_processing.png (PNG copy)>]
+<images/trino_workers.png, id=319, 198.7425pt x 62.8749pt>
+File: images/trino_workers.png Graphic file (type png)
+<use images/trino_workers.png>
+Package pdftex.def Info: images/trino_workers.png  used on input line 65.
+(pdftex.def)             Requested size: 483.69687pt x 153.04128pt.
+ [11 <./images/trino_workers.png (PNG copy)>] [12]
+<images/trino_connector.png, id=365, 307.3884pt x 75.1608pt>
+File: images/trino_connector.png Graphic file (type png)
+<use images/trino_connector.png>
+Package pdftex.def Info: images/trino_connector.png  used on input line 141.
+(pdftex.def)             Requested size: 483.69687pt x 118.27449pt.
+) [13 <./images/trino_connector.png (PNG copy)>]
 \openout2 = `4-conclusion.aux'.
 
- (4-conclusion.tex) [8
+ (4-conclusion.tex) [14
 
 
 ] (main.bbl)
@@ -1568,7 +1589,7 @@ Package minitoc(hints) Warning: W0024
 \tf@ptc=\write15
 \openout15 = `main.ptc'.
 
-[9
+[15
 
 
 
@@ -1811,25 +1832,30 @@ images/logoIID.png
   ts1ppl.fd    2001/06/04 font definitions for TS1/ppl.
 images/delta_lake_architecture.png
 3-partie/1-fichier.tex
+images/trino_architecture.png
+images/trino_communication.png
+images/trino_communication_processing.png
+images/trino_workers.png
+images/trino_connector.png
 4-conclusion.tex
     main.bbl
  ***********
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DB5C5E99E44D57E38AB362B90B3D24CD;3464.
+(rerunfilecheck)             Checksum: 70F1BA3D728286C467BFA0390DA54C4A;3947.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 45 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 41359 strings out of 476315
- 706229 string characters out of 5797012
- 1887068 words of memory out of 5000000
- 60662 multiletter control sequences out of 15000+600000
- 561082 words of font info for 107 fonts, out of 8000000 for 9000
+ 41423 strings out of 476315
+ 707968 string characters out of 5797012
+ 1886068 words of memory out of 5000000
+ 60712 multiletter control sequences out of 15000+600000
+ 560473 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,15n,131p,2301b,2963s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,14n,131p,2301b,2971s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{glo:glossaire} has been referenced but does not exist, replaced by a fixed one
 
@@ -1839,10 +1865,10 @@ pdfTeX warning (dest): name{glo:acroglo} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{glo:acro} has been referenced but does not exist, replaced by a fixed one
 
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14bf.pfb>
-Output written on main.pdf (24 pages, 468835 bytes).
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14bf.pfb>
+Output written on main.pdf (29 pages, 578470 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 442 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

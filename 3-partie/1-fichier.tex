@@ -150,3 +150,4 @@ The Trino cluster processes all queries by using the connector-based architectur
 
 \addcontentsline{toc}{section}{Conclusion}
 \section*{Conclusion}
+The Trino architecture has a coordinator receiving user requests and then using workers to assemble all the data from the data sources. Each query is translated into a distributed query plan of tasks in numerous stages. The data is returned by the connectors in splits and processed in multiple stages until the final result is available and provided to the user by the coordinator.
