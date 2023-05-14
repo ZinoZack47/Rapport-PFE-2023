@@ -12,7 +12,7 @@
 \contentsline {chapter}{\numberline {1}L'entreprise Izicap}{2}{chapter.1}%
 \contentsline {section}{Introduction}{2}{section*.11}%
 \contentsline {section}{\numberline {1.1}About}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Organigraph}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Organigramme}{2}{section.1.2}%
 \contentsline {section}{Conclusion}{2}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Delta Lake}{3}{chapter.2}%
 \contentsline {section}{Introduction}{3}{section*.12}%

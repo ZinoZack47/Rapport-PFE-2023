@@ -1,2 +1,8 @@
 \introduction
-bla bla bla \gls{acro} puis \Gls{acroglo} et enfin \gls{glossaire}
+Le monde des données continue de se développer à un rythme sans précédent. Cela a conduit au besoin de systèmes de stockage et de gestion de données efficaces capables de suivre cette croissance. Dans notre quête d'une meilleure solution, nous avons rencontré le problème de l'évolutivité avec notre système de gestion de base de données actuel, MariaDB. En conséquence, nous nous sommes lancés dans un projet visant à trouver une source de données évolutive qui répondrait à nos besoins. Après de nombreuses recherches et réflexions, nous avons décidé d'utiliser Delta Lake avec un stockage S3.
+
+Cependant, nous avons rencontré plusieurs défis lors de la mise en œuvre de Delta Lake. L'un des principaux problèmes auxquels nous avons été confrontés était le manque de popularité et de documentation de Delta Standalone. Il s'est également avéré lent et ne pouvait pas être interrogé avec SQL. Par conséquent, nous avons opté pour Trino, un moteur de requête SQL distribué qui pourrait facilement interagir avec Delta Lake.
+
+Un autre défi important était l'architecture monolithique de notre système, qui entravait sa flexibilité et son évolutivité. Par conséquent, nous avons décidé de passer aux microservices pour rendre notre système plus efficace et flexible.
+
+Dans ce rapport, nous donnerons un aperçu de la société Izicap au chapitre 1, suivi d'une explication de Delta Lake et de ses défis de mise en œuvre au chapitre 2. Au chapitre 3, nous discuterons de Trino et de la manière dont il nous a aidés à surmonter les défis auxquels nous étions confrontés. avec le lac Delta.
