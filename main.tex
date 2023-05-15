@@ -2,12 +2,24 @@
 % Les étudiants  qui disposent de plus de 3 chapitres dans leurs travaux peuvent en complèter
 % Les Membres doivent figurer dans la dernière version finale du mémoire pour dépôt de mémoire
 
-\documentclass{iidEn}
+\newcommand{\lang}{1}
+
+\ifnum\lang=1
+    \documentclass{iid}
+\else
+    \documentclass{iidEn}
+\fi
+
 \usepackage{titletoc}
 \setlength{\glsdescwidth}{0.65\textwidth}
 % \usepackage{lscape}
 
-\input{frontpageAn.tex}
+\ifnum\lang=1
+    \input{frontpageFR.tex}
+\else
+    \input{frontpageAn.tex}
+\fi
+
 
 \hypersetup{
  pdftitle={--},
@@ -42,27 +54,53 @@
 \printlist{toc}{}{\chapter*{Sommaire}}
 \setcounter{tocdepth}{5}
 
-%% rdedicaces
-\include{0-dedicace}
-\newpage 
+\ifnum\lang=1
+    %% rdedicaces
+    \include{0-dedicace}
+    \newpage 
 
-%% remerciements
-\include{1-remerciements}
-\newpage
+    %% remerciements
+    \include{1-remerciements}
+    \newpage
 
-% Résume
-\include{2-resume}
-\newpage
+    % Résume
+    \include{2-resume}
+    \newpage
 
-% Résume
-\include{2-2-resumeAn}
-\newpage
+    % Résume
+    \include{2-2-resumeAn}
+    \newpage
 
-% Résume
-\include{2-3-resumeAr}
-\newpage
+    % Résume
+    \include{2-3-resumeAr}
+    \newpage
 
-\selectlanguage{french}
+    \selectlanguage{french}
+\else
+    %% rdedicaces
+    \include{0-dedication}
+    \newpage 
+
+    %% remerciements
+    \include{1-acknowledgements}
+    \newpage
+
+    % Résume
+    \include{2-resume}
+    \newpage
+
+    % Résume
+    \include{2-2-resumeAn}
+    \newpage
+
+    % Résume
+    \include{2-3-resumeAr}
+    \newpage
+
+    \selectlanguage{english}
+\fi
+
+
 \dominitoc% initializer les minitoc
 \tableofcontents
 \newpage
@@ -100,20 +138,37 @@
 %%introduction
 \include{3-introduction}
 %\lhead[]{} \rhead[]{} \chead[]{}
-\selectlanguage{french}
+\ifnum\lang=1
+    \selectlanguage{french}
+\else
+    \selectlanguage{english}
+\fi
 \fancyhead[L]{\tiny \leftmark}
 \fancyhead[R]{\scriptsize \rightmark}
 \fancyfoot[C]{\thepage}
 
-\chapter{Izicap}\label{chap:1}
-\minitoc\input{1-partie/1-fichier}
- 
- \chapter{Delta Lake}\label{chap:2}
- \input{2-partie/1-fichier}
- 
-\chapter{Trino}\label{chap:3}
 
-\input{3-partie/1-fichier}
+\ifnum\lang=1
+    \chapter{Izicap}\label{chap:1}
+    \minitoc\input{1-partie/1-fichier}
+    
+    \chapter{Delta Lake}\label{chap:2}
+    \input{2-partie/1-fichier}
+    
+    \chapter{Trino}\label{chap:3}
+
+    \input{3-partie/1-fichier}
+\else
+    \chapter{Izicap}\label{chap:1}
+    \minitoc\input{1-partie/1-fichierAn}
+    
+    \chapter{Delta Lake}\label{chap:2}
+    \input{2-partie/1-fichierAn}
+    
+    \chapter{Trino}\label{chap:3}
+
+    \input{3-partie/1-fichierAn}
+\fi
  
 % \include{perspectives}
 %%conclusion
