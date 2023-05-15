@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.13)  14 MAY 2023 22:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.13)  15 MAY 2023 13:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1269,7 +1269,7 @@ LaTeX Font Info:    Trying to load font information for T1+phv on input line 50.
  (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-<images/logo_univ_D_usms.png, id=127, 135.8676pt x 148.3944pt>
+<images/logo_univ_D_usms.png, id=125, 135.8676pt x 148.3944pt>
 File: images/logo_univ_D_usms.png Graphic file (type png)
 <use images/logo_univ_D_usms.png>
 Package pdftex.def Info: images/logo_univ_D_usms.png  used on input line 50.
@@ -1277,7 +1277,7 @@ Package pdftex.def Info: images/logo_univ_D_usms.png  used on input line 50.
  (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
 )
-<images/logo_univ_G_ensa.png, id=129, 135.8676pt x 148.3944pt>
+<images/logo_univ_G_ensa.png, id=127, 135.8676pt x 148.3944pt>
 File: images/logo_univ_G_ensa.png Graphic file (type png)
 <use images/logo_univ_G_ensa.png>
 Package pdftex.def Info: images/logo_univ_G_ensa.png  used on input line 50.
@@ -1285,7 +1285,7 @@ Package pdftex.def Info: images/logo_univ_G_ensa.png  used on input line 50.
  (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2022/08/07 UCS: Unicode data U+2000..U+20FF
 )
-<images/logoIID.png, id=130, 505.89pt x 313.17pt>
+<images/logoIID.png, id=128, 505.89pt x 313.17pt>
 File: images/logoIID.png Graphic file (type png)
 <use images/logoIID.png>
 Package pdftex.def Info: images/logoIID.png  used on input line 50.
@@ -1319,11 +1319,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.55 \thispagestyle{empty}\ \clearpage
-                                       [1] [2
-
-]
+                                       [1]
 \c@ttl@toc@default=\count451
  (main.ptc) [1
+
 
 ]
 \openout2 = `0-dedicace.aux'.
@@ -1437,14 +1436,6 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc12.
 \openout5 = `main.mtc12'.
 
-Package minitoc Info: I0033
-(minitoc)             Writing main.mtc13.
-\openout5 = `main.mtc13'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing main.mtc14.
-\openout5 = `main.mtc14'.
-
  (main.toc [7
 
 
@@ -1497,12 +1488,7 @@ Package minitoc Info: I0006
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 2.
 
-)
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.132  \chapter
-               {Delta Lake}\label{chap:2} [2
+) [2
 
 
 
@@ -1516,60 +1502,87 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 [3
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 14.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 13.
  (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-<images/delta_lake_architecture.png, id=275, 1027.84pt x 458.71375pt>
+) [4]
+<images/delta_lake_architecture.png, id=271, 1027.84pt x 458.71375pt>
 File: images/delta_lake_architecture.png Graphic file (type png)
 <use images/delta_lake_architecture.png>
-Package pdftex.def Info: images/delta_lake_architecture.png  used on input line 35.
+Package pdftex.def Info: images/delta_lake_architecture.png  used on input line 34.
 (pdftex.def)             Requested size: 483.69687pt x 215.86847pt.
- [4] [5 <./images/delta_lake_architecture.png>]) [6]
+ [5 <./images/delta_lake_architecture.png>] [6] (/usr/local/share/miktex-texmf/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (/usr/local/share/miktex-texmf/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (/usr/local/share/miktex-texmf/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+Package textcomp Info: Symbol \textasciigrave not provided by
+(textcomp)             font family ppl in TS1 encoding.
+(textcomp)             Default family used instead on input line 93.
+Package textcomp Info: Symbol \textasciigrave not provided by
+(textcomp)             font family ppl in TS1 encoding.
+(textcomp)             Default family used instead on input line 93.
+ (/usr/local/share/miktex-texmf/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) [7] (/usr/local/share/miktex-texmf/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (/usr/local/share/miktex-texmf/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2023/02/27 1.9 listings language file
+) (/usr/local/share/miktex-texmf/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2023/02/27 1.9 listings language file
+) (/usr/local/share/miktex-texmf/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)) [8]
 Chapitre 3.
 (3-partie/1-fichier.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 1.
 
-<images/trino_architecture.png, id=290, 219.9417pt x 157.5486pt>
+[9
+
+]
+<images/trino_architecture.png, id=332, 219.9417pt x 157.5486pt>
 File: images/trino_architecture.png Graphic file (type png)
 <use images/trino_architecture.png>
-Package pdftex.def Info: images/trino_architecture.png  used on input line 17.
+Package pdftex.def Info: images/trino_architecture.png  used on input line 16.
 (pdftex.def)             Requested size: 483.69687pt x 346.48535pt.
-[7
-
-] [8 <./images/trino_architecture.png (PNG copy)>]
-<images/trino_communication.png, id=299, 161.403pt x 99.2508pt>
+<images/trino_communication.png, id=333, 161.403pt x 99.2508pt>
 File: images/trino_communication.png Graphic file (type png)
 <use images/trino_communication.png>
-Package pdftex.def Info: images/trino_communication.png  used on input line 33.
+Package pdftex.def Info: images/trino_communication.png  used on input line 31.
 (pdftex.def)             Requested size: 483.69687pt x 297.48808pt.
- [9 <./images/trino_communication.png (PNG copy)>]
-<images/trino_communication_processing.png, id=308, 196.0926pt x 111.2958pt>
+ [10 <./images/trino_architecture.png (PNG copy)>] [11 <./images/trino_communication.png (PNG copy)>]
+<images/trino_communication_processing.png, id=346, 196.0926pt x 111.2958pt>
 File: images/trino_communication_processing.png Graphic file (type png)
 <use images/trino_communication_processing.png>
-Package pdftex.def Info: images/trino_communication_processing.png  used on input line 50.
+Package pdftex.def Info: images/trino_communication_processing.png  used on input line 47.
 (pdftex.def)             Requested size: 483.69687pt x 274.5706pt.
- [10 <./images/trino_communication_processing.png (PNG copy)>]
-<images/trino_workers.png, id=313, 198.7425pt x 62.8749pt>
+
+Overfull \hbox (2.48314pt too wide) in paragraph at lines 58--59
+[]\T1/ppl/m/n/10.95 La fi-gure sui-vante montre com-ment plu-sieurs wor-kers ré-cu-pèrent des don-nées à par-tir des sources
+ []
+
+<images/trino_workers.png, id=347, 198.7425pt x 62.8749pt>
 File: images/trino_workers.png Graphic file (type png)
 <use images/trino_workers.png>
-Package pdftex.def Info: images/trino_workers.png  used on input line 65.
+Package pdftex.def Info: images/trino_workers.png  used on input line 62.
 (pdftex.def)             Requested size: 483.69687pt x 153.04128pt.
- [11 <./images/trino_workers.png (PNG copy)>] [12]
-<images/trino_connector.png, id=359, 307.3884pt x 75.1608pt>
+[12 <./images/trino_communication_processing.png (PNG copy)>] [13 <./images/trino_workers.png (PNG copy)>]
+<images/trino_connector.png, id=393, 307.3884pt x 75.1608pt>
 File: images/trino_connector.png Graphic file (type png)
 <use images/trino_connector.png>
-Package pdftex.def Info: images/trino_connector.png  used on input line 141.
+Package pdftex.def Info: images/trino_connector.png  used on input line 133.
 (pdftex.def)             Requested size: 483.69687pt x 118.27449pt.
-) [13 <./images/trino_connector.png (PNG copy)>]
+) [14 <./images/trino_connector.png (PNG copy)>] [15]
 \openout2 = `4-conclusion.aux'.
 
- (4-conclusion.tex) [14
+ (4-conclusion.tex) [16
 
 
-] (main.bbl)
+]
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
@@ -1599,8 +1612,7 @@ Package minitoc(hints) Warning: W0024
 \tf@ptc=\write15
 \openout15 = `main.ptc'.
 
-[15
-
+[17
 
 
 ] 
@@ -1842,6 +1854,14 @@ images/logoIID.png
 2-partie/1-fichier.tex
   ts1ppl.fd    2001/06/04 font definitions for TS1/ppl.
 images/delta_lake_architecture.png
+lstlang1.sty    2023/02/27 1.9 listings language file
+lstlang1.sty    2023/02/27 1.9 listings language file
+lstlang1.sty    2023/02/27 1.9 listings language file
+lstlang1.sty    2023/02/27 1.9 listings language file
+lstlang1.sty    2023/02/27 1.9 listings language file
+lstlang2.sty    2023/02/27 1.9 listings language file
+lstlang3.sty    2023/02/27 1.9 listings language file
+lstlang1.sty    2023/02/27 1.9 listings language file
 3-partie/1-fichier.tex
 images/trino_architecture.png
 images/trino_communication.png
@@ -1849,28 +1869,27 @@ images/trino_communication_processing.png
 images/trino_workers.png
 images/trino_connector.png
 4-conclusion.tex
-    main.bbl
  ***********
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 350B173F5752E42D9D2EB0BE203A347C;3952.
+(rerunfilecheck)             Checksum: 06E5ACC3845904AA4E874ED3B50312F9;4078.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 45 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 42511 strings out of 476362
- 734264 string characters out of 5795122
- 1910999 words of memory out of 5000000
- 61756 multiletter control sequences out of 15000+600000
- 560473 words of font info for 106 fonts, out of 8000000 for 9000
+ 43354 strings out of 476362
+ 743365 string characters out of 5795122
+ 1909999 words of memory out of 5000000
+ 62542 multiletter control sequences out of 15000+600000
+ 563344 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,14n,131p,2321b,2988s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmr8a.pfb></home/zinozack47/.miktex/texmfs/install/fonts/type1/public/arabtex/xnsh14.pfb></home/zinozack47/.miktex/texmfs/install/fonts/type1/public/arabtex/xnsh14bf.pfb>
-Output written on main.pdf (29 pages, 583767 bytes).
+ 125i,14n,131p,2321b,4619s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/zinozack47/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmr8a.pfb></home/zinozack47/.miktex/texmfs/install/fonts/type1/public/arabtex/xnsh14.pfb></home/zinozack47/.miktex/texmfs/install/fonts/type1/public/arabtex/xnsh14bf.pfb>
+Output written on main.pdf (30 pages, 598457 bytes).
 PDF statistics:
- 434 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
- 302 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 483 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
+ 294 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,96 +2,88 @@
 
 \section*{Introduction}
 
-\section{Definition}
-Trino is an open source distributed SQL query engine. It is a hard fork of the original Presto project created by Facebook. It lets developers run interactive analytics against large volumes of data. With Trino, organizations can easily use their existing SQL skills to query data without having to learn new complex languages. The architecture is quite similar to traditional online analytical processing (OLAP) systems using distributed computing architectures, in which one controller node coordinates multiple worker nodes.
+\section{Définition}
+Trino est un moteur de requête SQL distribué open source. Il s'agit d'un hard fork du projet Presto original créé par Facebook. Il permet aux développeurs d'exécuter des analyses interactives sur de gros volumes de données. Avec Trino, les organisations peuvent facilement utiliser leurs compétences SQL existantes pour interroger des données sans avoir à apprendre de nouveaux langages complexes. L'architecture est assez similaire aux systèmes traditionnels de traitement analytique en ligne (OLAP) utilisant des architectures informatiques distribuées, dans lesquelles un nœud de contrôleur coordonne plusieurs nœuds de travail.
+\section{Comment ça fonctionne}
+Trino est un système distribué qui s'exécute sur Hadoop et utilise une architecture similaire aux bases de données de traitement massivement parallèle (MPP). Il a un nœud coordinateur travaillant avec plusieurs nœuds de travail. Les utilisateurs soumettent SQL au coordinateur qui utilise le moteur de requête et d'exécution pour analyser, planifier et planifier un plan de requête distribué sur les nœuds de travail. Il prend en charge le SQL ANSI standard, y compris les requêtes complexes, les agrégations de jointures et les jointures externes.
 
-\section{How it works}
-Trino is a distributed system that runs on Hadoop, and uses an architecture similar to massively parallel processing (MPP) databases. It has one coordinator node working with multiple worker nodes. Users submit SQL to the coordinator which uses query and execution engine to parse, plan, and schedule a distributed query plan across the worker nodes. It supports standard ANSI SQL, including complex queries, joins aggregations, and outer joins.
+Tirant parti de cette architecture, le moteur de requête Trino est capable de traiter des requêtes SQL sur de grandes quantités de données en parallèle sur un cluster d'ordinateurs ou de nœuds. Trino s'exécute en tant que processus à serveur unique sur chaque nœud. Plusieurs nœuds exécutant Trino, qui sont configurés pour collaborer les uns avec les autres, constituent un cluster Trino.
 
-Leveraging this architecture, the Trino query engine is able to process SQL queries on large amounts of data in parallel across a cluster of computers, or nodes. Trino runs as a single-server process on each node. Multiple nodes running Trino, which are configured to collaborate with each other, make up a Trino cluster.
-
-The following figure displays a high-level overview of a Trino cluster composed of one coordinator and multiple worker nodes. A Trino user connects to the coordinator with a client, such as a tool using the JDBC driver or the Trino CLI. The coordinator then collaborates with the workers, which access the data sources.
+La figure suivante affiche une vue d'ensemble de haut niveau d'un cluster Trino composé d'un coordinateur et de plusieurs nœuds de travail. Un utilisateur Trino se connecte au coordinateur avec un client, tel qu'un outil utilisant le pilote JDBC ou la CLI Trino. Le coordinateur collabore ensuite avec les workers, qui accèdent aux sources de données.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{images/trino_architecture.png}
-\caption{Trino architecture overview with coordinator and workers}\label{fig:trino-architecture}
+\caption{Vue d'ensemble de l'architecture Trino avec le coordinateur et les workers}\label{fig:trino-architecture}
 \end{figure}
 
 \begin{enumerate}
-	\item A coordinator is a Trino server that handles incoming queries and manages the workers to execute the queries.
-	\item A worker is a Trino server responsible for executing tasks and processing data.
-	\item The discovery service typically runs on the coordinator and allows workers to register to participate in the cluster.
-	\item All communication and data transfer between clients, coordinator, and workers uses REST-based interactions over HTTP/HTTPS.
+	\item Un coordinateur est un serveur Trino qui gère les requêtes entrantes et gère les workers pour exécuter les requêtes.
+	\item Un worker est un serveur Trino responsable de l'exécution des tâches et du traitement des données.
+	\item Le service de découverte s'exécute généralement sur le coordinateur et permet aux workers de s'inscrire pour participer au cluster.
+	\item Toutes les communications et tous les transferts de données entre les clients, le coordinateur et les workers utilisent des interactions basées sur REST sur HTTP/HTTPS.
 \end{enumerate}
 
-The following figure shows how the communication within the cluster happens between the coordinator and the workers, as well as from one worker to another. The coordinator talks to workers to assign work, update status, and fetch the top-level result set to return to the users. The workers talk to each other to fetch data from upstream tasks, running on other workers. And the workers retrieve result sets from the data source.
-
+La figure suivante montre comment la communication au sein du cluster se produit entre le coordinateur et les workers, ainsi que d'un worker à l'autre. Le coordinateur discute avec les workers pour attribuer le travail, mettre à jour le statut et récupérer l'ensemble de résultats de niveau supérieur à renvoyer aux utilisateurs. Les workers se parlent pour récupérer des données à partir de tâches en amont, exécutées sur d'autres workers. Et les workers récupèrent les ensembles de résultats à partir de la source de données.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{images/trino_communication.png}
-\caption{Communication between coordinator and workers in a Trino cluster}\label{fig:trino-communication}
+\caption{Communication entre le coordinateur et les workers dans un cluster Trino}\label{fig:trino-communication}
 \end{figure}
 
-\section{Coordinator}
-The Trino coordinator is the server responsible for receiving SQL statements from the users, parsing these statements, planning queries, and managing worker nodes. It’s the brain of a Trino installation and the node to which a client connects. Users interact with the coordinator via the Trino CLI, applications using the JDBC or ODBC drivers, or any other available client libraries for a variety of languages. The coordinator accepts SQL statements from the client such as SELECT queries for execution.
+\section{Coordinateur}
+Le coordinateur Trino est le serveur responsable de la réception des instructions SQL des utilisateurs, de l'analyse de ces instructions, de la planification des requêtes et de la gestion des nœuds de travail. C'est le cerveau d'une installation Trino et le nœud auquel un client se connecte. Les utilisateurs interagissent avec le coordinateur via la CLI Trino, les applications utilisant les pilotes JDBC ou ODBC, ou toute autre bibliothèque client disponible pour une variété de langues. Le coordinateur accepte les instructions SQL du client telles que les requêtes SELECT pour l'exécution.
 
-Every Trino installation must have a coordinator alongside one or more workers. For development or testing purposes, a single instance of Trino can be configured to perform both roles.
+Chaque installation Trino doit avoir un coordinateur aux côtés d'un ou plusieurs workers. À des fins de développement ou de test, une seule instance de Trino peut être configurée pour remplir les deux rôles.
 
-The coordinator keeps track of the activity on each worker and coordinates the execution of a query. The coordinator creates a logical model of a query involving a series of stages.
+Le coordinateur suit l'activité de chaque worker et coordonne l'exécution d'une requête. Le coordinateur crée un modèle logique d'une requête impliquant une série d'étapes.
 
-Once it receives a SQL statement, the coordinator is responsible for parsing, analyzing, planning, and scheduling the query execution across the Trino worker nodes. The statement is translated into a series of connected tasks running on a cluster of workers. As the workers process the data, the results are retrieved by the coordinator and exposed to the clients on an output buffer. Once an output buffer is completely read by the client, the coordinator requests more data from the workers on behalf of the client. The workers, in turn, interact with the data sources to get the data from them. As a result, data is continuously requested by the client and supplied by the workers from the data source until the query execution is completed.
+Une fois qu'il reçoit une instruction SQL, le coordinateur est responsable de l'analyse, de l'analyse, de la planification et de la planification de l'exécution de la requête sur les nœuds de travail Trino. L'instruction est traduite en une série de tâches connectées s'exécutant sur un cluster de workers. Au fur et à mesure que les workers traitent les données, les résultats sont récupérés par le coordinateur et exposés aux clients sur un tampon de sortie. Une fois qu'un tampon de sortie est complètement lu par le client, le coordinateur demande plus de données aux workers au nom du client. Les workers, à leur tour, interagissent avec les sources de données pour en obtenir les données. En conséquence, les données sont continuellement demandées par le client et fournies par les workers à partir de la source de données jusqu'à ce que l'exécution de la requête soit terminée.
 
-Coordinators communicate with workers and clients by using an HTTP-based protocol.
-
+Les coordinateurs communiquent avec les workers et les clients à l'aide d'un protocole basé sur HTTP.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{images/trino_communication_processing.png}
-\caption{Client, coordinator, and worker communication processing a SQL statement}\label{fig:trino-communication-precessing}
+\caption{Communication client, coordinateur et worker traitant une instruction SQL}\label{fig:trino-communication-precessing}
 \end{figure}
 
 \section{Workers}
-A Trino worker is a server in a Trino installation. It is responsible for executing tasks assigned by the coordinator and for processing data. Worker nodes fetch data from data sources by using connectors and then exchange intermediate data with each other. The final resulting data is passed on to the coordinator. The coordinator is responsible for gathering the results from the workers and providing the final results to the client.
+Un worker Trino est un serveur dans une installation Trino. Il est responsable de l'exécution des tâches assignées par le coordinateur et du traitement des données. Les nœuds de travail récupèrent des données à partir de sources de données à l'aide de connecteurs, puis échangent des données intermédiaires entre eux. Les données finales qui en résultent sont transmises au coordinateur. Le coordonnateur est chargé de recueillir les résultats des workers et de fournir les résultats finaux au client.
 
-During installation, workers are configured to know the hostname or IP address of the discovery service for the cluster. When a worker starts up, it advertises itself to the discovery service, which makes it available to the coordinator for task execution.
+Lors de l'installation, les agents sont configurés pour connaître le nom d'hôte ou l'adresse IP du service de découverte du cluster. Lorsqu'un agent démarre, il s'annonce au service de découverte, qui le met à la disposition du coordinateur pour l'exécution de la tâche.
 
-Workers communicate with other workers and the coordinator by using an HTTP-based protocol.
+Les workers communiquent avec d'autres workers et le coordinateur à l'aide d'un protocole basé sur HTTP.
 
-The following figure shows how multiple workers retrieve data from the data sources and collaborate to process the data, until one worker can provide the data to the coordinator.
+La figure suivante montre comment plusieurs workers récupèrent des données à partir des sources de données et collaborent pour traiter les données, jusqu'à ce qu'un worker puisse fournir les données au coordinateur.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{images/trino_workers.png}
-\caption{Workers in a cluster collaborate to process SQL statements and data}\label{fig:trino-workers}
+\caption{Les workers d'un cluster collaborent pour traiter les instructions et les données SQL}\label{fig:trino-workers}
 \end{figure}
 
-\section{Connector-Based Architecture}
-At the heart of the separation of storage and compute in Trino is the connector-based architecture. A connector provides Trino an interface to access an arbitrary data source.
+\section{Architecture basée sur les connecteurs}
+Au cœur de la séparation du stockage et du calcul dans Trino se trouve l'architecture basée sur les connecteurs. Un connecteur fournit à Trino une interface pour accéder à une source de données arbitraire.
 
-Each connector provides a table-based abstraction over the underlying data source. As long as data can be expressed in terms of tables, columns, and rows by using the data types available to Trino, a connector can be created and the query engine can use the data for query processing.
+Chaque connecteur fournit une abstraction basée sur une table sur la source de données sous-jacente. Tant que les données peuvent être exprimées en termes de tables, de colonnes et de lignes à l'aide des types de données disponibles pour Trino, un connecteur peut être créé et le moteur de requête peut utiliser les données pour le traitement des requêtes.
 
-Trino provides a service provider interface (SPI), which is a type of API used to implement a connector. By implementing the SPI in a connector, Trino can use standard operations internally to connect to any data source and perform operations on any data source. The connector takes care of the details relevant to the specific data source.
+Trino fournit une interface de fournisseur de services (SPI), qui est un type d'API utilisé pour implémenter un connecteur. En implémentant le SPI dans un connecteur, Trino peut utiliser des opérations standard en interne pour se connecter à n'importe quelle source de données et effectuer des opérations sur n'importe quelle source de données. Le connecteur prend en charge les détails relatifs à la source de données spécifique.
 
-At the heart of the separation of storage and compute in Trino is the connector-based architecture. A connector provides Trino an interface to access an arbitrary data source.
-
-Each connector provides a table-based abstraction over the underlying data source. As long as data can be expressed in terms of tables, columns, and rows by using the data types available to Trino, a connector can be created and the query engine can use the data for query processing.
-
-Trino provides a service provider interface (SPI), which is a type of API used to implement a connector. By implementing the SPI in a connector, Trino can use standard operations internally to connect to any data source and perform operations on any data source. The connector takes care of the details relevant to the specific data source.
 \begin{enumerate}
-	\item[$\bullet$] Operations to fetch table/view/schema metadata
-	\item[$\bullet$] Operations to produce logical units of data partitioning, so that Trino can parallelize reads and writes
-	\item[$\bullet$] Data sources and sinks that convert the source data to/from the in-memory format expected by the query engine 
+	\item[$\bullet$] Opérations pour récupérer les métadonnées de table/vue/schéma
+	\item[$\bullet$] Opérations pour produire des unités logiques de partitionnement de données, afin que Trino puisse paralléliser les lectures et les écritures
+	\item[$\bullet$] Sources et récepteurs de données qui convertissent les données source vers/depuis le format en mémoire attendu par le moteur de requête 
 \end{enumerate}
 
-Trino provides many connectors to systems, here are the list of connects as of the writing of this report:
+Trino fournit de nombreux connecteurs aux systèmes, vous trouverez la liste des connecteurs au moment de la rédaction de ce rapport ci-dessous.
 
 % chktex-file 44
 \begin{table}[ht]
 \centering
 	\begin{tabular}{|c|c|}
 	\hline
-	\textbf{Connector Name} & \textbf{Documentation Link} \\ \hline
+	\textbf{Nom de connecteur} & \textbf{Lien de documentation} \\ \hline
 	Accumulo & \href{https://trino.io/docs/current/connector/accumulo.html}{https://trino.io/docs/current/connector/accumulo.html} \\ \hline
 	Atop & \href{https://trino.io/docs/current/connector/atop.html}{https://trino.io/docs/current/connector/atop.html} \\ \hline
 	BigQuery & \href{https://trino.io/docs/current/connector/bigquery.html}{https://trino.io/docs/current/connector/bigquery.html} \\ \hline
@@ -129,25 +121,24 @@ Trino provides many connectors to systems, here are the list of connects as of t
 	TPCDS & \href{https://trino.io/docs/current/connector/tpcds.html}{https://trino.io/docs/current/connector/tpcds.html} \\ \hline
 	TPCH & \href{https://trino.io/docs/current/connector/tpch.html}{https://trino.io/docs/current/connector/tpch.html} \\ \hline
 \end{tabular}
-\caption{List of Trino Connectors and their documentation}
+\caption{Liste des connecteurs Trino et leur documentation}
 \end{table}
 
-Trino’s SPI also gives you the ability to create your own custom connectors. This may be needed if you need to access a data source without a compatible connector. If you end up creating a connector, we strongly encourage you to learn more about the Trino open source community, use our help, and contribute your connector. Check out “Trino Resources” for more information. A custom connector may also be needed if you have a unique or proprietary data source within your organization. This is what allows Trino users to query any data source by using SQL—truly SQL-on-Anything.
+Le SPI de Trino vous donne également la possibilité de créer vos propres connecteurs personnalisés. Cela peut être nécessaire si vous avez besoin d'accéder à une source de données sans connecteur compatible. Si vous finissez par créer un connecteur, nous vous encourageons fortement à en savoir plus sur la communauté open source Trino, à utiliser notre aide et à contribuer votre connecteur. Consultez « Ressources Trino » pour plus d'informations. Un connecteur personnalisé peut également être nécessaire si vous disposez d'une source de données unique ou propriétaire au sein de votre organisation. C'est ce qui permet aux utilisateurs de Trino d'interroger n'importe quelle source de données en utilisant SQL, vraiment SQL-on-Anything.
 
-The following figure shows how the Trino SPI includes separate interfaces for metadata, data statistics, and data location used by the coordinator, and for data streaming used by the workers
+La figure suivante montre comment le Trino SPI inclut des interfaces distinctes pour les métadonnées, les statistiques de données et l'emplacement des données utilisées par le coordinateur, et pour le flux de données utilisé par les workers.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{images/trino_connector.png}
-\caption{Overview of the Trino service provider interface (SPI)}\label{fig:trino-connector}
+\caption{Vue d'ensemble de l'interface du fournisseur de services Trino (SPI)}\label{fig:trino-connector}
 \end{figure}
 
-Trino connectors are plug-ins loaded by each server at startup. They are configured by specific parameters in the catalog properties files and loaded from the plug-ins directory. 
+Les connecteurs Trino sont des plug-ins chargés par chaque serveur au démarrage. Ils sont configurés par des paramètres spécifiques dans les fichiers de propriétés du catalogue et chargés à partir du répertoire des plug-ins.
 
-\section{Catalogs, Schemas, and Tables}
-The Trino cluster processes all queries by using the connector-based architecture described earlier. Each catalog configuration uses a connector to access a specific data source. The data source exposes one or more schemas in the catalog. Each schema contains tables that provide the data in table rows with columns using different data types. You can find out more about catalogs, schemas, tables. Specifically in “Catalogs”, “Schemas”, and “Tables”.
-
+\section{Catalogues, Schémas et Tables}
+Le cluster Trino traite toutes les requêtes en utilisant l'architecture basée sur les connecteurs décrite précédemment. Chaque configuration de catalogue utilise un connecteur pour accéder à une source de données spécifique. La source de données expose un ou plusieurs schémas dans le catalogue. Chaque schéma contient des tables qui fournissent les données dans des lignes de table avec des colonnes utilisant différents types de données. Vous pouvez en savoir plus sur les catalogues, les schémas, les tables. Plus précisément dans `Catalogues', `Schémas' et `Tables'.
 
 \addcontentsline{toc}{section}{Conclusion}
 \section*{Conclusion}
-The Trino architecture has a coordinator receiving user requests and then using workers to assemble all the data from the data sources. Each query is translated into a distributed query plan of tasks in numerous stages. The data is returned by the connectors in splits and processed in multiple stages until the final result is available and provided to the user by the coordinator.
+L'architecture Trino a un coordinateur recevant les demandes des utilisateurs, puis utilisant des travailleurs pour assembler toutes les données à partir des sources de données. Chaque requête est traduite en un plan de requête distribué de tâches en plusieurs étapes. Les données sont renvoyées par les connecteurs en fractions et traitées en plusieurs étapes jusqu'à ce que le résultat final soit disponible et fourni à l'utilisateur par le coordinateur.
