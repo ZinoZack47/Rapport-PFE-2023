@@ -3,14 +3,15 @@
 \babel@toc {french}{}\relax 
 \addvspace {10\p@ }
 \contentsline {xchapter}{Izicap}{2}{chapter.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Organigramme de Izicap\relax }}{3}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Delta Lake}{3}{chapter.2}%
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Architecture multi-sauts de Delta Lake\relax }}{5}{figure.caption.13}%
+\contentsline {xchapter}{Delta Lake}{4}{chapter.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Architecture multi-sauts de Delta Lake\relax }}{6}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Trino}{9}{chapter.3}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Vue d'ensemble de l'architecture Trino avec le coordinateur et les workers\relax }}{10}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Communication entre le coordinateur et les workers dans un cluster Trino\relax }}{11}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Communication client, coordinateur et worker traitant une instruction SQL\relax }}{12}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Les workers d'un cluster collaborent pour traiter les instructions et les données SQL\relax }}{13}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Vue d'ensemble de l'interface du fournisseur de services Trino (SPI)\relax }}{14}{figure.caption.20}%
+\contentsline {xchapter}{Trino}{10}{chapter.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Vue d'ensemble de l'architecture Trino avec le coordinateur et les workers\relax }}{11}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Communication entre le coordinateur et les workers dans un cluster Trino\relax }}{12}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Communication client, coordinateur et worker traitant une instruction SQL\relax }}{13}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Les workers d'un cluster collaborent pour traiter les instructions et les données SQL\relax }}{14}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Vue d'ensemble de l'interface du fournisseur de services Trino (SPI)\relax }}{15}{figure.caption.21}%
 \contentsfinish 
