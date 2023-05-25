@@ -1,6 +1,6 @@
-PWD c:\Users\ziyad\Downloads\00-IID_templte_latex
+PWD c:\Users\ziyad\OneDrive\Documents\00-IID_templte_latex
 INPUT C:\Users\ziyad\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\ziyad\Downloads\00-IID_templte_latex\main.tex
+INPUT c:\Users\ziyad\OneDrive\Documents\00-IID_templte_latex\main.tex
 OUTPUT main.log
 INPUT .\iid.cls
 INPUT .\iid.cls
@@ -2830,59 +2830,20 @@ INPUT 2-partie\1-fichier.tex
 INPUT .\2-partie\1-fichier.tex
 INPUT .\2-partie\1-fichier.tex
 INPUT 2-partie\1-fichier.tex
-INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ppl.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ppl.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ppl.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ppl.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8c.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr8c.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
-INPUT .\images\delta_lake_architecture.png
-INPUT .\images\delta_lake_architecture.png
-INPUT images\delta_lake_architecture.png
-INPUT .\images\delta_lake_architecture.png
-INPUT .\images\delta_lake_architecture.png
-INPUT .\images\delta_lake_architecture.png
-INPUT .\images\delta_lake_architecture.png
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8c.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr8c.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang2.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang2.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang2.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang2.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplri8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplri8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
+INPUT .\images\smart-data-izicap.png
+INPUT .\images\smart-data-izicap.png
+INPUT images\smart-data-izicap.png
+INPUT .\images\smart-data-izicap.png
+INPUT .\images\smart-data-izicap.png
+INPUT .\images\smart-data-izicap.png
+INPUT .\images\smart-data-izicap.png
+INPUT .\images\archi-globale.png
+INPUT .\images\archi-globale.png
+INPUT images\archi-globale.png
+INPUT .\images\archi-globale.png
+INPUT .\images\archi-globale.png
+INPUT .\images\archi-globale.png
+INPUT .\images\archi-globale.png
 INPUT .\3-partie\1-fichier.tex
 INPUT .\3-partie\1-fichier.tex
 INPUT .\3-partie\1-fichier.tex
@@ -2974,8 +2935,6 @@ INPUT 4-conclusion.aux
 INPUT 4-conclusion.aux
 INPUT .\main.out
 INPUT .\main.out
-INPUT C:\Users\ziyad\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0800.pk
-INPUT C:\Users\ziyad\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0800.pk
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb

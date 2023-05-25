@@ -16,20 +16,17 @@
 \contentsline {section}{Conclusion}{3}{figure.caption.12}%
 \contentsline {chapter}{\numberline {2}Delta Lake}{4}{chapter.2}%
 \contentsline {section}{Introduction}{4}{section*.13}%
-\contentsline {section}{\numberline {2.1}Définition}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Comment fonctionne Delta Lake}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Diagramme d'architecture du Delta Lake}{5}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Principaux avantages et caractéristiques de Delta Lake}{6}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Implémentation}{8}{section.2.5}%
-\contentsline {section}{Conclusion}{9}{lstnumber.-8.8}%
-\contentsline {chapter}{\numberline {3}Trino}{10}{chapter.3}%
-\contentsline {section}{Introduction}{10}{section*.15}%
-\contentsline {section}{\numberline {3.1}Définition}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Comment ça fonctionne}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Coordinateur}{12}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Workers}{13}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Architecture basée sur les connecteurs}{14}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Catalogues, Schémas et Tables}{15}{section.3.6}%
-\contentsline {section}{Conclusion}{15}{section.3.6}%
-\contentsline {chapter}{Conclusion}{17}{chapter*.22}%
+\contentsline {section}{\numberline {2.1}Smart Data}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}L'architecture du système}{6}{section.2.2}%
+\contentsline {section}{Conclusion}{7}{Item.12}%
+\contentsline {chapter}{\numberline {3}Trino}{8}{chapter.3}%
+\contentsline {section}{Introduction}{8}{section*.16}%
+\contentsline {section}{\numberline {3.1}Définition}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Comment ça fonctionne}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Coordinateur}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Workers}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Architecture basée sur les connecteurs}{12}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Catalogues, Schémas et Tables}{13}{section.3.6}%
+\contentsline {section}{Conclusion}{13}{section.3.6}%
+\contentsline {chapter}{Conclusion}{15}{chapter*.23}%
 \contentsfinish 

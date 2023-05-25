@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.4)  19 MAY 2023 10:19
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.13)  16 MAY 2023 12:03
->>>>>>> 3819cdee2931bba368599fdb24e43edb0ebbf2ed
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.4)  25 MAY 2023 10:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/ziyad/Downloads/00-IID_templte_latex/main.tex
-(c:/Users/ziyad/Downloads/00-IID_templte_latex/main.tex
+**c:/Users/ziyad/OneDrive/Documents/00-IID_templte_latex/main.tex
+(c:/Users/ziyad/OneDrive/Documents/00-IID_templte_latex/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-04-20> (iid.cls (C:\Program Files\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
@@ -1273,7 +1269,7 @@ LaTeX Font Info:    Trying to load font information for T1+phv on input line 41.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-<images/logo_univ_D_usms.png, id=126, 135.8676pt x 148.3944pt>
+<images/logo_univ_D_usms.png, id=114, 135.8676pt x 148.3944pt>
 File: images/logo_univ_D_usms.png Graphic file (type png)
 <use images/logo_univ_D_usms.png>
 Package pdftex.def Info: images/logo_univ_D_usms.png  used on input line 41.
@@ -1281,7 +1277,7 @@ Package pdftex.def Info: images/logo_univ_D_usms.png  used on input line 41.
  (C:\Program Files\MiKTeX\tex/latex/ucs/data\uni-0.def
 File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
 )
-<images/logo_univ_G_ensa.png, id=128, 135.8676pt x 148.3944pt>
+<images/logo_univ_G_ensa.png, id=116, 135.8676pt x 148.3944pt>
 File: images/logo_univ_G_ensa.png Graphic file (type png)
 <use images/logo_univ_G_ensa.png>
 Package pdftex.def Info: images/logo_univ_G_ensa.png  used on input line 41.
@@ -1289,7 +1285,7 @@ Package pdftex.def Info: images/logo_univ_G_ensa.png  used on input line 41.
  (C:\Program Files\MiKTeX\tex/latex/ucs/data\uni-32.def
 File: uni-32.def 2022/08/07 UCS: Unicode data U+2000..U+20FF
 )
-<images/logoIID.png, id=129, 505.89pt x 313.17pt>
+<images/logoIID.png, id=117, 505.89pt x 313.17pt>
 File: images/logoIID.png Graphic file (type png)
 <use images/logoIID.png>
 Package pdftex.def Info: images/logoIID.png  used on input line 41.
@@ -1442,14 +1438,14 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc12.
 \openout5 = `main.mtc12'.
 
- (main.toc [7
-
-
-])
+ (main.toc)
 \tf@toc=\write12
 \openout12 = `main.toc'.
 
- [8] (main.lof)
+ [7
+
+
+] [8] (main.lof)
 \tf@lof=\write13
 \openout13 = `main.lof'.
 
@@ -1494,7 +1490,7 @@ Package minitoc Info: I0006
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 2.
 
-<images/orga.png, id=260, 2469.225pt x 1108.14pt>
+<images/orga.png, id=247, 2469.225pt x 1108.14pt>
 File: images/orga.png Graphic file (type png)
 <use images/orga.png>
 Package pdftex.def Info: images/orga.png  used on input line 15.
@@ -1513,60 +1509,39 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 [4
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 13.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [5]
-<images/delta_lake_architecture.png, id=279, 1027.84pt x 458.71375pt>
-File: images/delta_lake_architecture.png Graphic file (type png)
-<use images/delta_lake_architecture.png>
-Package pdftex.def Info: images/delta_lake_architecture.png  used on input line 34.
-(pdftex.def)             Requested size: 483.69687pt x 215.86847pt.
- [6 <./images/delta_lake_architecture.png>] [7] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family ppl in TS1 encoding.
-(textcomp)             Default family used instead on input line 93.
-Package textcomp Info: Symbol \textasciigrave not provided by
-(textcomp)             font family ppl in TS1 encoding.
-(textcomp)             Default family used instead on input line 93.
- (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) [8] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (C:\Program Files\MiKTeX\tex/latex/listings\lstlang2.sty
-File: lstlang2.sty 2023/02/27 1.9 listings language file
-) (C:\Program Files\MiKTeX\tex/latex/listings\lstlang3.sty
-File: lstlang3.sty 2023/02/27 1.9 listings language file
-) (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)) [9]
+<images/smart-data-izicap.png, id=265, 943.525pt x 1190.4475pt>
+File: images/smart-data-izicap.png Graphic file (type png)
+<use images/smart-data-izicap.png>
+Package pdftex.def Info: images/smart-data-izicap.png  used on input line 25.
+(pdftex.def)             Requested size: 290.22107pt x 366.16489pt.
+ [5 <./images/smart-data-izicap.png>]
+<images/archi-globale.png, id=275, 1169.36874pt x 687.56876pt>
+File: images/archi-globale.png Graphic file (type png)
+<use images/archi-globale.png>
+Package pdftex.def Info: images/archi-globale.png  used on input line 36.
+(pdftex.def)             Requested size: 483.69687pt x 284.40198pt.
+ [6 <./images/archi-globale.png>]) [7]
 Chapitre 3.
 (3-partie/1-fichier.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 1.
 
-[10
+[8
 
 ]
-<images/trino_architecture.png, id=340, 219.9417pt x 157.5486pt>
+<images/trino_architecture.png, id=294, 219.9417pt x 157.5486pt>
 File: images/trino_architecture.png Graphic file (type png)
 <use images/trino_architecture.png>
 Package pdftex.def Info: images/trino_architecture.png  used on input line 16.
 (pdftex.def)             Requested size: 483.69687pt x 346.48535pt.
-<images/trino_communication.png, id=341, 161.403pt x 99.2508pt>
+<images/trino_communication.png, id=295, 161.403pt x 99.2508pt>
 File: images/trino_communication.png Graphic file (type png)
 <use images/trino_communication.png>
 Package pdftex.def Info: images/trino_communication.png  used on input line 31.
 (pdftex.def)             Requested size: 483.69687pt x 297.48808pt.
- [11 <./images/trino_architecture.png (PNG copy)>] [12 <./images/trino_communication.png (PNG copy)>]
-<images/trino_communication_processing.png, id=355, 196.0926pt x 111.2958pt>
+ [9 <./images/trino_architecture.png (PNG copy)>] [10 <./images/trino_communication.png (PNG copy)>]
+<images/trino_communication_processing.png, id=308, 196.0926pt x 111.2958pt>
 File: images/trino_communication_processing.png Graphic file (type png)
 <use images/trino_communication_processing.png>
 Package pdftex.def Info: images/trino_communication_processing.png  used on input line 47.
@@ -1576,21 +1551,21 @@ Overfull \hbox (2.48314pt too wide) in paragraph at lines 58--59
 []\T1/ppl/m/n/10.95 La fi-gure sui-vante montre com-ment plu-sieurs wor-kers ré-cu-pèrent des don-nées à par-tir des sources
  []
 
-<images/trino_workers.png, id=356, 198.7425pt x 62.8749pt>
+<images/trino_workers.png, id=309, 198.7425pt x 62.8749pt>
 File: images/trino_workers.png Graphic file (type png)
 <use images/trino_workers.png>
 Package pdftex.def Info: images/trino_workers.png  used on input line 62.
 (pdftex.def)             Requested size: 483.69687pt x 153.04128pt.
-[13 <./images/trino_communication_processing.png (PNG copy)>] [14 <./images/trino_workers.png (PNG copy)>]
-<images/trino_connector.png, id=401, 307.3884pt x 75.1608pt>
+[11 <./images/trino_communication_processing.png (PNG copy)>] [12 <./images/trino_workers.png (PNG copy)>]
+<images/trino_connector.png, id=356, 307.3884pt x 75.1608pt>
 File: images/trino_connector.png Graphic file (type png)
 <use images/trino_connector.png>
 Package pdftex.def Info: images/trino_connector.png  used on input line 133.
 (pdftex.def)             Requested size: 483.69687pt x 118.27449pt.
-) [15 <./images/trino_connector.png (PNG copy)>] [16]
+) [13 <./images/trino_connector.png (PNG copy)>] [14]
 \openout2 = `4-conclusion.aux'.
 
- (4-conclusion.tex) [17
+ (4-conclusion.tex) [15
 
 
 ]
@@ -1623,7 +1598,7 @@ Package minitoc(hints) Warning: W0024
 \tf@ptc=\write15
 \openout15 = `main.ptc'.
 
-[18
+[16
 
 
 ] 
@@ -1865,16 +1840,8 @@ images/logoIID.png
 1-partie/1-fichier.tex
 images/orga.png
 2-partie/1-fichier.tex
-  ts1ppl.fd    2001/06/04 font definitions for TS1/ppl.
-images/delta_lake_architecture.png
-lstlang1.sty    2023/02/27 1.9 listings language file
-lstlang1.sty    2023/02/27 1.9 listings language file
-lstlang1.sty    2023/02/27 1.9 listings language file
-lstlang1.sty    2023/02/27 1.9 listings language file
-lstlang1.sty    2023/02/27 1.9 listings language file
-lstlang2.sty    2023/02/27 1.9 listings language file
-lstlang3.sty    2023/02/27 1.9 listings language file
-lstlang1.sty    2023/02/27 1.9 listings language file
+images/smart-data-izicap.png
+images/archi-globale.png
 3-partie/1-fichier.tex
 images/trino_architecture.png
 images/trino_communication.png
@@ -1885,24 +1852,24 @@ images/trino_connector.png
  ***********
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C2FB2E6011215852A3DCD6CC795157A2;4084.
+(rerunfilecheck)             Checksum: 1256BE1ACAAA95E3335EEDC6171BF5AD;3326.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 36 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 42887 strings out of 476315
- 723428 string characters out of 5797012
+ 42023 strings out of 476315
+ 714540 string characters out of 5797012
  1910068 words of memory out of 5000000
- 62113 multiletter control sequences out of 15000+600000
- 563344 words of font info for 111 fonts, out of 8000000 for 9000
+ 61306 multiletter control sequences out of 15000+600000
+ 559919 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,14n,131p,2285b,4596s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ziyad\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14bf.pfb>
-Output written on main.pdf (31 pages, 639136 bytes).
+ 125i,14n,131p,2294b,2902s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14bf.pfb>
+Output written on main.pdf (29 pages, 969407 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 111 named destinations out of 1000 (max. 500000)
- 299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 436 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
