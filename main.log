@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.4)  25 MAY 2023 10:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.13)  28 MAY 2023 19:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/ziyad/OneDrive/Documents/00-IID_templte_latex/main.tex
-(c:/Users/ziyad/OneDrive/Documents/00-IID_templte_latex/main.tex
+**/home/zinozack47/Dropbox/Documents/Scripts/LaTex/Rapport-PFE-2023/main.tex
+(/home/zinozack47/Dropbox/Documents/Scripts/LaTex/Rapport-PFE-2023/main.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-04-20> (iid.cls (C:\Program Files\MiKTeX\tex/latex/base\report.cls
+L3 programming layer <2023-05-11> (iid.cls (/usr/local/share/miktex-texmf/tex/latex/base/report.cls
 Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
-(C:\Program Files\MiKTeX\tex/latex/base\size11.clo
+(/usr/local/share/miktex-texmf/tex/latex/base/size11.clo
 File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -23,38 +23,38 @@ File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
+) (/usr/local/share/miktex-texmf/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (C:\Program Files\MiKTeX\tex/latex/ucs\ucs.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/ucs.sty
 Package: ucs 2022/08/07 v2.3 UCS: Unicode input support
- (C:\Program Files\MiKTeX\tex/latex/ucs/data\uni-global.def
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2022/08/07 UCS: Unicode global data
 )
 \uc@secondtry=\count194
 \uc@combtoks=\toks16
 \uc@combtoksb=\toks17
 \uc@temptokena=\toks18
-) (C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
+) (/usr/local/share/miktex-texmf/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks19
 \inpenc@posthook=\toks20
- (C:\Program Files\MiKTeX\tex/latex/ucs\utf8x.def
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/utf8x.def
 File: utf8x.def 2022/08/07 UCS: Input encoding UTF-8
-)) (C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2023/04/18 3.88 The Babel package
+)) (/usr/local/share/miktex-texmf/tex/generic/babel/babel.sty
+Package: babel 2023/05/11 v3.89 The Babel package
 \babel@savecnt=\count195
 \U@D=\dimen141
 \l@unhyphenated=\language79
- (C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
+ (/usr/local/share/miktex-texmf/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count196
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
+(/usr/local/share/miktex-texmf/tex/latex/arabi/bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Program Files\MiKTeX\tex/generic/babel-french\french.ldf
+) (/home/zinozack47/.miktex/texmfs/install/tex/generic/babel-french/french.ldf
 Language: french 2023/03/08 v3.5q French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
 (babel)             (\language22). Reported on input line 91.
@@ -81,7 +81,7 @@ Package babel Info: Making ? an active character on input line 398.
 \leftmarginFB=\dimen148
 \parindentFFN=\dimen149
 \FBfnindent=\dimen150
-) (C:\Program Files\MiKTeX\tex/latex/babel-english\english.ldf
+) (/usr/local/share/miktex-texmf/tex/latex/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
@@ -89,99 +89,99 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
-)) (C:\Program Files\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
+)) (/usr/local/share/miktex-texmf/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
-) (C:\Program Files\MiKTeX\tex/generic/babel/locale/fr\babel-french.tex
+) (/usr/local/share/miktex-texmf/tex/generic/babel/locale/fr/babel-french.tex
 Package babel Info: Importing font and identification data for french
 (babel)             from babel-fr.ini. Reported on input line 11.
-) (C:\Program Files\MiKTeX\tex/latex/carlisle\scalefnt.sty) (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/carlisle/scalefnt.sty) (/usr/local/share/miktex-texmf/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\arabtex.sty (C:\Program Files\MiKTeX\tex/latex/arabtex\aconfig.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/arabtex.sty (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/aconfig.sty
 LaTeX2e detected 
 BABEL detected
 \a@moduledate=\count270
 \a@maindate=\count271
 )
 Package: arabtex 2003/08/22  3.11 ArabTeX main module
- (C:\Program Files\MiKTeX\tex/latex/arabtex\arabaux.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/arabaux.sty
 Package: arabaux 2003/05/21  3.11 auxiliary macros for ArabTeX
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\acmd.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/acmd.sty
 Package: acmd 2003/08/20  3.11 Arabic command processing 
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\afonts.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/afonts.sty
 Package: afonts 1995/11/16  3.04 define Naskh font 
- (C:\Program Files\MiKTeX\tex/latex/arabtex\afonts2.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/afonts2.sty
 Package: afonts2 1998/10/19  3.10 define Naskh fonts for LaTeX2e
-)) (C:\Program Files\MiKTeX\tex/latex/arabtex\ascan.sty
+)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/ascan.sty
 Package: ascan 2003/08/22  3.11 standard ZDMG input encoding 
- (ArabTeX) scanner for code `arabtex' installed. (ArabTeX) input encoding set to ArabTeX standard conventions.) (C:\Program Files\MiKTeX\tex/latex/arabtex\aparse.sty
+ (ArabTeX) scanner for code `arabtex' installed. (ArabTeX) input encoding set to ArabTeX standard conventions.) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/aparse.sty
 Package: aparse 2003/05/26  3.11 get syllables 
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\awrite.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/awrite.sty
 Package: awrite 2003/06/05  3.11 build output word 
- (C:\Program Files\MiKTeX\tex/latex/arabtex\xarbsymb.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/xarbsymb.sty
 Package: xarbsymb 1998/07/15  3.07 symbolic output encoding 
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\arabskel.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/arabskel.sty
 Package: arabskel 2000/06/04  3.10 character skeleton definitions 
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\xarbskel.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/xarbskel.sty
 Package: xarbskel 1999/07/17  3.09 character skeleton definitions 
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\aboxes.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/aboxes.sty
 Package: aboxes 2003/05/28  3.11 build output boxes
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\arabtoks.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/arabtoks.sty
 Package: arabtoks 1999/07/17  3.09 ArabTeX CS token definitions 
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\arabchrs.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/arabchrs.sty
 Package: arabchrs 1998/07/11  3.07 letter token definitions 
-)) (C:\Program Files\MiKTeX\tex/latex/arabtex\aligs.sty
+)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/aligs.sty
 Package: aligs 2003/05/26  3.11 compute ligatures
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\aoutput.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/aoutput.sty
 Package: aoutput 2000/06/04  3.10 build output lines
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\abidir.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/abidir.sty
 Package: abidir 2003/08/22  3.11 bidirectional linebreaking
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\atrans.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/atrans.sty
 Package: atrans 2003/06/14  3.11 generate the transliteration 
- (ArabTeX) ZDMG transliteration.) (C:\Program Files\MiKTeX\tex/latex/arabtex\alatex.sty
+ (ArabTeX) ZDMG transliteration.) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/alatex.sty
 Package: alatex 2003/05/04  3.11 ArabTeX extensions for LaTeX 
- (C:\Program Files\MiKTeX\tex/latex/arabtex\afoot.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/afoot.sty
 Package: afoot 2003/05/12  3.11 ArabTeX footnotes
-)) (C:\Program Files\MiKTeX\tex/latex/arabtex\abjad.sty
+)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/abjad.sty
 Package: abjad 2003/04/26  3.11 abjad numerals 
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\apatch.sty (C:\Program Files\MiKTeX\tex/latex/arabtex\alists.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/apatch.sty (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/alists.sty
 Package: alists 2003/04/26  3.11 inverted list macros
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\asect.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/asect.sty
 Package: asect 2003/04/26  3.11 section macros for Arabic
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\atabg.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/atabg.sty
 Package: atabg 1997/01/21  3.05 LaTeX tabbing macros for Arabic
-) (C:\Program Files\MiKTeX\tex/latex/arabtex\alocal.sty (ArabTeX) 3.11 local stub, 26.02.2006)
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/alocal.sty (ArabTeX) 3.11 local stub, 26.02.2006)
 Package: apatch 2006/07/02  3.11s last minute patches 
 )
 Arabic processor `ArabTeX' [20060702 patch level 3.11s (02.07.2006)]
-(ArabTeX) ... now be patient ... ) (C:\Program Files\MiKTeX\tex/latex/arabtex\utf8.sty (C:\Program Files\MiKTeX\tex/latex/arabtex\utfcode.sty
+(ArabTeX) ... now be patient ... ) (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/utf8.sty (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/utfcode.sty
 Package: utfcode 2002/03/07  3.10a Arabic+Hebrew segment of UTF-8
 \u@lb=\count301
 \u@lq=\count302
 )
 Package: utf8 2000/06/13  3.10 UTF-8 input encoding 
- (ArabTeX) scanner for code UTF-8 installed.) (C:\Program Files\MiKTeX\tex/latex/psnfss\pifont.sty
+ (ArabTeX) scanner for code UTF-8 installed.) (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\upzd.fd
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\upsy.fd
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-)) (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+)) (/usr/local/share/miktex-texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
- (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Package option `usenames' ignored on input line 218.
 Package xcolor Info: Driver file: pdftex.def on input line 227.
- (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (/usr/local/share/miktex-texmf/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-) (C:\Program Files\MiKTeX\tex/latex/colortbl\colortbl.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
- (C:\Program Files\MiKTeX\tex/latex/tools\array.sty
+ (/usr/local/share/miktex-texmf/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen173
 \ar@mcellbox=\box66
@@ -194,7 +194,7 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \everycr=\toks44
 \minrowclearance=\skip54
 \rownum=\count303
-) (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (/usr/local/share/miktex-texmf/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -204,40 +204,40 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
- (C:\Program Files\MiKTeX\tex/latex/graphics\dvipsnam.def
+ (/usr/local/share/miktex-texmf/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (C:\Program Files\MiKTeX\tex/latex/xcolor\svgnam.def
+) (/usr/local/share/miktex-texmf/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2022/06/12 v2.14 Predefined colors according to SVG 1.1 (UK)
-)) (C:\Program Files\MiKTeX\tex/latex/setspace\setspace.sty
+)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+) (/usr/local/share/miktex-texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+ (/usr/local/share/miktex-texmf/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+ (/usr/local/share/miktex-texmf/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 \Gin@req@height=\dimen175
 \Gin@req@width=\dimen176
-) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip55
 
 For additional information on amsmath, use the `?' option.
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks45
 \ex@=\dimen177
-)) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen178
-) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count304
@@ -287,28 +287,28 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks49
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+) (/usr/local/share/miktex-texmf/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (C:\Program Files\MiKTeX\tex/latex/siunits\SIunits.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/siunits/SIunits.sty
 Package: SIunits 2007/12/02 v1.36 Support for the International System of units (MH)
 
 
 \@qskwidth=\skip58
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 46.
 \symgreek=\mathgroup6
-(C:\Program Files\MiKTeX\tex/latex/siunits\SIunits.cfg)
+(/home/zinozack47/.miktex/texmfs/install/tex/latex/siunits/SIunits.cfg)
 LaTeX Info: Redefining \usk on input line 576.
 
 Option `cdot' provided!
 Option `amssymb' provided!
-) (C:\Program Files\MiKTeX\tex/latex/mathcomp\mathcomp.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/mathcomp/mathcomp.sty
 Package: mathcomp 2001/01/07 v0.1f (TBo)
- (C:\Program Files\MiKTeX\tex/latex/base\textcomp.sty
+ (/usr/local/share/miktex-texmf/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 \symTC=\mathgroup7
@@ -316,17 +316,17 @@ LaTeX Font Info:    Overwriting symbol font `TC' in version `bold'
 (Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 25.
 LaTeX Font Info:    Redeclaring math symbol \dagger on input line 47.
 LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 48.
-) (C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip59
 \multirow@cntb=\count316
 \multirow@dima=\skip60
 \bigstrutjot=\dimen186
-) (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (/usr/local/share/miktex-texmf/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+ (/usr/local/share/miktex-texmf/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count317
@@ -341,7 +341,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen193
 \Gm@layoutvoffset=\dimen194
 \Gm@dimlist=\toks50
- (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Program Files\MiKTeX\tex/latex/fncychap\fncychap.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fncychap/fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip61
 \mylen=\skip62
@@ -350,20 +350,20 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \py=\skip65
 \pyy=\skip66
 \pxx=\skip67
-) (C:\Program Files\MiKTeX\tex/latex/psnfss\palatino.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/palatino.sty
 Package: palatino 2020/03/25 PSNFSS-v9.3 (SPQR) 
-) (C:\Program Files\MiKTeX\tex/latex/float\float.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count320
 \float@exts=\toks51
 \float@box=\box70
 \@float@everytoks=\toks52
 \@floatcapt=\box71
-) (C:\Program Files\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
- (C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+ (/usr/local/share/miktex-texmf/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-) (C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
+) (/usr/local/share/miktex-texmf/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count321
 \calc@Bcount=\count322
@@ -375,15 +375,15 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count323
 \calc@Cskip=\skip70
-) (C:\Program Files\MiKTeX\tex/latex/eso-pic\eso-pic.sty
-Package: eso-pic 2023/03/23 v3.0b eso-pic (RN)
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen197
 \ESO@tempdimb=\dimen198
 )
 \AM@pagewidth=\dimen199
 \AM@pageheight=\dimen256
 \AM@fboxrule=\dimen257
- (C:\Program Files\MiKTeX\tex/latex/pdfpages\pppdftex.def
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count324
@@ -394,62 +394,62 @@ File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks55
 \c@AM@survey=\count326
 \AM@templatesizebox=\box73
-) (C:\Program Files\MiKTeX\tex/latex/url\url.sty
+) (/usr/local/share/miktex-texmf/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+) (/usr/local/share/miktex-texmf/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-04-22 v7.00x Hypertext links for LaTeX
- (C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+) (/usr/local/share/miktex-texmf/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (C:\Program Files\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Program Files\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (C:\Program Files\MiKTeX\tex/latex/auxhook\auxhook.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 
 
 Package auxhook Warning: Cannot patch \document,
 (auxhook)                using \AtBeginDocument instead.
 
-) (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+) (/usr/local/share/miktex-texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
- (C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count327
-) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+) (/usr/local/share/miktex-texmf/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count328
 )
 \@linkdim=\dimen258
 \Hy@linkcounter=\count329
 \Hy@pagecounter=\count330
- (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
+ (/usr/local/share/miktex-texmf/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2023-04-22 v7.00x Hyperref: PDFDocEncoding definition (HO)
-) (C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count331
- (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
+ (/usr/local/share/miktex-texmf/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-04-22 v7.00x Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 4065.
@@ -463,9 +463,9 @@ Package hyperref Info: Bookmarks ON on input line 4449.
 \c@Hy@tempcnt=\count332
 LaTeX Info: Redefining \url on input line 4787.
 \XeTeXLinkMargin=\dimen259
- (C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count333
@@ -478,7 +478,7 @@ Package hyperref Info: backreferencing OFF on input line 6081.
 Package hyperref Info: Link coloring ON on input line 6084.
 Package hyperref Info: Link coloring with OCG OFF on input line 6091.
 Package hyperref Info: PDF/A mode OFF on input line 6096.
- (C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+ (/usr/local/share/miktex-texmf/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -487,51 +487,51 @@ package with kernel methods
 \c@Hfootnote=\count336
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+ (/usr/local/share/miktex-texmf/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2023-04-22 v7.00x Hyperref driver for pdfTeX
- (C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty
+ (/usr/local/share/miktex-texmf/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
 \Fld@listcount=\count337
 \c@bookmark@seq@number=\count338
- (C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (C:\Program Files\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip71
-) (C:\Program Files\MiKTeX\tex/latex/glossaries/base\glossaries.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2022/11/03 v4.52 (NLCT)
- (C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+ (/usr/local/share/miktex-texmf/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+ (/usr/local/share/miktex-texmf/tex/generic/xkeyval/xkeyval.tex (/usr/local/share/miktex-texmf/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks56
 \XKV@tempa@toks=\toks57
 )
 \XKV@depth=\count339
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (C:\Program Files\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
+)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2022/10/14 v2.08 (NLCT)
 \@glsmfirst=\toks58
 \@glsmrest=\toks59
-) (C:\Program Files\MiKTeX\tex/latex/xfor\xfor.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
-) (C:\Program Files\MiKTeX\tex/latex/datatool\datatool-base.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/datatool/datatool-base.sty
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
- (C:\Program Files\MiKTeX\tex/latex/substr\substr.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
 \c@su@anzahl=\count340
-) (C:\Program Files\MiKTeX\tex/latex/datatool\datatool-fp.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
- (C:\Program Files\MiKTeX\tex/latex/fp\fp.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp.sty
 Package: fp 1995/04/02
- `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (C:\Program Files\MiKTeX\tex/latex/fp\defpattern.sty
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
 \actioncount=\count341
-) (C:\Program Files\MiKTeX\tex/latex/fp\fp-basic.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
 \FP@xs=\count342
 \FP@xia=\count343
@@ -542,24 +542,24 @@ Package: fp-basic 1996/05/13
 \FP@regb=\count348
 \FP@regs=\count349
 \FP@times=\count350
-) (C:\Program Files\MiKTeX\tex/latex/fp\fp-addons.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
-) (C:\Program Files\MiKTeX\tex/latex/fp\fp-snap.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp-snap.sty
 Package: fp-snap 1995/04/05
-) (C:\Program Files\MiKTeX\tex/latex/fp\fp-exp.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp-exp.sty
 Package: fp-exp 1995/04/03
-) (C:\Program Files\MiKTeX\tex/latex/fp\fp-trigo.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp-trigo.sty
 Package: fp-trigo 1995/04/14
-) (C:\Program Files\MiKTeX\tex/latex/fp\fp-pas.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp-pas.sty
 Package: fp-pas 1994/08/29
-) (C:\Program Files\MiKTeX\tex/latex/fp\fp-random.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
 \FPseed=\count351
-) (C:\Program Files\MiKTeX\tex/latex/fp\fp-eqn.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
-) (C:\Program Files\MiKTeX\tex/latex/fp\fp-upn.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp-upn.sty
 Package: fp-upn 1996/10/21
-) (C:\Program Files\MiKTeX\tex/latex/fp\fp-eval.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks60
@@ -571,13 +571,13 @@ Package: fp-eval 1995/04/03
 \dtl@codeA=\count356
 \dtl@codeB=\count357
 \@dtl@foreach@level=\count358
-) (C:\Program Files\MiKTeX\tex/latex/tracklang\tracklang.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/tracklang/tracklang.sty
 Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
- (C:\Program Files\MiKTeX\tex/generic/tracklang\tracklang.tex)) (C:\Program Files\MiKTeX\tex/latex/translator\translator.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/tracklang/tracklang.tex)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/translator/translator.sty
 Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
-) (C:\Program Files\MiKTeX\tex/latex/glossaries-english\glossaries-english.ldf
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/glossaries-english/glossaries-english.ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
-) (C:\Program Files\MiKTeX\tex/latex/glossaries-french\glossaries-french.ldf
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/glossaries-french/glossaries-french.ldf
 File: glossaries-french.ldf 2016/12/12 v1.1
 )
 \gls@level=\count359
@@ -587,14 +587,14 @@ File: glossaries-french.ldf 2016/12/12 v1.1
 \glslabeltok=\toks63
 \glsshorttok=\toks64
 \glslongtok=\toks65
- (C:\Program Files\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-hypernav.sty
 Package: glossary-hypernav 2022/11/03 v4.52 (NLCT)
-) (C:\Program Files\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2022/11/03 v4.52 (NLCT)
 \glslistdottedwidth=\skip74
-) (C:\Program Files\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-long.sty
 Package: glossary-long 2022/11/03 v4.52 (NLCT)
- (C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
+ (/usr/local/share/miktex-texmf/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTleft=\skip75
 \LTright=\skip76
@@ -615,9 +615,9 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 )
 \glsdescwidth=\skip79
 \glspagelistwidth=\skip80
-) (C:\Program Files\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-super.sty
 Package: glossary-super 2022/11/03 v4.52 (NLCT)
- (C:\Program Files\MiKTeX\tex/latex/supertabular\supertabular.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \c@tracingst=\count365
 \ST@wd=\dimen263
@@ -634,10 +634,10 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \ST@toadd=\dimen271
 \ST@dimen=\dimen272
 \ST@pbox=\box79
-)) (C:\Program Files\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
+)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2022/11/03 v4.52 (NLCT)
 \glstreeindent=\skip84
-)) (C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip85
 \f@nch@O@elh=\skip86
@@ -648,14 +648,14 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip91
 \f@nch@O@olf=\skip92
 \f@nch@O@orf=\skip93
-) (C:\Program Files\MiKTeX\tex/latex/lastpage\lastpage.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2023/04/12 v2.0b lastpage: 2.09 or 2e? (HMM)
- (C:\Program Files\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/lastpage/lastpage2e.sty
 Package: lastpage2e 2023/04/12 v2.0b Decide which 2e lastpage version to use (HMM)
- (C:\Program Files\MiKTeX\tex/latex/lastpage\lastpagemodern.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/lastpage/lastpagemodern.sty
 Package: lastpagemodern 2023-04-12 v2.0b Refers to last page's name (HMM; JPG)
 ) 
-)) (C:\Program Files\MiKTeX\tex/latex/titlesec\titlesec.sty
+)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box80
 \beforetitleunit=\skip94
@@ -666,18 +666,18 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidth=\dimen275
 \titlewidthlast=\dimen276
 \titlewidthfirst=\dimen277
-) (C:\Program Files\MiKTeX\tex/latex/changepage\changepage.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count366
 \cp@tempcnt=\count367
-) (C:\Program Files\MiKTeX\tex/latex/framed\framed.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip96
 \fb@frw=\dimen278
 \fb@frh=\dimen279
 \FrameRule=\dimen280
 \FrameSep=\dimen281
-) (C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
+) (/usr/local/share/miktex-texmf/tex/latex/listings/listings.sty
 \lst@mode=\count368
 \lst@gtempboxa=\box81
 \lst@token=\toks68
@@ -690,22 +690,22 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \lst@newlines=\count372
 \lst@lineno=\count373
 \lst@maxwidth=\dimen285
- (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
+ (/usr/local/share/miktex-texmf/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 \c@lstnumber=\count374
 \lst@skipnumbers=\count375
 \lst@framebox=\box82
-) (C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
+) (/usr/local/share/miktex-texmf/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
- (C:\Program Files\MiKTeX\tex/latex/listingsutf8\listingsutf8.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/listingsutf8/listingsutf8.sty
 Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
- (C:\Program Files\MiKTeX\tex/generic/stringenc\stringenc.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
-)) (C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
+)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/caption/caption.sty
 Package: caption 2023/03/12 v3.6j Customizing captions (AR)
- (C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/caption/caption3.sty
 Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
 \caption@tempdima=\dimen286
 \captionmargin=\dimen287
@@ -727,13 +727,13 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- (C:\Program Files\MiKTeX\tex/latex/caption\ltcaption.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
-) (C:\Program Files\MiKTeX\tex/latex/minitoc\minitoc.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/minitoc/minitoc.sty
 Package: minitoc 2018/07/12 v62 Package minitoc
- (C:\Program Files\MiKTeX\tex/latex/minitoc\mtcmess.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/minitoc/mtcmess.sty
 Package: mtcmess 2006/03/14
 )
 Package minitoc Info: I0001
@@ -774,49 +774,49 @@ Package minitoc Info: I0031
 Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
- (C:\Program Files\MiKTeX\tex/latex/minitoc\english.mld
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/minitoc/english.mld
 File: english.mld 2006/01/13
-) (C:\Program Files\MiKTeX\tex/latex/minitoc\english.mld
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/minitoc/english.mld
 File: english.mld 2006/01/13
 )
 Package minitoc Info: I0010
 (minitoc)             The francais language is selected.
 (minitoc)              on input line 4911.
- (C:\Program Files\MiKTeX\tex/latex/minitoc\francais.mld
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/minitoc/francais.mld
 File: francais.mld 2004/12/14
 Package minitoc Info: I0010
 (minitoc)             The french language is selected.
 (minitoc)              on input line 74.
- (C:\Program Files\MiKTeX\tex/latex/minitoc\french.mld
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/minitoc/french.mld
 File: french.mld 2006/03/21
-))) (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+))) (/home/zinozack47/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
- (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape-nometadata.sty
 Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
- (C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
+ (/usr/local/share/miktex-texmf/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)) (C:\Program Files\MiKTeX\tex/latex/psnfss\courier.sty
+)) (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/courier.sty
 Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
-) (C:\Program Files\MiKTeX\tex/latex/tocbibind\tocbibind.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (C:\Program Files\MiKTeX\tex/latex/algorithm2e\algorithm2e.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count382
 \algocf@hangindent=\skip100
- (C:\Program Files\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count383
 LaTeX Info: Redefining \checkoddpage on input line 45.
-) (C:\Program Files\MiKTeX\tex/latex/tools\xspace.sty
+) (/usr/local/share/miktex-texmf/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) (C:\Program Files\MiKTeX\tex/latex/relsize\relsize.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip101
@@ -854,9 +854,9 @@ Package: relsize 2013/03/29 ver 4.1
 \c@algocf=\count386
 \algocf@algoframe=\box91
 \algocf@algobox=\box92
-) (C:\Program Files\MiKTeX\tex/latex/algorithmicx\algpseudocode.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
- (C:\Program Files\MiKTeX\tex/latex/algorithmicx\algorithmicx.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -872,11 +872,11 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip121
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (C:\Program Files\MiKTeX\tex/latex/pstricks\pstricks.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/pstricks/pstricks.sty
 Package: pstricks 2022/19/23 v0.72 LaTeX wrapper for `PSTricks' (RN,HV)
- (C:\Program Files\MiKTeX\tex/generic/xkeyval\pst-xkey.tex
+ (/usr/local/share/miktex-texmf/tex/generic/xkeyval/pst-xkey.tex
 File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
-) (C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks.tex (C:\Program Files\MiKTeX\tex/generic/pstricks\pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv)
+) (/home/zinozack47/.miktex/texmfs/install/tex/generic/pstricks/pstricks.tex (/home/zinozack47/.miktex/texmfs/install/tex/generic/pstricks/pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv)
 \pstFP@xs=\count394
 \pstFP@xia=\count395
 \pstFP@xib=\count396
@@ -886,20 +886,20 @@ File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 \pstFP@regb=\count400
 \pstFP@regs=\count401
 \pstFP@times=\count402
-) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+) (/usr/local/share/miktex-texmf/tex/latex/pgf/utilities/pgffor.sty (/usr/local/share/miktex-texmf/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks70
 \pgfutil@tempdima=\dimen302
 \pgfutil@tempdimb=\dimen303
-) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+) (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box93
-) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+) (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/share/miktex-texmf/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+)) (/usr/local/share/miktex-texmf/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks71
 \pgfkeys@temptoks=\toks72
- (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+ (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks73
-))) (C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex
+))) (/usr/local/share/miktex-texmf/tex/latex/pgf/math/pgfmath.sty (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathutil.code.tex
 \pgf@x=\dimen304
 \pgf@xa=\dimen305
 \pgf@xb=\dimen306
@@ -912,16 +912,16 @@ Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 \c@pgf@countb=\count404
 \c@pgf@countc=\count405
 \c@pgf@countd=\count406
-) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen312
 \pgfmath@count=\count407
 \pgfmath@box=\box94
 \pgfmath@toks=\toks74
 \pgfmath@stack@operand=\toks75
 \pgfmath@stack@operation=\toks76
-) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count408
-))) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+))) (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen313
 \pgffor@skip=\dimen314
@@ -930,7 +930,7 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 ))
 \psLoopIndex=\count409
 
-`PSTricks' v3.18  <2022/11/28> (tvz,hv)
+`PSTricks' v3.19  <2023/04/30> (tvz,hv)
 \pst@dima=\dimen315
 \pst@dimb=\dimen316
 \pst@dimc=\dimen317
@@ -957,7 +957,7 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \@zero=\count420
 \pst@toks=\toks79
 --- We are running latex or xelatex ---
-(C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks.con) (C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks-color.tex)
+(/home/zinozack47/.miktex/texmfs/install/tex/generic/pstricks/pstricks.con) (/home/zinozack47/.miktex/texmfs/install/tex/generic/pstricks/pstricks-color.tex)
 \psunit=\dimen325
 \psxunit=\dimen326
 \psyunit=\dimen327
@@ -965,12 +965,12 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pslinewidth=\dimen328
 \psk@startLW=\dimen329
 \psk@endLW=\dimen330
- (C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks-arrows.tex
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/pstricks/pstricks-arrows.tex
 \pshooklength=\dimen331
 \pshookwidth=\dimen332
 )
 \pst@customdefs=\toks80
- (C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks-dots.tex)
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/pstricks/pstricks-dots.tex)
 \pslinearc=\dimen333
 \pst@symbolStep=\dimen334
 \pst@symbolWidth=\dimen335
@@ -982,14 +982,14 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \sh@wgridYunit=\dimen340
 \pst@shift=\dimen341
 \ps@imagectr=\count422
- (C:\Program Files\MiKTeX\tex/generic/pstricks\pstricks.con))
-File: pstricks.tex 2022/11/28 v3.18 `PSTricks' (tvz,hv)
- (C:\Program Files\MiKTeX\tex/generic/pstricks\pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv))
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/pstricks/pstricks.con))
+File: pstricks.tex 2023/04/30 v3.19 `PSTricks' (tvz,hv)
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/pstricks/pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv))
 File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
-) (C:\Program Files\MiKTeX\tex/latex/pst-node\pst-node.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/pst-node/pst-node.sty
 Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
 Package: pst-node 2010/04/22 package wrapper for pst-node.tex
- (C:\Program Files\MiKTeX\tex/generic/pst-node\pst-node.tex  v1.43, 2022/01/31
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/pst-node/pst-node.tex  v1.43, 2022/01/31
 \psrow=\count423
 \pscol=\count424
 \psmatrixcnt=\count425
@@ -1000,9 +1000,9 @@ Package: pst-node 2010/04/22 package wrapper for pst-node.tex
 \pst@argcnt=\count428
 )
 File: pst-node.tex 2022/01/31 1.43 `pst-node' (tvz,hv)
-) (C:\Program Files\MiKTeX\tex/latex/pst-tree\pst-tree.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/pst-tree/pst-tree.sty
 Package: pst-tree 2009/01/25 package wrapper for pst-tree.tex
- (C:\Program Files\MiKTeX\tex/generic/pst-tree\pst-tree.tex  v1.14, 2021/09/04(tvz,dg,hv)
+ (/home/zinozack47/.miktex/texmfs/install/tex/generic/pst-tree/pst-tree.tex  v1.14, 2021/09/04(tvz,dg,hv)
 \pstree@rootbox=\box98
 \pstree@box=\box99
 \psnodecnt=\count429
@@ -1012,7 +1012,7 @@ Package: pst-tree 2009/01/25 package wrapper for pst-tree.tex
 \pstree@stop=\count433
 )
 File: pst-tree.tex 2021/09/04 1.14 `pst-tree' (tvz,hv)
-) (C:\Program Files\MiKTeX\tex/latex/tocloft\tocloft.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip124
@@ -1051,17 +1051,17 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforetabskip=\skip155
 \cfttabindent=\skip156
 \cfttabnumwidth=\skip157
-) (C:\Program Files\MiKTeX\tex/latex/nomencl\nomencl.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/nomencl/nomencl.sty
 Package: nomencl 2021/11/10 v5.6 Nomenclature package
- (C:\Program Files\MiKTeX\tex/latex/koma-script\tocbasic.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/koma-script/tocbasic.sty
 Package: tocbasic 2023/04/24 v3.40 KOMA-Script package (handling toc-files)
- (C:\Program Files\MiKTeX\tex/latex/koma-script\scrbase.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/koma-script/scrbase.sty
 Package: scrbase 2023/04/24 v3.40 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (C:\Program Files\MiKTeX\tex/latex/koma-script\scrlfile.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2023/04/24 v3.40 KOMA-Script package (file load hooks)
- (C:\Program Files\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/koma-script/scrlfile-hook.sty
 Package: scrlfile-hook 2023/04/24 v3.40 KOMA-Script package (using LaTeX hooks)
- (C:\Program Files\MiKTeX\tex/latex/koma-script\scrlogo.sty
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/koma-script/scrlogo.sty
 Package: scrlogo 2023/04/24 v3.40 KOMA-Script package (logo)
 )))
 Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
@@ -1094,14 +1094,14 @@ Package glossaries Info: Writing glossary file main.glo on input line 476.
 \openout10 = `main.acn'.
 
 Package glossaries Info: Writing glossary file main.acn on input line 476.
-) (C:\Program Files\MiKTeX\tex/latex/titlesec\titletoc.sty
+) (/home/zinozack47/.miktex/texmfs/install/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2021/07/05 v2.14 TOC entries
 \ttl@leftsep=\dimen344
 ) (frontpageFR.tex) (glossaire_reduit.tex)
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 36.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\t1ppl.fd
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count436
 \l__pdf_internal_box=\box101
@@ -1126,12 +1126,12 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
- (C:\Program Files\MiKTeX\tex/latex/ucs\ucsencs.def
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 LaTeX Info: Redefining \degres on input line 36.
 LaTeX Info: Redefining \up on input line 36.
- (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count437
 \scratchdimen=\dimen345
@@ -1144,10 +1144,10 @@ LaTeX Info: Redefining \up on input line 36.
 \MPnumerator=\count441
 \makeMPintoPDFobject=\count442
 \everyMPtoPDFconversion=\toks83
-) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (/usr/local/share/miktex-texmf/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+ (/usr/local/share/miktex-texmf/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Option `amssymb' provided! 
@@ -1252,40 +1252,40 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                --- It may be the consequence 
 (minitoc(hints))                of loading the ``hyperref'' package.
 
-(C:\Program Files\MiKTeX\tex/latex/arabtex\apatch.sty
+(/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/apatch.sty
 \a@lines=\count450
 \a@Lwidth=\dimen347
 \a@displaywidth=\dimen348
- (C:\Program Files\MiKTeX\tex/latex/arabtex\alocal.sty (ArabTeX) 3.11 local stub, 26.02.2006) (ArabTeX) version 3.11s (02.07.2006): second phase of patching)
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/alocal.sty (ArabTeX) 3.11 local stub, 26.02.2006) (ArabTeX) version 3.11s (02.07.2006): second phase of patching)
 LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
- (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
- (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+ (/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 41.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\t1phv.fd
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-<images/logo_univ_D_usms.png, id=114, 135.8676pt x 148.3944pt>
+<images/logo_univ_D_usms.png, id=103, 135.8676pt x 148.3944pt>
 File: images/logo_univ_D_usms.png Graphic file (type png)
 <use images/logo_univ_D_usms.png>
 Package pdftex.def Info: images/logo_univ_D_usms.png  used on input line 41.
 (pdftex.def)             Requested size: 81.52116pt x 89.03731pt.
- (C:\Program Files\MiKTeX\tex/latex/ucs/data\uni-0.def
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
 )
-<images/logo_univ_G_ensa.png, id=116, 135.8676pt x 148.3944pt>
+<images/logo_univ_G_ensa.png, id=105, 135.8676pt x 148.3944pt>
 File: images/logo_univ_G_ensa.png Graphic file (type png)
 <use images/logo_univ_G_ensa.png>
 Package pdftex.def Info: images/logo_univ_G_ensa.png  used on input line 41.
 (pdftex.def)             Requested size: 81.52116pt x 89.03731pt.
- (C:\Program Files\MiKTeX\tex/latex/ucs/data\uni-32.def
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2022/08/07 UCS: Unicode data U+2000..U+20FF
 )
-<images/logoIID.png, id=117, 505.89pt x 313.17pt>
+<images/logoIID.png, id=106, 505.89pt x 313.17pt>
 File: images/logoIID.png Graphic file (type png)
 <use images/logoIID.png>
 Package pdftex.def Info: images/logoIID.png  used on input line 41.
@@ -1309,14 +1309,12 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 Non-PDF special ignored!
-<special> ps:0.8 setlinewidth 0 setgray
-Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
 Non-PDF special ignored!
 <special> ps:0.8 setlinewidth 0 setgray
 \openout8 = `main.ist'.
 
-{C:/Users/ziyad/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <./images/logo_univ_D_usms.png> <./images/logo_univ_G_ensa.png> <./images/logoIID.png>]
+{/home/zinozack47/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}{/usr/local/share/miktex-texmf/fonts/enc/dvips/base/8r.enc} <./images/logo_univ_D_usms.png> <./images/logo_univ_G_ensa.png> <./images/logoIID.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1363,7 +1361,7 @@ l.46 \thispagestyle{empty}\ \clearpage
 
  (2-3-resumeAr.tex (ArabTeX) input encoding set to UTF-8 conventions
 LaTeX Font Info:    Trying to load font information for U+xnsh on input line 4.
- (C:\Program Files\MiKTeX\tex/latex/arabtex\uxnsh.fd
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/arabtex/Uxnsh.fd
 File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
 )
 LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
@@ -1445,23 +1443,23 @@ Package minitoc Info: I0033
  [7
 
 
-] [8] (main.lof)
+] (main.lof)
 \tf@lof=\write13
 \openout13 = `main.lof'.
 
- [9] (main.lot)
+ [8] (main.lot)
 \tf@lot=\write14
 \openout14 = `main.lot'.
 
- [10]
+ [9]
 \openout2 = `2-4-listedessigles.aux'.
 
- (2-4-listedessigles.tex) [11
+ (2-4-listedessigles.tex) [10
 
 ]
 \openout2 = `3-introduction.aux'.
 
- (3-introduction.tex (C:\Program Files\MiKTeX\tex/latex/ucs/data\uni-1.def
+ (3-introduction.tex (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2022/08/07 UCS: Unicode data U+0100..U+01FF
 ))
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -1476,11 +1474,11 @@ l.139 \include{3-introduction}
 ]
 Chapitre 1.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 152.
-(C:\Program Files\MiKTeX\tex/latex/psnfss\ot1phv.fd
+(/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 152.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package minitoc Info: I0006
@@ -1490,7 +1488,7 @@ Package minitoc Info: I0006
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 2.
 
-<images/orga.png, id=247, 2469.225pt x 1108.14pt>
+<images/orga.png, id=219, 2469.225pt x 1108.14pt>
 File: images/orga.png Graphic file (type png)
 <use images/orga.png>
 Package pdftex.def Info: images/orga.png  used on input line 15.
@@ -1509,13 +1507,13 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 [4
 
 ]
-<images/smart-data-izicap.png, id=265, 943.525pt x 1190.4475pt>
+<images/smart-data-izicap.png, id=237, 943.525pt x 1190.4475pt>
 File: images/smart-data-izicap.png Graphic file (type png)
 <use images/smart-data-izicap.png>
 Package pdftex.def Info: images/smart-data-izicap.png  used on input line 25.
 (pdftex.def)             Requested size: 290.22107pt x 366.16489pt.
  [5 <./images/smart-data-izicap.png>]
-<images/archi-globale.png, id=275, 1169.36874pt x 687.56876pt>
+<images/archi-globale.png, id=247, 1169.36874pt x 687.56876pt>
 File: images/archi-globale.png Graphic file (type png)
 <use images/archi-globale.png>
 Package pdftex.def Info: images/archi-globale.png  used on input line 36.
@@ -1527,45 +1525,21 @@ Chapitre 3.
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 1.
 
-[8
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 12.
+(/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [8
 
 ]
-<images/trino_architecture.png, id=294, 219.9417pt x 157.5486pt>
-File: images/trino_architecture.png Graphic file (type png)
-<use images/trino_architecture.png>
-Package pdftex.def Info: images/trino_architecture.png  used on input line 16.
-(pdftex.def)             Requested size: 483.69687pt x 346.48535pt.
-<images/trino_communication.png, id=295, 161.403pt x 99.2508pt>
-File: images/trino_communication.png Graphic file (type png)
-<use images/trino_communication.png>
-Package pdftex.def Info: images/trino_communication.png  used on input line 31.
-(pdftex.def)             Requested size: 483.69687pt x 297.48808pt.
- [9 <./images/trino_architecture.png (PNG copy)>] [10 <./images/trino_communication.png (PNG copy)>]
-<images/trino_communication_processing.png, id=308, 196.0926pt x 111.2958pt>
-File: images/trino_communication_processing.png Graphic file (type png)
-<use images/trino_communication_processing.png>
-Package pdftex.def Info: images/trino_communication_processing.png  used on input line 47.
-(pdftex.def)             Requested size: 483.69687pt x 274.5706pt.
-
-Overfull \hbox (2.48314pt too wide) in paragraph at lines 58--59
-[]\T1/ppl/m/n/10.95 La fi-gure sui-vante montre com-ment plu-sieurs wor-kers ré-cu-pèrent des don-nées à par-tir des sources
- []
-
-<images/trino_workers.png, id=309, 198.7425pt x 62.8749pt>
-File: images/trino_workers.png Graphic file (type png)
-<use images/trino_workers.png>
-Package pdftex.def Info: images/trino_workers.png  used on input line 62.
-(pdftex.def)             Requested size: 483.69687pt x 153.04128pt.
-[11 <./images/trino_communication_processing.png (PNG copy)>] [12 <./images/trino_workers.png (PNG copy)>]
-<images/trino_connector.png, id=356, 307.3884pt x 75.1608pt>
-File: images/trino_connector.png Graphic file (type png)
-<use images/trino_connector.png>
-Package pdftex.def Info: images/trino_connector.png  used on input line 133.
-(pdftex.def)             Requested size: 483.69687pt x 118.27449pt.
-) [13 <./images/trino_connector.png (PNG copy)>] [14]
+<images/delta_lake_architecture.png, id=266, 1027.84pt x 458.71375pt>
+File: images/delta_lake_architecture.png Graphic file (type png)
+<use images/delta_lake_architecture.png>
+Package pdftex.def Info: images/delta_lake_architecture.png  used on input line 25.
+(pdftex.def)             Requested size: 483.69687pt x 215.86847pt.
+ [9 <./images/delta_lake_architecture.png>] [10]) [11]
 \openout2 = `4-conclusion.aux'.
 
- (4-conclusion.tex) [15
+ (4-conclusion.tex) [12
 
 
 ]
@@ -1598,7 +1572,7 @@ Package minitoc(hints) Warning: W0024
 \tf@ptc=\write15
 \openout15 = `main.ptc'.
 
-[16
+[13
 
 
 ] 
@@ -1614,7 +1588,7 @@ enddocument/afterlastpage: lastpage setting LastPage.
 uni-global.def    2022/08/07 UCS: Unicode global data
 inputenc.sty    2021/02/14 v1.3d Input encoding file
    utf8x.def    2022/08/07 UCS: Input encoding UTF-8
-   babel.sty    2023/04/18 3.88 The Babel package
+   babel.sty    2023/05/11 v3.89 The Babel package
  bblopts.cfg    2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
   french.ldf    2023/03/08 v3.5q French support from the babel system
  english.ldf    2017/06/06 v3.3r English support from the babel system
@@ -1686,7 +1660,7 @@ palatino.sty    2020/03/25 PSNFSS-v9.3 (SPQR)
 pdfpages.sty    2022/12/19 v0.5x Insert pages of external PDF documents (AM)
   ifthen.sty    2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
     calc.sty    2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
- eso-pic.sty    2023/03/23 v3.0b eso-pic (RN)
+ eso-pic.sty    2023/05/03 v3.0c eso-pic (RN)
 pppdftex.def    2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
      url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
 hyperref.sty    2023-04-22 v7.00x Hypertext links for LaTeX
@@ -1784,7 +1758,7 @@ algorithmicx.sty    2005/04/27 v1.2 Algorithmicx
 pstricks.sty    2022/19/23 v0.72 LaTeX wrapper for `PSTricks' (RN,HV)
 pst-xkey.tex    2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 pst-xkey.tex    2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
-pstricks.tex    2022/11/28 v3.18 `PSTricks' (tvz,hv)
+pstricks.tex    2023/04/30 v3.19 `PSTricks' (tvz,hv)
   pgffor.sty    2023-01-15 v3.1.10 (3.1.10)
   pgfrcs.sty    2023-01-15 v3.1.10 (3.1.10)
 pgfrcs.code.tex
@@ -1831,7 +1805,7 @@ images/logoIID.png
 2-resume.tex
 2-2-resumeAn.tex
 2-3-resumeAr.tex
-   uxnsh.fd     1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
+   Uxnsh.fd
 2-4-listedessigles.tex
 3-introduction.tex
    uni-1.def    2022/08/07 UCS: Unicode data U+0100..U+01FF
@@ -1843,33 +1817,30 @@ images/orga.png
 images/smart-data-izicap.png
 images/archi-globale.png
 3-partie/1-fichier.tex
-images/trino_architecture.png
-images/trino_communication.png
-images/trino_communication_processing.png
-images/trino_workers.png
-images/trino_connector.png
+  ts1ppl.fd    2001/06/04 font definitions for TS1/ppl.
+images/delta_lake_architecture.png
 4-conclusion.tex
  ***********
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1256BE1ACAAA95E3335EEDC6171BF5AD;3326.
+(rerunfilecheck)             Checksum: 2A5F4319E16E9BAC3918AC45A1C71BE3;3071.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 36 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 42023 strings out of 476315
- 714540 string characters out of 5797012
- 1910068 words of memory out of 5000000
- 61306 multiletter control sequences out of 15000+600000
- 559919 words of font info for 104 fonts, out of 8000000 for 9000
+ 42477 strings out of 476362
+ 733179 string characters out of 5795122
+ 1910999 words of memory out of 5000000
+ 61730 multiletter control sequences out of 15000+600000
+ 560473 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,14n,131p,2294b,2902s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14bf.pfb>
-Output written on main.pdf (29 pages, 969407 bytes).
+ 125i,14n,131p,2305b,2925s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmr8a.pfb></home/zinozack47/.miktex/texmfs/install/fonts/type1/public/arabtex/xnsh14.pfb></home/zinozack47/.miktex/texmfs/install/fonts/type1/public/arabtex/xnsh14bf.pfb>
+Output written on main.pdf (25 pages, 959718 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 280 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 343 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 
