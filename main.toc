@@ -5,25 +5,31 @@
 \contentsline {chapter}{Abstract}{v}{chapter*.5}%
 \babel@toc {french}{}\relax 
 \contentsline {chapter}{Table des mati\`eres}{vii}{section*.7}%
-\contentsline {chapter}{Table des figures}{viii}{section*.8}%
-\contentsline {chapter}{Liste des tableaux}{ix}{section*.9}%
+\contentsline {chapter}{Table des figures}{ix}{section*.8}%
+\contentsline {chapter}{Liste des tableaux}{x}{section*.9}%
 \contentsline {chapter}{Introduction}{1}{chapter*.10}%
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{\numberline {1}Izicap}{2}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Contexte général du projet}{2}{chapter.1}%
 \contentsline {section}{Introduction}{2}{section*.11}%
-\contentsline {section}{\numberline {1.1}About}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Organigramme}{3}{section.1.2}%
-\contentsline {section}{Conclusion}{3}{figure.caption.12}%
-\contentsline {chapter}{\numberline {2}Delta Lake}{4}{chapter.2}%
-\contentsline {section}{Introduction}{4}{section*.13}%
-\contentsline {section}{\numberline {2.1}Smart Data}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}L'architecture du système}{6}{section.2.2}%
-\contentsline {section}{Conclusion}{7}{Item.12}%
-\contentsline {chapter}{\numberline {3}Technologies Utilisées}{8}{chapter.3}%
-\contentsline {section}{Introduction}{8}{section*.16}%
-\contentsline {section}{\numberline {3.1}Delta Lake}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Avantages de Delta Lake}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Principaux avantages et caractéristiques de Delta Lake}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Trino}{11}{section.3.4}%
-\contentsline {chapter}{Conclusion}{12}{chapter*.18}%
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Présentation de l’organisme d’accueil}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}IZICAP}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Partenariats stratégiques}{3}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Organigramme}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Cadre du projet}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}L'architecture du système -Smart Data-}{6}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Problématique et besoin fonctionnel}{8}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Objectives du stages}{9}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Processus de réalisation du projet}{10}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Planification du projet}{11}{section.1.9}%
+\contentsline {section}{Conclusion}{12}{figure.caption.17}%
+\contentsline {chapter}{\numberline {2}Analyse et Schématisation}{13}{chapter.2}%
+\contentsline {section}{Introduction}{13}{section*.18}%
+\contentsline {section}{Conclusion}{13}{section*.18}%
+\contentsline {chapter}{\numberline {3}Technologies Utilisées}{14}{chapter.3}%
+\contentsline {section}{Introduction}{14}{section*.19}%
+\contentsline {section}{\numberline {3.1}Delta Lake}{14}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Principaux avantages et caractéristiques de Delta Lake}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Trino}{17}{section.3.3}%
+\contentsline {chapter}{Conclusion}{18}{chapter*.21}%
 \contentsfinish 

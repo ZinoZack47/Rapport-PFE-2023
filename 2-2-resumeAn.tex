@@ -1,23 +1,28 @@
 \resumeAn
 %\begin{abstract}
+This final year project report highlights the different stages of our project to transform a Groovy-based monolithic architecture into a Java-based microservices architecture, while transitioning from AngularJS to React and adopting a microfrontend approach. Our goal was to enhance the flexibility, maintainability, performance, data consistency, and modularity of our application.
+\medskip
 
-This report provides an in-depth analysis of the complex project undertaken to scale the data source of Izicap. The project required the removal of MariaDB and implementation of Delta Lake, a high-performance data storage and processing solution. In addition, the existing monolithic architecture was divided into microservices utilizing Spring Boot as the backend with a suitable connector to Delta Lake, and ReactJS micro-frontends as the frontend.
+Initially, our codebase was developed as a monolith using Groovy. The first step of our project involved analyzing the monolithic architecture and identifying components that could be isolated into independent microservices. Concurrently, we evaluated the benefits of migrating from the outdated AngularJS framework to the more modern and performant React framework.
+
+\medskip
+We proceeded with the design and implementation of these microservices using Spring Boot, ensuring loose coupling between functionalities and effective communication among services. Simultaneously, we gradually migrated our AngularJS code to React, rewriting existing features according to React's best development practices.  
+\medskip
+
+To ensure data consistency among microservices, we implemented Delta Lake, an incremental data management technology. Delta Lake guaranteed reliable data and simplified secure read and write operations between services. Java connectors facilitated communication between the React-based frontend and Delta Lake, ensuring robust and secure connectivity. These connectors also enabled efficient read and write operations, ensuring data integrity and consistency.
+
+\medskip
+In parallel, we adopted a microfrontend approach for our frontend architecture, decoupling frontend features into autonomous modules. This provided greater flexibility and the ability to develop and deploy modules independently.
 
 \medskip
 
-The project presented numerous challenges that required the application of advanced technologies and strategies. These included data migration, ensuring data consistency and accuracy, managing the complexities of distributed systems, and integrating various technologies and services. The report outlines the various solutions developed to address these challenges, including the use of advanced data processing algorithms, distributed computing architectures, and containerization.
-
+Finally, to facilitate deployment and management of our microservices, React, and microfrontend architecture, we adopted Kubernetes and Docker. These tools enabled efficient orchestration, scaling of services, and simplified deployment across different environments.
 \medskip
 
-Despite the challenges encountered, the project remains a work in progress. The report provides insights into the ongoing efforts to improve the project's scalability, performance, and overall functionality.
+In conclusion, our project resulted in significant improvements in flexibility, maintainability, performance, data consistency, and modularity of our application. The transition from a Groovy-based monolithic architecture to a Java-based microservices architecture, combined with the migration from AngularJS to React, the adoption of Delta Lake, Java connectors, microfrontend, Kubernetes, and Docker, collectively optimized our system.
 
-\vspace{1cm}
-
-
-
-\noindent\rule[2pt]{\textwidth}{0.5pt}
-
-{\textbf{Keywords:}}
-Project, Data Source, Delta Lake, Monolith, Microservice, Springboot, ReactJS, Micro-frontends, Back-End, Front-End, Data, Scalability, Performance.
-\\
-\noindent\rule[2pt]{\textwidth}{0.5pt}
+    \noindent\rule[2pt]{\textwidth}{0.5pt}
+    {\textbf{Mots-clés :}}
+    Monolithique, Groovy, Microservices, AngularJS, React, Delta Lake, Microfrontend, Kubernetes, Docker\\
+    \noindent\rule[2pt]{\textwidth}{0.5pt}
+\clearpage

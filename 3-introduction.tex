@@ -1,8 +1,26 @@
 \introduction
-Le monde des données continue de se développer à un rythme sans précédent. Cela a conduit au besoin de systèmes de stockage et de gestion de données efficaces capables de suivre cette croissance. Dans notre quête d'une meilleure solution, nous avons rencontré le problème de l'évolutivité avec notre système de gestion de base de données actuel, MariaDB. En conséquence, nous nous sommes lancés dans un projet visant à trouver une source de données évolutive qui répondrait à nos besoins. Après de nombreuses recherches et réflexions, nous avons décidé d'utiliser Delta Lake avec un stockage S3.
+Dans un monde numérique en constante évolution, les entreprises sont confrontées à des défis majeurs pour maintenir leurs applications à la pointe de la technologie et répondre aux attentes croissantes des utilisateurs. L'architecture monolithique présente des limitations en termes de flexibilité, de maintenabilité, de performances et de modularité, ce qui pousse de nombreuses organisations à adopter des architectures basées sur des microservices.
 
-Cependant, nous avons rencontré plusieurs défis lors de la mise en œuvre de Delta Lake. L'un des principaux problèmes auxquels nous avons été confrontés était le manque de popularité et de documentation de Delta Standalone. Il s'est également avéré lent et ne pouvait pas être interrogé avec SQL. Par conséquent, nous avons opté pour Trino, un moteur de requête SQL distribué qui pourrait facilement interagir avec Delta Lake.
+\medskip
 
-Un autre défi important était l'architecture monolithique de notre système, qui entravait sa flexibilité et son évolutivité. Par conséquent, nous avons décidé de passer aux microservices pour rendre notre système plus efficace et flexible.
+Ce rapport met en évidence la démarche entreprise pour transformer une architecture monolithique en Groovy vers une architecture basée sur des microservices en utilisant Java, tout en migrant de AngularJS vers React et en adoptant une approche de microfrontend. L'objectif principal de cette transformation était d'améliorer la flexibilité, la maintenabilité, les performances, la cohérence des données et la modularité de l'application.
 
-Dans ce rapport, nous donnerons un aperçu de la société Izicap au chapitre 1, suivi d'une explication de Delta Lake et de ses défis de mise en œuvre au chapitre 2. Au chapitre 3, nous discuterons de Trino et de la manière dont il nous a aidés à surmonter les défis auxquels nous étions confrontés. avec le lac Delta.
+\medskip
+
+La première étape a été d'analyser l'architecture monolithique existante et d'identifier les composants pouvant être isolés en microservices indépendants. En parallèle, une évaluation des avantages de migrer de AngularJS vers React a été réalisée.
+
+\medskip
+
+La conception et la mise en œuvre des microservices ont été réalisées en utilisant Spring-Boot, en veillant à découpler les fonctionnalités et à assurer une communication efficace entre les services. Le code AngularJS a été progressivement migré vers React en utilisant les meilleures pratiques de développement React.
+
+\medskip
+
+Pour garantir la cohérence des données entre les microservices, la technologie de gestion de données incrémentielle Delta Lake a été utilisée. Des connecteurs en Java ont facilité la communication entre le frontend basé sur React et Delta Lake, assurant une connexion robuste et sécurisée.
+
+\medskip
+
+En parallèle, une approche de microfrontend a été adoptée pour le frontend, permettant de découpler les fonctionnalités en modules autonomes.
+
+\medskip
+
+Ce rapport détaillera chaque étape de la transformation, mettant l'accent sur les décisions prises, les défis rencontrés et les résultats obtenus. Il soulignera les avantages de l'architecture basée sur des microservices, l'utilisation de React et du microfrontend, ainsi que l'utilisation de Kubernetes et Docker. Cette étude de cas offre une perspective précieuse sur la modernisation des applications et les meilleures pratiques de développement dans un environnement en constante évolution.
