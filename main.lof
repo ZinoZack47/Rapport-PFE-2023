@@ -14,4 +14,5 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Technologies Utilisées}{14}{chapter.3}%
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Architecture multi-sauts de Delta Lake\relax }}{15}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Vue d'ensemble de l'architecture Trino avec le coordinateur et les workers\relax }}{17}{figure.caption.21}%
 \contentsfinish 

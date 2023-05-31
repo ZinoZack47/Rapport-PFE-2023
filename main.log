@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.4)  30 MAY 2023 12:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.4)  31 MAY 2023 15:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1500,36 +1500,36 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 20
  (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<images/partenaires.png, id=263, 1126.2075pt x 621.07031pt>
+<images/partenaires.png, id=265, 1126.2075pt x 621.07031pt>
 File: images/partenaires.png Graphic file (type png)
 <use images/partenaires.png>
 Package pdftex.def Info: images/partenaires.png  used on input line 29.
 (pdftex.def)             Requested size: 483.69687pt x 266.7423pt.
  [3]
-<images/organigram.png, id=268, 1145.27875pt x 858.20625pt>
+<images/organigram.png, id=270, 1145.27875pt x 858.20625pt>
 File: images/organigram.png Graphic file (type png)
 <use images/organigram.png>
 Package pdftex.def Info: images/organigram.png  used on input line 35.
 (pdftex.def)             Requested size: 362.77264pt x 271.84235pt.
  [4 <./images/partenaires.png> <./images/organigram.png>] [5]
-<images/smart-data-izicap.png, id=285, 943.525pt x 1190.4475pt>
+<images/smart-data-izicap.png, id=287, 943.525pt x 1190.4475pt>
 File: images/smart-data-izicap.png Graphic file (type png)
 <use images/smart-data-izicap.png>
 Package pdftex.def Info: images/smart-data-izicap.png  used on input line 60.
 (pdftex.def)             Requested size: 290.22107pt x 366.16489pt.
-<images/archi-globale.png, id=286, 1725.44624pt x 999.735pt>
+<images/archi-globale.png, id=288, 1725.44624pt x 999.735pt>
 File: images/archi-globale.png Graphic file (type png)
 <use images/archi-globale.png>
 Package pdftex.def Info: images/archi-globale.png  used on input line 71.
 (pdftex.def)             Requested size: 483.69687pt x 280.24423pt.
  [6 <./images/smart-data-izicap.png>] [7 <./images/archi-globale.png>] [8] [9]
-<images/scrum.png, id=321, 965.10562pt x 462.22687pt>
+<images/scrum.png, id=323, 965.10562pt x 462.22687pt>
 File: images/scrum.png Graphic file (type png)
 <use images/scrum.png>
 Package pdftex.def Info: images/scrum.png  used on input line 133.
 (pdftex.def)             Requested size: 483.69687pt x 231.663pt.
  [10]
-<images/gantt.png, id=334, 992.20688pt x 192.72pt>
+<images/gantt.png, id=336, 992.20688pt x 192.72pt>
 File: images/gantt.png Graphic file (type png)
 <use images/gantt.png>
 Package pdftex.def Info: images/gantt.png  used on input line 148.
@@ -1553,15 +1553,21 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 [14
 
 ]
-<images/delta_lake_architecture.png, id=354, 1027.84pt x 458.71375pt>
+<images/delta_lake_architecture.png, id=356, 1027.84pt x 458.71375pt>
 File: images/delta_lake_architecture.png Graphic file (type png)
 <use images/delta_lake_architecture.png>
 Package pdftex.def Info: images/delta_lake_architecture.png  used on input line 25.
 (pdftex.def)             Requested size: 483.69687pt x 215.86847pt.
- [15 <./images/delta_lake_architecture.png>] [16]) [17]
+ [15 <./images/delta_lake_architecture.png>] [16]
+<images/trino_architecture.png, id=365, 219.9417pt x 157.5486pt>
+File: images/trino_architecture.png Graphic file (type png)
+<use images/trino_architecture.png>
+Package pdftex.def Info: images/trino_architecture.png  used on input line 47.
+(pdftex.def)             Requested size: 386.95897pt x 277.1902pt.
+ [17 <./images/trino_architecture.png (PNG copy)>]) [18]
 \openout2 = `4-conclusion.aux'.
 
- (4-conclusion.tex) [18
+ (4-conclusion.tex) [19
 
 
 ]
@@ -1594,7 +1600,7 @@ Package minitoc(hints) Warning: W0024
 \tf@ptc=\write15
 \openout15 = `main.ptc'.
 
-[19
+[20
 
 
 ] 
@@ -1844,28 +1850,29 @@ images/gantt.png
 2-partie/1-fichier.tex
 3-partie/1-fichier.tex
 images/delta_lake_architecture.png
+images/trino_architecture.png
 4-conclusion.tex
  ***********
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5DB3933400C7F4CDEBED83C02AD692BB;4588.
+(rerunfilecheck)             Checksum: F7CCAF6C7E4D7DAE350ACDBDC9DD2A62;4588.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 36 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 42062 strings out of 476315
- 714555 string characters out of 5797012
+ 42078 strings out of 476315
+ 714911 string characters out of 5797012
  1910068 words of memory out of 5000000
- 61324 multiletter control sequences out of 15000+600000
+ 61333 multiletter control sequences out of 15000+600000
  560473 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,14n,131p,2294b,2986s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14bf.pfb>
-Output written on main.pdf (32 pages, 1221220 bytes).
+Output written on main.pdf (33 pages, 1260092 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 454 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 
