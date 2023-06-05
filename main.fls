@@ -2872,6 +2872,13 @@ INPUT 2-partie\1-fichier.tex
 INPUT .\2-partie\1-fichier.tex
 INPUT .\2-partie\1-fichier.tex
 INPUT 2-partie\1-fichier.tex
+INPUT .\images\architecture-solution.png
+INPUT .\images\architecture-solution.png
+INPUT images\architecture-solution.png
+INPUT .\images\architecture-solution.png
+INPUT .\images\architecture-solution.png
+INPUT .\images\architecture-solution.png
+INPUT .\images\architecture-solution.png
 INPUT .\3-partie\1-fichier.tex
 INPUT .\3-partie\1-fichier.tex
 INPUT .\3-partie\1-fichier.tex
