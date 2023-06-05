@@ -25,13 +25,14 @@
 \contentsline {section}{Conclusion}{12}{figure.caption.17}%
 \contentsline {chapter}{\numberline {2}Analyse et Schématisation}{13}{chapter.2}%
 \contentsline {section}{Introduction}{13}{section*.18}%
-\contentsline {section}{\numberline {2.1}Solution}{14}{section.2.1}%
-\contentsline {section}{Conclusion}{14}{figure.caption.19}%
-\contentsline {chapter}{\numberline {3}Technologies Utilisées}{15}{chapter.3}%
-\contentsline {section}{Introduction}{15}{section*.20}%
-\contentsline {section}{\numberline {3.1}Delta Lake}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Principaux avantages et caractéristiques de Delta Lake}{16}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Trino}{18}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Keycloak}{19}{section.3.4}%
-\contentsline {chapter}{Conclusion}{20}{chapter*.23}%
+\contentsline {section}{\numberline {2.1}Schématisation}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Avantages}{14}{section.2.2}%
+\contentsline {section}{Conclusion}{16}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Technologies Utilisées}{17}{chapter.3}%
+\contentsline {section}{Introduction}{17}{section*.20}%
+\contentsline {section}{\numberline {3.1}Delta Lake}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Principaux avantages et caractéristiques de Delta Lake}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Trino}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Keycloak}{21}{section.3.4}%
+\contentsline {chapter}{Conclusion}{22}{chapter*.23}%
 \contentsfinish 
