@@ -29,28 +29,28 @@
 \contentsline {section}{\numberline {2.1}Côté Data}{13}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Côté Backend}{13}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Côté Frontend}{14}{section.2.3}%
-\contentsline {section}{Conclusion}{14}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Implementation de la solution}{15}{chapter.3}%
-\contentsline {section}{Introduction}{15}{section*.19}%
-\contentsline {section}{\numberline {3.1}Étude de faisabilité}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Benchmark entre Trino et Spark}{16}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Architecture}{16}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Temps d'exécution}{17}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Gestion de la mémoire}{18}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Écosystème et intégrations}{19}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Évolutivité}{19}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Support des fonctionnalités Delta Lake}{19}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Facilité d'utilisation}{19}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}Autres statistiques}{20}{subsection.3.2.8}%
-\contentsline {section}{\numberline {3.3}Schématisation de la Solution}{20}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Avantages}{21}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Technologies Utilisées}{23}{chapter.4}%
-\contentsline {section}{Introduction}{23}{section*.26}%
-\contentsline {section}{\numberline {4.1}Delta Lake}{23}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Principaux avantages et caractéristiques de Delta Lake}{24}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Trino}{26}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Springboot}{27}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Keycloak}{27}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Kafka}{28}{section.4.6}%
-\contentsline {chapter}{Conclusion}{30}{chapter*.30}%
+\contentsline {section}{Conclusion}{15}{figure.caption.20}%
+\contentsline {chapter}{\numberline {3}Implementation de la solution}{16}{chapter.3}%
+\contentsline {section}{Introduction}{16}{section*.21}%
+\contentsline {section}{\numberline {3.1}Étude de faisabilité}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Benchmark entre Trino et Spark}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Architecture}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Temps d'exécution}{18}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Gestion de la mémoire}{19}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Écosystème et intégrations}{20}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Évolutivité}{20}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Support des fonctionnalités Delta Lake}{20}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Facilité d'utilisation}{20}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Autres statistiques}{21}{subsection.3.2.8}%
+\contentsline {section}{\numberline {3.3}Schématisation de la Solution}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Avantages}{22}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Technologies Utilisées}{24}{chapter.4}%
+\contentsline {section}{Introduction}{24}{section*.28}%
+\contentsline {section}{\numberline {4.1}Delta Lake}{24}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Principaux avantages et caractéristiques de Delta Lake}{25}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Trino}{27}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Springboot}{28}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Keycloak}{28}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Kafka}{29}{section.4.6}%
+\contentsline {chapter}{Conclusion}{31}{chapter*.32}%
 \contentsfinish 
