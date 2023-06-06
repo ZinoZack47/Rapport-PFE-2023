@@ -16,6 +16,11 @@
 \usepackage{utf8}
 \usepackage{pifont}  % for some special characters 
 
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor} % les couleurs avec les divers modes d'appels
 \usepackage{setspace}
 \usepackage[]{graphicx} % pour insérer des images

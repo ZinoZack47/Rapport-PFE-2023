@@ -23,21 +23,33 @@
 \contentsline {section}{\numberline {1.8}Processus de réalisation du projet}{10}{section.1.8}%
 \contentsline {section}{\numberline {1.9}Planification du projet}{11}{section.1.9}%
 \contentsline {section}{Conclusion}{12}{figure.caption.17}%
-\contentsline {chapter}{\numberline {2}Schématisation de la Solution}{13}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Cheminement de la solution}{13}{chapter.2}%
 \contentsline {section}{Introduction}{13}{section*.18}%
 \contentsline {section}{\numberline {2.1}Côté Data}{13}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Côté Backend}{13}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Côté Frontend}{13}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Schématisation}{13}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Avantages}{14}{section.2.5}%
-\contentsline {section}{Conclusion}{15}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Technologies Utilisées}{16}{chapter.3}%
-\contentsline {section}{Introduction}{16}{section*.20}%
-\contentsline {section}{\numberline {3.1}Delta Lake}{16}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Principaux avantages et caractéristiques de Delta Lake}{17}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Trino}{19}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Springboot}{20}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Keycloak}{20}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Kafka}{21}{section.3.6}%
-\contentsline {chapter}{Conclusion}{23}{chapter*.24}%
+\contentsline {section}{\numberline {2.3}Côté Frontend}{14}{section.2.3}%
+\contentsline {section}{Conclusion}{14}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Implementation de la solution}{15}{chapter.3}%
+\contentsline {section}{Introduction}{15}{section*.19}%
+\contentsline {section}{\numberline {3.1}Étude de faisabilité}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Benchmark entre Trino et Spark}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Architecture}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Temps d'exécution}{17}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Gestion de la mémoire}{18}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Écosystème et intégrations}{19}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Évolutivité}{19}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Support des fonctionnalités Delta Lake}{19}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Facilité d'utilisation}{19}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Autres statistiques}{20}{subsection.3.2.8}%
+\contentsline {section}{\numberline {3.3}Schématisation de la Solution}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Avantages}{21}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Technologies Utilisées}{23}{chapter.4}%
+\contentsline {section}{Introduction}{23}{section*.26}%
+\contentsline {section}{\numberline {4.1}Delta Lake}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Principaux avantages et caractéristiques de Delta Lake}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Trino}{26}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Springboot}{27}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Keycloak}{27}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Kafka}{28}{section.4.6}%
+\contentsline {chapter}{Conclusion}{30}{chapter*.30}%
 \contentsfinish 

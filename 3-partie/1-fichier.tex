@@ -1,107 +1,199 @@
 \addcontentsline{toc}{section}{Introduction}
 
 \section*{Introduction}
-Dans ce chapitre, nous examinerons en détail les technologies clés qui sont utilisées dans notre solution pour fournir des fonctionnalités avancées et répondre aux besoins spécifiques de notre projet. Les trois principales technologies que nous aborderons sont Delta Lake, Trino et les Microfrontends.
 
-\section{Delta Lake}
+Ce chapitre se concentre sur l'implémentation de la solution, en mettant l'accent sur le choix du connecteur pour manipuler Delta Lake. Nous discuterons de l'étude de faisabilité des différents connecteurs et de leur impact sur la modularité, les performances et la sécurité.
 
-Delta Lake est une technologie de gestion des données qui permet de stocker, gérer et analyser des volumes massifs de données de manière efficace et fiable. Il repose sur une architecture basée sur des fichiers parquet et offre des fonctionnalités avancées telles que la gestion des transactions ACID (Atomicité, Cohérence, Isolation, Durabilité) et la compatibilité avec des outils d'analyse populaires. Delta Lake garantit également l'intégrité des données, la cohérence des requêtes et la prise en charge de la réplication et de la récupération en cas de défaillance.
+\section{Étude de faisabilité}
+Lors de notre étude de faisabilité, nous avons examiné plusieurs options de connecteurs pour manipuler Delta Lake. Voici un aperçu des connecteurs que nous avons explorés:
 
-Le concept de `lakehouse' est rendu possible grâce à Delta Lake. Il s'agit d'une architecture de données qui combine les avantages des entrepôts de données et des lacs de données, en offrant une approche unique et cohérente pour la gestion des données. Les données sont stockées au format Parquet dans le lac de données, permettant ainsi un traitement continu et par lots.
-\begin{itemize}
-    \item \textbf{Permet une architecture  Lakehouse:} Delta Lake permet une architecture de données continue et simplifiée qui permet aux organisations de gérer et de traiter d'énormes volumes de données en continu et par lots sans les tracas de gestion et d'exploitation liés à la gestion séparée du streaming, des data warehouses et des lacs de données.
-    \item \textbf{Permet une gestion intelligente des données pour les lacs de données:} Delta Lake offre une gestion efficace et évolutive des métadonnées, qui fournit des informations sur les volumes de données massifs dans les lacs de données. Grâce à ces informations, les tâches de gouvernance et de gestion des données se déroulent plus efficacement.
-    \item \textbf{Application du schéma pour une meilleure qualité des données:} Étant donné que les lacs de données n'ont pas de schéma défini, il devient facile pour les données mauvaises/incompatibles d'entrer dans les systèmes de données. La qualité des données est améliorée grâce à la validation automatique du schéma, qui valide la compatibilité DataFrame et table avant les écritures.
-    \item \textbf{Permet la transaction ACID:} La plupart des architectures de données organisationnelles impliquent de nombreux mouvements ETL et ELT entrant et sortant du stockage de données, ce qui l'ouvre à plus de complexité et d'échecs aux points d'entrée des nœuds. Delta Lake garantit la durabilité et la persistance des données pendant l'ETL et d'autres opérations de données. Delta Lake capture toutes les modifications apportées aux données pendant les opérations de données dans un journal des transactions, garantissant ainsi l'intégrité et la fiabilité des données pendant les opérations de données.
-\end{itemize}
+\begin{enumerate}
+    \item \textbf{Delta Standalone:} Nous avons tenté d'utiliser Delta Standalone, qui est un connecteur indépendant de Spark. Cependant, nous avons constaté que Delta Standalone ne prend en charge que des snapshots de timestamp et ne permet pas les requêtes. De plus, il peut parfois être lourd lors de la récupération de plusieurs enregistrements, ce qui affecte les performances.
+    \item \textbf{Delta Sharing Server:} Delta Sharing Server est une autre option qui nécessite son propre serveur. Bien qu'il soit populaire avec Rust et Python, nous avons constaté que l'utilisation de Delta Sharing Server avec Java ne fournit pas toutes les options disponibles et manque de documentation détaillée.
+    \item \textbf{Spark:} Spark est une option faisable et déjà disponible pour manipuler Delta Lake. Cependant, il nécessite une version spécifique de Spring Boot (2.7-) avec une configuration Maven très spécifique. Bien que Spark offre de nombreuses fonctionnalités et soit bien intégré à l'écosystème de Big Data, son utilisation peut être complexe et nécessite une configuration précise.
+    \item \textbf{Trino:} Trino est un autre connecteur que nous avons exploré. Cependant, il nécessite son propre serveur et une base de données relationnelle (Hive). Trino offre plusieurs avantages, notamment la possibilité d'utiliser du SQL standard et un connecteur Java JDBC pour accéder à Delta Lake. Cela offre une flexibilité et une facilité d'utilisation accrues.
+\end{enumerate}
 
-\section{Principaux avantages et caractéristiques de Delta Lake}
-\begin{flushleft}
-	Avec Delta Lake, les données sont stockées dans un format optimisé, tel que Parquet, dans un lac de données. Ce format facilite le traitement efficace des requêtes, quel que soit le mode d'accès aux données, qu'il s'agisse d'un traitement streaming ou par batch.
-\end{flushleft}
+\section{Benchmark entre Trino et Spark}
+Trino est un moteur de requêtage distribué et rapide conçu pour exécuter des requêtes SQL interactives sur de grands ensembles de données. Spark, d'autre part, est un système de traitement distribué populaire qui prend également en charge le requêtage de données à grande échelle.
+Pour cette étude de benchmark, nous allons évaluer les performances de Trino et Spark sur le requêtage de données stockées dans Delta Lake (S3 Amazon dans notre cas), un format de stockage de données optimisé pour les analyses analytiques.
+
+\subsection{Architecture}
+Les deux schémas suivant représentent l’architecture respective des deux POC (Proof Of Concept) SPARK et TRINO.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{images/delta_lake_architecture.png}
-\caption{Architecture multi-sauts de Delta Lake}\label{fig:delta-lake-architecture}
+\includegraphics[width=\linewidth]{images/trino_microservice.png}
+\caption{Architecture TRINO}\label{fig:arch-trino}
 \end{figure}
-
-\begin{itemize}
-	\item[\textbullet] \textbf{Pistes d'audit et historique:}Dans Delta Lake, chaque écriture existe en tant que transaction et est enregistrée en série dans un journal des transactions. Par conséquent, toutes les modifications ou validations apportées au journal des transactions sont enregistrées, laissant une trace complète à utiliser dans les audits historiques, la gestion des versions ou à des fins de voyage dans le temps. Cette fonctionnalité de Delta Lake permet de garantir l'intégrité et la fiabilité des données pour les opérations de données d'entreprise.
-	\item[\textbullet] \textbf{Voyager dans le temps et versionner les données:} Étant donné que chaque écriture crée une nouvelle version et stocke l'ancienne version dans le journal des transactions, les utilisateurs peuvent afficher/restaurer les anciennes versions de données en fournissant l'horodatage ou le numéro de version d'une table ou d'un répertoire existant à l'API de lecture Sparks\@. À l'aide du numéro de version fourni, Delta Lake construit ensuite un instantané complet de la version avec les informations fournies par le journal des transactions. Les retours en arrière et la gestion des versions jouent un rôle essentiel dans l'expérimentation de l'apprentissage automatique, où les scientifiques des données modifient de manière itérative les hyperparamètres pour former des modèles et peuvent revenir aux modifications si nécessaire.
-	\item[\textbullet] \textbf{Unifie le traitement par lots et par flux:} Chaque table d'un Delta Lake est un puits de lot et de flux. Avec le streaming structuré Sparks, les organisations peuvent diffuser et traiter efficacement les données de streaming. De plus, grâce à la gestion efficace des métadonnées, à la facilité d'évolutivité et à la qualité ACID de chaque transaction, l'analyse en temps quasi réel devient possible sans utiliser une architecture de données à deux niveaux plus compliquée.
-	\item[\textbullet] \textbf{Gestion efficace et évolutive des métadonnées:} Delta Lakes stocke les informations de métadonnées dans le journal des transactions et exploite la puissance de traitement distribuée de Spark pour traiter rapidement, lire et gérer efficacement de gros volumes de métadonnées de données, améliorant ainsi la gouvernance des données.
-	\item[\textbullet] \textbf{transactions ACID:} Delta Lakes garantit que les utilisateurs voient toujours une vue de données cohérente dans une table ou un répertoire. Il garantit cela en capturant chaque modification effectuée dans un journal de transactions et en l'isolant au niveau d'isolation le plus fort, le niveau sérialisable. Au niveau sérialisable, chaque opération existante a et suit une séquence en série qui, lorsqu'elle est exécutée une par une, fournit le même résultat que celui indiqué dans le tableau.
-	\item[\textbullet] \textbf{Opérations du langage de manipulation de données:} Delta Lakes prend en charge les opérations DML telles que les mises à jour, les suppressions et les fusions, qui jouent un rôle dans les opérations de données complexes telles que la capture de données de modification (CDC), les upserts en continu et la dimension à évolution lente (SCD). Des opérations comme CDC assurent la synchronisation des données dans tous les systèmes de données et minimisent le temps et les ressources consacrés aux opérations ELT. Par exemple, en utilisant le CDC, au lieu d'ETL toutes les données disponibles, seules les données récemment mises à jour depuis la dernière opération subissent une transformation.
-	\item[\textbullet] \textbf{Schema Enforcement:} Delta Lakes effectue une validation automatique du schéma en vérifiant un ensemble de règles pour déterminer la compatibilité d'une écriture d'un DataFrame vers une table. L'une de ces règles est l'existence de toutes les colonnes DataFrame dans la table cible. Une occurrence d'une colonne supplémentaire ou manquante dans le DataFrame génère une erreur d'exception. Une autre règle est que le DataFrame et la table cible doivent contenir les mêmes types de colonnes, ce qui, sinon, déclenchera une exception. Delta Lake utilise également DDL (Data Definition Language) pour ajouter explicitement de nouvelles colonnes. Cette fonctionnalité de lac de données permet d'éviter l'ingestion de données incorrectes, garantissant ainsi une qualité élevée des données.
-	\item[\textbullet] \textbf{Compatibilité avec l'API de Spark:} Delta Lake est basé sur Apache Spark et est entièrement compatible avec l'API Spark, qui permet de créer des pipelines de données volumineuses efficaces et fiables.
-	\item[\textbullet] \textbf{Flexibilité et intégration:} Delta Lake est une couche de stockage open source et utilise le format Parquet pour stocker des fichiers de données, ce qui favorise le partage de données et facilite l'intégration avec d'autres technologies et stimule l'innovation.
-\end{itemize}
-
-\section{Trino}
-
-Trino, anciennement connu sous le nom de Presto, est un moteur de requêtes SQL distribué et open-source. Il est conçu pour exécuter des requêtes interactives et analytiques à grande échelle sur des données hétérogènes et distribuées. Trino offre une grande polyvalence en permettant l'accès à différents types de sources de données, qu'il s'agisse de bases de données relationnelles, de systèmes de fichiers, de sources de données en temps réel ou de services de stockage cloud. Grâce à sa conception distribuée, Trino permet des performances élevées et une scalabilité horizontale, ce qui en fait un outil essentiel pour l'analyse des données dans notre solution.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\linewidth]{images/trino_architecture.png}
-\caption{Vue d'ensemble de l'architecture Trino avec le coordinateur et les workers}\label{fig:trino-architecture}
+\includegraphics[width=\linewidth]{images/archi-spark.png}
+\caption{Architecture SPARK}\label{fig:arch-spark}
 \end{figure}
-
+    
+\subsection{Temps d'exécution}
 \begin{enumerate}
-	\item Un coordinateur est un serveur Trino qui gère les requêtes entrantes et gère les workers pour exécuter les requêtes.
-	\item Un worker est un serveur Trino responsable de l'exécution des tâches et du traitement des données.
-	\item Le service de découverte s'exécute généralement sur le coordinateur et permet aux workers de s'inscrire pour participer au cluster.
-	\item Toutes les communications et tous les transferts de données entre les clients, le coordinateur et les workers utilisent des interactions basées sur REST sur HTTP/HTTPS.
+    \item[$\bullet$] \textbf{Trino:} Trino est connu pour sa vitesse d'exécution élevée. Il utilise une architecture optimisée pour exécuter des requêtes SQL de manière très rapide, en exploitant la parallélisation et l'optimisation des requêtes. Trino peut fournir des temps d'exécution courts en ce qui concerne les requêtes sur Delta Lake.
+    \item[$\bullet$] \textbf{Spark:} Spark est également conçu pour offrir des performances élevées, mais il peut nécessiter plus de temps pour lire les données à partir du disque. Cependant, Spark peut offrir des performances élevées lorsqu'il est utilisé avec des opérations de transformation complexes, grâce à son modèle de calcul distribué basé sur le disque.
 \end{enumerate}
 
-\section{Springboot}
-
-Spring Boot est un framework open-source pour le développement d'applications Java. Il fournit une approche simplifiée et conventionnelle pour créer des applications Java autonomes, prêtes à être déployées, sans nécessiter une configuration complexe.
-
-L'un des principaux avantages de Spring Boot est sa capacité à réduire la configuration boilerplate et à simplifier le développement d'applications en fournissant des définitions de configuration par défaut intelligentes et en automatisant de nombreux aspects du développement. Il intègre également un serveur d'applications embarqué, ce qui facilite le déploiement et l'exécution de l'application sans avoir besoin d'un serveur d'applications externe.
-
-Spring Boot suit le paradigme de la programmation orientée annotation, où les annotations sont utilisées pour configurer et orchestrer les différentes parties de l'application. Il offre une large gamme de fonctionnalités, telles que l'injection de dépendances, la configuration externe, la gestion des erreurs, la sécurité, l'accès aux données, etc. Ces fonctionnalités sont regroupées dans des starters, qui sont des dépendances prédéfinies facilitant l'ajout de fonctionnalités spécifiques à l'application.
-
-Grâce à son approche simplifiée, Spring Boot permet aux développeurs de se concentrer davantage sur la logique métier de leur application plutôt que sur des tâches de configuration fastidieuses. Il favorise également les bonnes pratiques de développement, telles que la séparation des préoccupations et la modularité, ce qui rend les applications plus maintenables et évolutives.
-
-
-\section{Keycloak}
-
-Keycloak est une solution open-source de gestion des identités et des accès (Identity and Access Management) développée par Red Hat. Il fournit des fonctionnalités complètes pour la gestion des utilisateurs, l'authentification, l'autorisation et la sécurisation des applications.
-
-Keycloak permet de centraliser et de simplifier la gestion des identités au sein d'une infrastructure informatique. Il offre des fonctionnalités telles que l'inscription des utilisateurs, l'authentification à plusieurs facteurs, la gestion des rôles et des autorisations, la gestion des sessions, ainsi que l'intégration avec des protocoles d'authentification et d'autorisation courants tels que OAuth 2.0 et OpenID Connect.
-
-Keycloak offre un ensemble de fonctionnalités pour gérer les rôles, les administrateurs, les utilisateurs et les mots de passe. Voici comment Keycloak aborde ces aspects:
-
+Nous avons effectué un test de performance sur une table Delta de 2 giga-octets en utilisant 2 ordinateurs:
 \begin{enumerate}
-	\item Keycloak permet de définir des rôles au niveau du royaume (realm) ou au niveau de l'application. Les rôles peuvent être créés et attribués aux utilisateurs pour définir leurs autorisations et leurs accès.
-	\item Les administrateurs Keycloak peuvent créer, gérer et assigner des rôles aux utilisateurs via l'interface d'administration ou via l'API de gestion.
-	\item Les rôles peuvent être utilisés pour contrôler l'accès aux fonctionnalités, aux pages et aux ressources au sein de l'application.
-	\item Keycloak propose des rôles d'administration spécifiques tels que "admin" ou "superadmin" qui permettent aux utilisateurs d'effectuer des tâches d'administration, telles que la gestion des clients, des utilisateurs, des rôles, etc.
-	\item Les utilisateurs peuvent se connecter à l'aide de leurs identifiants (nom d'utilisateur et mot de passe) ou d'autres méthodes d'authentification prises en charge, telles que l'authentification à deux facteurs, OAuth 2.0, etc.
-	\item Keycloak prend en charge l'authentification basée sur les utilisateurs et fournit une interface d'inscription pour permettre aux utilisateurs de créer leurs comptes.
-	\item Keycloak offre également des fonctionnalités d'authentification avancées, telles que l'authentification à deux facteurs, l'authentification sociale (via des fournisseurs d'identité tels que Google, Facebook, etc.) et l'authentification basée sur des certificats.
+    \item Le premier PC «DELL Latitude 5530» ou nous allons lancer les images Docker suivantes:
+    \item \begin{enumerate}
+        \item[$\bullet$] \textbf{Trino:} c’est l’image du serveur Trino pour l'interrogation de données distribué avec le langage SQL 
+        \item[$\bullet$] \textbf{Hive:} Il sera utilisé conjointement avec Trino afin d’interroger et analyser des données stockées dans Hive grâce à la compatibilité entre les deux systèmes et le partage des métadonnées via le Hive Metastore.
+        \item[$\bullet$] \textbf{PostgreSQL:} Il sera utilisé afin de stocker les métadonnées des tables Delta, des schémas et des partitions, facilitant ainsi la gestion, la découverte et l'accès aux données dans un environnement distribué. Il offre également des fonctionnalités d'optimisation des requêtes et de gestion des autorisations pour améliorer les performances et la sécurité des analyses de données.
+        \item[$\bullet$] \textbf{AWS:} Ou les delta tables sont stockés.
+    \end{enumerate}
+    \item Le Dexième PC «ASUS ROG G752 VT» c’est là ou sera exécuté les micro-services springboot de SPARK et de TRINO.\@
 \end{enumerate}
 
-\section{Kafka}
+La configuration utilisée lors des tests est la suivante:
+\begin{table}[h]
+\centering
+\label{tab:caracteristiques}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Composant} & \textbf{Spécifications} \\ \hline
+Processeur & 12th Gen Intel\textsuperscript{®} Core\textsuperscript{TM} i7-1255U 1.70 - 4.8 GHz \\ \hline
+Fréquence processeur & 2.6 - 3.2 GHz \\ \hline
+Mémoire vive & 24 GO \\ \hline
+Type de mémoire vive & DDR4 \\ \hline
+Puce graphique & Intel Iris Xe Graphics \\ \hline
+Disque dur & 512GB PCIe NVMe Class 35 SSD \\ \hline
+Type du système d'exploitation & Windows 11 64 bits \\ \hline
+\end{tabular}
+\caption{Caractéristiques techniques du PC « DEL Latitude 5530 »}
+\end{table}
 
-Kafka est une plateforme de streaming de données distribuée et évolutive, conçue pour gérer efficacement la transmission et le traitement de flux de données en temps réel. Elle a été développée par Apache Software Foundation.
+\begin{table}[h]
+\centering
+\label{tab:caracteristiques-2}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Composant} & \textbf{Spécifications} \\ \hline
+Processeur & Intel Core i7-6700HQ \\ \hline
+Fréquence processeur & 2.6 - 3.2 GHz \\ \hline
+Mémoire vive & 24 GO DDR4 \\ \hline
+Disque dur & 1TO SSD + 1TO HDD \\ \hline
+Type de mémoire vive & DDR4-SDRAM \\ \hline
+Puce graphique & Nvidia GeForce GTX 970M \\ \hline
+Quantité de mémoire graphique & 3072 Mo dédiée \\\hline
+Type du système d'exploitation & Windows 10 64 bits \\ \hline
+\end{tabular}
+\caption{Caractéristiques techniques du PC «ASUS ROG G752 VT»}
+\end{table}
 
-Kafka est basé sur une architecture de journal de messages distribué, où les données sont stockées sous forme de flux de messages dans des "topics". Les producteurs de données envoient des messages à des "topics" spécifiques, tandis que les consommateurs s'abonnent à ces "topics" pour récupérer les messages. Cela permet une communication asynchrone et une séparation claire entre les producteurs et les consommateurs de données.
+Les résultats sont les suivants:
 
-Les principales caractéristiques de Kafka incluent:
+\begin{table}[h]
+\centering
+\label{tab:resultats}
+\begin{tabular}{|l|l|l|}
+\hline
+\multirow{2}{*}{\textbf{Requêtes}} & \multicolumn{2}{c|}{\textbf{Implémentation}} \\ \cline{2-3}
+& \textbf{Spark (s)} & \textbf{Trino (s)} \\ \hline
+SELECT (par page et par limite de résultats par page - 100 par page) & 1.2 & 0.43 \\ \hline
+Agrégation et regroupement & 2.1 & 0.8 \\ \hline
+Tri & 2.2 & 0.8 \\ \hline
+\end{tabular}
+\caption{Caractéristiques techniques du PC «ASUS ROG G752 VT»}
+\end{table}
 
+\subsection{Gestion de la mémoire}
 \begin{enumerate}
-	\item Scalabilité: Kafka est conçu pour gérer de gros volumes de données et peut être mis à l'échelle horizontalement pour répondre aux besoins de performance croissants. Il peut gérer des charges de travail élevées et traiter des milliers de messages par seconde.
-	\item Tolérance aux pannes: Kafka garantit une haute disponibilité et une tolérance aux pannes en répliquant les données sur plusieurs nœuds du cluster. Cela garantit la fiabilité et la disponibilité des données, même en cas de défaillance d'un ou plusieurs nœuds.
-	\item Durabilité des données: Les messages stockés dans Kafka sont persistants et peuvent être conservés pendant une période définie. Cela permet de rejouer les messages et de récupérer les données en cas de besoin, ce qui est essentiel pour les cas d'utilisation nécessitant une conservation à long terme des données.
-	\item Traitement de flux: Kafka est conçu pour le traitement de flux en temps réel. Il permet aux applications de consommer des flux de données en continu et de les traiter en temps réel, ce qui est crucial pour les cas d'utilisation nécessitant une analyse en temps réel, des pipelines de données, etc.
-	\item Intégration avec d'autres outils: Kafka s'intègre facilement avec d'autres outils et frameworks tels que Spark, Hadoop, Flink, etc. Cela permet une intégration transparente avec l'écosystème Big Data et facilite l'ingestion, le traitement et la diffusion des données.
+    \item[$\bullet$] \textbf{Trino:} Trino utilise principalement la mémoire pour accélérer le traitement des requêtes. Il dispose d'un moteur de requêtage en mémoire qui optimise l'accès aux données et minimise les temps d'accès. Cependant, cela signifie que Trino peut nécessiter une quantité de mémoire significative pour traiter de grands ensembles de données.
+    \item[$\bullet$] \textbf{Spark:} Spark utilise un modèle de calcul distribué basé sur le disque, ce qui signifie que les données sont généralement stockées sur le disque et chargées en mémoire selon les besoins. Cela permet à Spark de gérer des ensembles de données beaucoup plus volumineux que ce qui peut tenir en mémoire.
 \end{enumerate}
+    
+\subsection{Écosystème et intégrations}
+\begin{enumerate}
+    \item[$\bullet$] \textbf{Trino:} Trino dispose d'un écosystème en pleine croissance avec une large gamme de connecteurs et d'intégrations, ce qui permet d'accéder à différentes sources de données, y compris Delta Lake. Il est compatible avec divers outils de visualisation et de traitement des données.
+    \item[$\bullet$] \textbf{Spark:} Spark est un projet mature avec un écosystème riche d'outils, de bibliothèques et de connecteurs. Il bénéficie d'une large communauté de développeurs et de nombreuses ressources d'apprentissage. Spark prend également en charge le traitement de données en continu et le traitement par lots.
+\end{enumerate}
+
+\subsection{Évolutivité}
+\begin{enumerate}
+    \item[$\bullet$] \textbf{Trino:} Trino est conçu pour être hautement évolutif et peut gérer de grands ensembles de données. Il peut être facilement configuré pour s'adapter à des charges de travail intensives et à des volumes de données importants.
+    \item[$\bullet$] \textbf{Spark:} Spark est également conçu pour l'évolutivité et peut traiter des ensembles de données massifs. Il dispose d'un système de traitement distribué qui peut s'adapter à différentes configurations de clusters et de ressources.
+\end{enumerate}
+
+\subsection{Support des fonctionnalités Delta Lake}
+\begin{enumerate}
+    \item[$\bullet$] \textbf{Trino:} Trino dispose d'un connecteur officiel pour Delta Lake, ce qui lui permet de lire et d'écrire des données dans Delta Lake. Il prend en charge les fonctionnalités essentielles de Delta Lake, telles que la gestion des transactions ACID, les mises à jour incrémentielles et les opérations de fusion ("merge").
+    \item[$\bullet$] \textbf{Spark:} Spark dispose également d'un support intégré pour Delta Lake. Il offre des fonctionnalités avancées de gestion des données Delta, notamment la prise en charge des transactions ACID, des opérations de fusion performantes et des mécanismes de contrôle de version des données.
+\end{enumerate}
+
+\subsection{Facilité d'utilisation}
+\begin{enumerate}
+    \item[$\bullet$] \textbf{Trino:} Trino offre une interface SQL standard, ce qui facilite son utilisation pour les utilisateurs familiers avec SQL. Il propose également des outils de requêtage interactif conviviaux et des options de configuration flexibles.
+    \item[$\bullet$] \textbf{Spark:} Spark propose une interface SQL via Spark SQL, mais il est également orienté vers le traitement de données par le biais d'un API plus large. Spark peut être plus complexe à utiliser pour les utilisateurs moins familiers avec les concepts du traitement distribué.
+\end{enumerate}
+
+\subsection{Autres statistiques}
+
+\begin{longtable}{|p{0.23\linewidth}|p{0.35\linewidth}|p{0.42\linewidth}|}
+\hline
+\textbf{} & \textbf{Spark} & \textbf{Trino} \\ \hline
+\textbf{Expérience \newline Développeur} & 
+\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\newline
+La syntaxe de Spark exige que les PME aient une expérience en ingénierie de données &
+\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\newline
+Une interface SQL standard, ce qui facilite son utilisation pour les utilisateurs familiers avec SQL \\ \hline
+\textbf{Coût} & 
+Équipe: \includegraphics[width=0.33in,height=0.35in]{images/image4.jpg}\includegraphics[width=0.33in,height=0.35in]{images/image4.jpg}\newline
+Infrastructure: \textcolor[RGB]{0, 128, 0}{\textbf{\large \$}} & 
+Équipe: \includegraphics[width=0.33in,height=0.35in]{images/image4.jpg}\includegraphics[width=0.33in,height=0.35in]{images/image4.jpg}\newline
+Infrastructure: \textcolor[RGB]{0, 128, 0}{\textbf{\large \$}} \\ \hline
+\textbf{Fiabilité} & 
+\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\newline
+Produit mature maintenu en interne et pris en charge par Google Dataproc &
+\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\newline
+A été en panne à quelques reprises car l'équipe interne apprend à maintenir et à évoluer \\ \hline
+\textbf{Caractéristiques et Open sources} & 
+\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\newline
+A été soutenu par la communauté open source depuis 2014 &
+\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\includegraphics[width=0.28in,height=0.28in]{images/image3.png}\newline
+A été soutenu par la communauté open source depuis 2019. Shopify a apporté des contributions. \\ \hline
+\textbf{Usage} & 
+\textasciitilde800,000 emplois/jour & 
+3000 utilisateurs actifs/semaine \newline
+\textasciitilde200,000 requêtes/semaine \\ \hline
+\end{longtable}
+
+\section{Schématisation de la Solution}
+
+Dans le cadre de la schématisation de la solution, nous avons opté pour une architecture basée sur des microservices, utilisant les technologies suivantes : Spring Data, JPA, Hibernate, JDBC et Trino.
+
+Les microservices sont développés en utilisant Spring Data, qui fournit une abstraction de haut niveau pour interagir avec la base de données. Cela permet d'utiliser des annotations et des interfaces pour définir les entités, les requêtes et les opérations de persistance. JPA (Java Persistence API) est utilisé comme couche d'interface pour interagir avec la base de données, tandis que Hibernate est utilisé comme fournisseur de persistance, permettant la gestion des objets Java et leur mapping vers Trino.
+
+La communication entre les microservices est assurée par un broker Kafka. Kafka est une plateforme de streaming distribuée qui permet aux microservices d'échanger des messages en temps réel. Les microservices publient des événements sur des sujets Kafka, et d'autres microservices peuvent s'abonner à ces sujets pour recevoir les événements correspondants.
+
+Pour gérer l'authentification et l'autorisation, nous utilisons Spring Cloud Gateway. Ce composant reçoit les appels de services provenant des applications Web, mobiles ou de bureau. Ces applications envoient un jeton JWT (JSON Web Token) à Spring Cloud Gateway pour authentification. Ce dernier vérifie la disponibilité du jeton en contactant Keycloak, qui est responsable de la gestion des identités et des accès. Une fois le jeton validé, Spring Cloud Gateway autorise la demande à passer vers les microservices.
+
+Les microservices communiquent avec Trino en utilisant le connecteur JDBC\@. Trino est responsable de l'interrogation et du traitement des données sur une grande quantité de sources de données. Il stocke les métadonnées dans Hive, qui est un entrepôt de données basé sur Hadoop. Trino utilise également le concept de tables Delta pour gérer les modifications incrémentielles des données. Ces tables Delta sont stockées sur AWS (Amazon Web Services), offrant une solution de stockage évolutive et fiable.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{images/kafka.jpg}
-\caption{Architecture Kafka}\label{fig:kafka}
+\includegraphics[width=\linewidth]{images/architecture-solution.png}
+\caption{Architecture de solution}\label{fig:solution}
 \end{figure}
+
+\section{Avantages}
+
+L'architecture que nous avons choisie présente plusieurs avantages significatifs:
+
+\begin{enumerate}
+    \item[$\bullet$] \textbf{Évolutivité:} L'architecture basée sur des microservices permet une évolutivité horizontale, ce qui signifie que chaque microservice peut être déployé et mis à l'échelle indépendamment en fonction de ses besoins spécifiques. Cela permet d'ajuster la capacité et les ressources de manière granulaire, ce qui facilite la gestion des charges de travail élevées et l'adaptation aux besoins croissants de l'application.
+    \item[$\bullet$] \textbf{Modularité:} La conception modulaire des microservices permet une gestion plus efficace du développement, du déploiement et de la maintenance. Chaque microservice peut être développé indépendamment, ce qui facilite la collaboration entre les équipes et favorise la réutilisation du code. De plus, les modifications ou les mises à jour apportées à un microservice n'ont pas d'impact sur les autres, ce qui réduit les risques d'erreurs et de conflits. 
+    \item[$\bullet$] \textbf{Flexibilité technologique:} Les microservices offrent une flexibilité en termes de choix technologiques. Chaque microservice peut être développé en utilisant les technologies les plus adaptées à sa fonctionnalité spécifique. Cela permet d'exploiter au mieux les avantages de chaque technologie et de choisir les outils les mieux adaptés à chaque composant de l'architecture. 
+    \item[$\bullet$] \textbf{Communication efficace:} L'utilisation de Kafka comme broker de streaming facilite la communication entre les microservices. Kafka garantit la fiabilité et la scalabilité des échanges d'événements en temps réel, ce qui permet une communication fluide et une synchronisation efficace entre les différents composants du système. 
+    \item[$\bullet$] \textbf{Sécurité renforcée:} L'intégration de Keycloak pour l'authentification et l'autorisation offre un niveau élevé de sécurité. Les jetons JWT sont utilisés pour l'identification des utilisateurs, et Spring Cloud Gateway assure la vérification et la gestion de ces jetons. Cela garantit que seules les personnes autorisées ont accès aux ressources et aux fonctionnalités appropriées, renforçant ainsi la sécurité de l'application.
+    \item[$\bullet$] \textbf{Performances optimisées:}  L'utilisation de Trino comme moteur de requête distribué permet d'interroger et de traiter de grandes quantités de données de manière parallèle et efficace. Trino offre des performances élevées et une optimisation des requêtes, ce qui permet d'obtenir des résultats plus rapidement et d'améliorer l'expérience utilisateur. 
+\end{enumerate}
+
+\section*{Conclusion}
+L'étude de faisabilité des connecteurs pour manipuler Delta Lake nous a permis de prendre des décisions éclairées sur l'implémentation de la solution. Bien que Spark soit largement utilisé et intégré à l'écosystème Big Data, Trino offre des avantages significatifs en termes de flexibilité et de performances pour les requêtes SQL. En fonction de nos besoins spécifiques et des contraintes techniques, nous avons opté pour l'utilisation de Trino comme connecteur pour manipuler Delta Lake dans notre solution.
