@@ -24,7 +24,7 @@
 \contentsline {section}{\numberline {1.8}Processus de réalisation du projet}{10}{section.1.8}%
 \contentsline {section}{\numberline {1.9}Planification du projet}{11}{section.1.9}%
 \contentsline {section}{Conclusion}{12}{figure.caption.17}%
-\contentsline {chapter}{\numberline {2}Informatique décisionnelle et architectures de données}{13}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Informatique décisionnelle et Choix de solutions}{13}{chapter.2}%
 \contentsline {section}{Introduction}{13}{section*.18}%
 \contentsline {section}{\numberline {2.1}Différence entre un data warehouse, un data lake, un datalakehouse et un delta lake}{13}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Data Warehouse}{14}{subsection.2.1.1}%
@@ -34,7 +34,7 @@
 \contentsline {section}{\numberline {2.2}Différence entre une architecture microservices et une architecture monolithique}{16}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Avantages et Inconvénients de l'architecture monolithique}{16}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Avantages et Inconvénients de l'architecture microservices}{17}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Différence entre une architecture microfrontends et une architecture monolithique fronend}{19}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Différence entre une architecture microfrontends et une architecture monolithique frontend}{19}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Avantages et Inconvénients du monolithe frontend}{19}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Avantages et Inconvénients de l'architecture microfrontends}{20}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Cheminement de la solution}{21}{section.2.4}%

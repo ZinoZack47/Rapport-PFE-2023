@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.4)  8 JUN 2023 12:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.4)  8 JUN 2023 13:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1465,7 +1465,12 @@ Package minitoc Info: I0033
  (main.toc [7
 
 
-])
+]
+Overfull \hbox (3.0342pt too wide) in paragraph at lines 36--36
+ [][] [][][]\T1/ppl/m/n/10.95 Différence entre une ar-chi-tec-ture mi-cro-fron-tends et une ar-chi-tec-ture mo-no-li-thique fron- 
+ []
+
+)
 \tf@toc=\write12
 \openout12 = `main.toc'.
 
@@ -2077,7 +2082,7 @@ images/architecture-solution.png
  ***********
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 847B260B9C5288D5AE4BE7422852C6C2;11548.
+(rerunfilecheck)             Checksum: D459769841ABD8F1AE3D2AC5F4DAEFF0;11520.
  )
 (\end occurred inside a group at level 1)
 
@@ -2092,7 +2097,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  125i,14n,131p,2294b,3124s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14.pfb><C:/Program Files/MiKTeX/fonts/type1/public/arabtex/xnsh14bf.pfb>
-Output written on main.pdf (53 pages, 1815636 bytes).
+Output written on main.pdf (53 pages, 1815663 bytes).
 PDF statistics:
  846 PDF objects out of 1000 (max. 8388607)
  241 named destinations out of 1000 (max. 500000)

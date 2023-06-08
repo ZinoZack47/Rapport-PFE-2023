@@ -10,7 +10,7 @@
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Méthodologie Scrum\relax }}{11}{figure.caption.16}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Diagramme de Gantt\relax }}{11}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Informatique décisionnelle et architectures de données}{13}{chapter.2}%
+\contentsline {xchapter}{Informatique décisionnelle et Choix de solutions}{13}{chapter.2}%
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Data Warehouse vs Data Lake vs Data Lakehouse\relax }}{15}{figure.caption.19}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Architecture monolithique vs microservice\relax }}{18}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Architecture monolithique frontend vs microfrontends\relax }}{21}{figure.caption.21}%
