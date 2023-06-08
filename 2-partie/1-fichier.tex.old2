@@ -1,0 +1,11 @@
+\addcontentsline{toc}{section}{Introduction}
+\section*{Introduction}
+
+Dans ce chapitre, nous discuterons du cheminement de la solution proposée pour répondre aux besoins identifiés. Nous aborderons les différentes composantes de la solution, à savoir la partie data, le backend et le frontend.
+
+
+
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+
+En adoptant ce cheminement de solution, nous visons à moderniser et à améliorer l'architecture de notre système. En remplaçant l'exporter worker et les bases de données MariaDB par Delta Lake sur le Cloud Object Store, nous assurons une meilleure gestion des données, scalable et moins chère. En utilisant des microservices avec Spring Boot, nous obtenons une architecture plus modulaire, évolutive et facile à maintenir du côté backend. Enfin, en utilisant des micro-frontends avec React, nous améliorons la flexibilité et la maintenabilité de l'interface utilisateur.
