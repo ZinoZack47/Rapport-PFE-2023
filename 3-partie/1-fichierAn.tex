@@ -13,10 +13,14 @@ The concept of a `lakehouse' is made possible by Delta Lake. It is a data archit
 \item \textbf{Enables ACID transactions:} Most organizational data architectures involve numerous ETL and ELT movements in and out of data storage, which opens it up to more complexity and failure points. Delta Lake ensures data durability and persistence during ETL and other data operations. Delta Lake captures all data changes during data operations in a transaction log, ensuring data integrity and reliability during data operations.
 \end{itemize}
 
+\cite{deltalake}
+
 \section{Key Benefits and Features of Delta Lake}
 \begin{flushleft}
 With Delta Lake, data is stored in an optimized format, such as Parquet, in a data lake. This format enables efficient query processing regardless of the mode of data access, whether it is streaming or batch processing.
 \end{flushleft}
+
+\cite{databricksdelta}
 
 \begin{figure}[H]
 \centering
@@ -39,6 +43,8 @@ With Delta Lake, data is stored in an optimized format, such as Parquet, in a da
 \section{Trino}
 
 Trino, formerly known as Presto, is a distributed, open-source SQL query engine. It is designed to execute interactive and analytical queries at a large scale on heterogeneous and distributed data. Trino offers great versatility by allowing access to various types of data sources, whether they are relational databases, file systems, real-time data sources, or cloud storage services. With its distributed design, Trino enables high performance and horizontal scalability, making it an essential tool for data analysis in our solution.
+
+\cite{trino}
 
 \begin{figure}[H]
 \centering
@@ -63,6 +69,8 @@ Spring Boot follows the annotation-driven programming paradigm, where annotation
 
 With its simplified approach, Spring Boot allows developers to focus more on the business logic of their application rather than tedious configuration tasks. It also promotes good development practices, such as separation of concerns and modularity, making applications more maintainable and scalable.
 
+\cite{springboot}
+
 \section{Keycloak}
 
 Keycloak is an open-source Identity and Access Management (IAM) solution developed by Red Hat. It provides comprehensive features for user management, authentication, authorization, and securing applications.
@@ -70,6 +78,8 @@ Keycloak is an open-source Identity and Access Management (IAM) solution develop
 Keycloak helps centralize and simplify identity management within an IT infrastructure. It offers features such as user registration, multi-factor authentication, role and permission management, session management, and integration with common authentication and authorization protocols like OAuth 2.0 and OpenID Connect.
 
 Keycloak provides functionality for managing roles, administrators, users, and passwords. Here's how Keycloak addresses these aspects:
+
+\cite{keycloak}
 
 \begin{enumerate}
 \item Keycloak allows defining roles at the realm or application level. Roles can be created and assigned to users to define their permissions and access.
@@ -86,6 +96,8 @@ Keycloak provides functionality for managing roles, administrators, users, and p
 Kafka is a distributed and scalable data streaming platform designed to efficiently handle the transmission and processing of real-time data streams. It was developed by Apache Software Foundation.
 
 Kafka is based on a distributed log architecture, where data is stored as streams of messages in "topics". Data producers send messages to specific "topics," while consumers subscribe to those "topics" to retrieve the messages. This allows for asynchronous communication and clear separation between data producers and consumers.
+
+\cite{kafka}
 
 The key features of Kafka include:
 

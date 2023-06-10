@@ -1529,6 +1529,7 @@ OUTPUT main.mtc10
 OUTPUT main.mtc11
 OUTPUT main.mtc12
 OUTPUT main.mtc13
+OUTPUT main.mtc14
 INPUT ./main.toc
 INPUT main.toc
 INPUT main.toc
@@ -1894,6 +1895,10 @@ INPUT ./4-conclusionAn.tex
 INPUT ./4-conclusionAn.tex
 INPUT 4-conclusionAn.tex
 INPUT 4-conclusionAn.tex
+INPUT ./main.bbl
+INPUT main.bbl
+INPUT ./main.bbl
+INPUT main.bbl
 OUTPUT main.maf
 INPUT ./main.mtc
 INPUT main.mtc
@@ -1907,6 +1912,8 @@ INPUT main.mtc2
 INPUT ./main.mtc1
 INPUT main.mtc1
 OUTPUT main.ptc
+INPUT /usr/local/share/miktex-texmf/fonts/vf/adobe/palatino/pplri8t.vf
+INPUT /usr/local/share/miktex-texmf/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT main.aux
 INPUT ./0-dedication.aux
 INPUT 0-dedication.aux

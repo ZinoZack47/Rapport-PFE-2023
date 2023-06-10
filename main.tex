@@ -195,13 +195,15 @@
 \lhead[]{} \rhead[]{} \chead[]{}
 
 %%biblio
+% \ifnum\lang=1
 % \addcontentsline{toc}{chapter}{Bibliographie}
-% \bibliographystyle{abbrv}
-% \bibliography{biblio}
-
+% \else
+% \addcontentsline{toc}{chapter}{Bibliography}
+% \fi
+\bibliographystyle{abbrv}
+\bibliography{biblio}
 
 %\include{annexe}
 
 
-
-\end{document}          
+\end{document}

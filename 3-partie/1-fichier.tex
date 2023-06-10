@@ -15,10 +15,14 @@ Le concept de `lakehouse' est rendu possible grâce à Delta Lake. Il s'agit d'u
     \item \textbf{Permet la transaction ACID:} La plupart des architectures de données organisationnelles impliquent de nombreux mouvements ETL et ELT entrant et sortant du stockage de données, ce qui l'ouvre à plus de complexité et d'échecs aux points d'entrée des nœuds. Delta Lake garantit la durabilité et la persistance des données pendant l'ETL et d'autres opérations de données. Delta Lake capture toutes les modifications apportées aux données pendant les opérations de données dans un journal des transactions, garantissant ainsi l'intégrité et la fiabilité des données pendant les opérations de données.
 \end{itemize}
 
+\cite{deltalake}
+
 \section{Principaux avantages et caractéristiques de Delta Lake}
 \begin{flushleft}
 	Avec Delta Lake, les données sont stockées dans un format optimisé, tel que Parquet, dans un lac de données. Ce format facilite le traitement efficace des requêtes, quel que soit le mode d'accès aux données, qu'il s'agisse d'un traitement streaming ou par batch.
 \end{flushleft}
+
+\cite{databricksdelta}
 
 \begin{figure}[H]
 \centering
@@ -42,6 +46,8 @@ Le concept de `lakehouse' est rendu possible grâce à Delta Lake. Il s'agit d'u
 
 Trino, anciennement connu sous le nom de Presto, est un moteur de requêtes SQL distribué et open-source. Il est conçu pour exécuter des requêtes interactives et analytiques à grande échelle sur des données hétérogènes et distribuées. Trino offre une grande polyvalence en permettant l'accès à différents types de sources de données, qu'il s'agisse de bases de données relationnelles, de systèmes de fichiers, de sources de données en temps réel ou de services de stockage cloud. Grâce à sa conception distribuée, Trino permet des performances élevées et une scalabilité horizontale, ce qui en fait un outil essentiel pour l'analyse des données dans notre solution.
 
+\cite{trino}
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth]{images/trino_architecture.png}
@@ -55,6 +61,7 @@ Trino, anciennement connu sous le nom de Presto, est un moteur de requêtes SQL 
 	\item Toutes les communications et tous les transferts de données entre les clients, le coordinateur et les workers utilisent des interactions basées sur REST sur HTTP/HTTPS.
 \end{enumerate}
 
+
 \section{Springboot}
 
 Spring Boot est un framework open-source pour le développement d'applications Java. Il fournit une approche simplifiée et conventionnelle pour créer des applications Java autonomes, prêtes à être déployées, sans nécessiter une configuration complexe.
@@ -65,6 +72,8 @@ Spring Boot suit le paradigme de la programmation orientée annotation, où les 
 
 Grâce à son approche simplifiée, Spring Boot permet aux développeurs de se concentrer davantage sur la logique métier de leur application plutôt que sur des tâches de configuration fastidieuses. Il favorise également les bonnes pratiques de développement, telles que la séparation des préoccupations et la modularité, ce qui rend les applications plus maintenables et évolutives.
 
+\cite{springboot}
+
 
 \section{Keycloak}
 
@@ -73,6 +82,8 @@ Keycloak est une solution open-source de gestion des identités et des accès (I
 Keycloak permet de centraliser et de simplifier la gestion des identités au sein d'une infrastructure informatique. Il offre des fonctionnalités telles que l'inscription des utilisateurs, l'authentification à plusieurs facteurs, la gestion des rôles et des autorisations, la gestion des sessions, ainsi que l'intégration avec des protocoles d'authentification et d'autorisation courants tels que OAuth 2.0 et OpenID Connect.
 
 Keycloak offre un ensemble de fonctionnalités pour gérer les rôles, les administrateurs, les utilisateurs et les mots de passe. Voici comment Keycloak aborde ces aspects:
+
+\cite{keycloak}
 
 \begin{enumerate}
 	\item Keycloak permet de définir des rôles au niveau du royaume (realm) ou au niveau de l'application. Les rôles peuvent être créés et attribués aux utilisateurs pour définir leurs autorisations et leurs accès.
@@ -89,6 +100,8 @@ Keycloak offre un ensemble de fonctionnalités pour gérer les rôles, les admin
 Kafka est une plateforme de streaming de données distribuée et évolutive, conçue pour gérer efficacement la transmission et le traitement de flux de données en temps réel. Elle a été développée par Apache Software Foundation.
 
 Kafka est basé sur une architecture de journal de messages distribué, où les données sont stockées sous forme de flux de messages dans des "topics". Les producteurs de données envoient des messages à des "topics" spécifiques, tandis que les consommateurs s'abonnent à ces "topics" pour récupérer les messages. Cela permet une communication asynchrone et une séparation claire entre les producteurs et les consommateurs de données.
+
+\cite{kafka}
 
 Les principales caractéristiques de Kafka incluent:
 

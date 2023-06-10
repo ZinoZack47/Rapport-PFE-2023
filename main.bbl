@@ -1,3 +1,31 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{kafka}
+Apache.
+\newblock 2014.
+
+\bibitem{databricksdelta}
+Databrick.
+\newblock 2023.
+
+\bibitem{deltalake}
+M.~Kukreja.
+\newblock {\em Data Engineering with Apache Spark, Delta Lake, and Lakehouse}.
+\newblock Packt Publishing, 2021.
+
+\bibitem{trino}
+M.~T. Matt~Fuller, Manfred~Moser.
+\newblock {\em Trino: The Definitive Guide}.
+\newblock O'Reilly Media, Inc., 2021.
+
+\bibitem{springboot}
+K.~S.~P. Reddy.
+\newblock {\em Beginning Spring Boot 2: Applications and Microservices with the
+  Spring Framework}.
+\newblock Apress, 2021.
+
+\bibitem{keycloak}
+S.~Thorgersen.
+\newblock 2014.
 
 \end{thebibliography}
