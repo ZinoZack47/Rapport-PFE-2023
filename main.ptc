@@ -6,8 +6,8 @@
 \contentsline {chapter}{Abstract}{v}{chapter*.5}%
 \babel@toc {french}{}\relax 
 \contentsline {chapter}{Table des mati\`eres}{vii}{section*.7}%
-\contentsline {chapter}{Table des figures}{ix}{section*.8}%
-\contentsline {chapter}{Liste des tableaux}{x}{section*.9}%
+\contentsline {chapter}{Table des figures}{x}{section*.8}%
+\contentsline {chapter}{Liste des tableaux}{xi}{section*.9}%
 \contentsline {chapter}{Introduction}{1}{chapter*.10}%
 \babel@toc {french}{}\relax 
 \contentsline {chapter}{\numberline {1}Contexte général du projet}{2}{chapter.1}%
@@ -64,5 +64,10 @@
 \contentsline {subsection}{\numberline {4.2.8}Autres statistiques}{36}{subsection.4.2.8}%
 \contentsline {section}{\numberline {4.3}Schématisation de la Solution}{36}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Avantages}{37}{section.4.4}%
-\contentsline {chapter}{Conclusion}{39}{chapter*.35}%
+\contentsline {section}{\numberline {4.5}Visualisation}{38}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Console de Trino}{39}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Micro services}{41}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Delta Lake}{45}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}UI Izicap}{46}{subsection.4.5.4}%
+\contentsline {chapter}{Conclusion}{49}{chapter*.47}%
 \contentsfinish 

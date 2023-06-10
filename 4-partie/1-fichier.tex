@@ -195,5 +195,97 @@ L'architecture que nous avons choisie présente plusieurs avantages significatif
     \item[$\bullet$] \textbf{Performances optimisées:}  L'utilisation de Trino comme moteur de requête distribué permet d'interroger et de traiter de grandes quantités de données de manière parallèle et efficace. Trino offre des performances élevées et une optimisation des requêtes, ce qui permet d'obtenir des résultats plus rapidement et d'améliorer l'expérience utilisateur. 
 \end{enumerate}
 
+\section{Visualisation}
+
+Dans cette section, nous présenterons des captures d'écran des différents microservices de notre solution, notamment Swagger pour l'API, la console de Trino pour l'exploration des données et le site web d'Izicap. Ces captures d'écran illustreront l'interface utilisateur et les fonctionnalités offertes par chaque service.
+\subsection{Console de Trino}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/trino-1.png}
+\caption{Console Trino}\label{fig:trino-1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/trino-2.png}
+\caption{Console Trino SELECT}\label{fig:trino-2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/trino-3.png}
+\caption{Console Trino}\label{fig:trino-3}
+\end{figure}
+
+Ces captures d'écran de la console de Trino met en évidence l'interface de requêtes de données avancée fournie par Trino. Les développeurs et les analystes peuvent exécuter des requêtes SQL sur les données stockées dans Trino, explorer les schémas, prévisualiser les résultats et effectuer des opérations analytiques pour extraire des informations précieuses.
+
+\subsection{Micro services}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/Swagger-UI-1.png}
+\caption{Swagger UI}\label{fig:swagger-1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/Swagger-UI-2.png}
+\caption{Swagger UI}\label{fig:swagger-2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/Swagger-UI.png}
+\caption{Swagger UI}\label{fig:swagger-3}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/Swagger-UI-3.png}
+\caption{Swagger UI}\label{fig:swagger-4}
+\end{figure}
+
+Ces images montrent la documentation détaillée de notre API à l'aide de Swagger. Cette interface conviviale permet aux développeurs de comprendre les endpoints disponibles, les paramètres requis, les réponses attendues et les exemples d'utilisation. Swagger facilite l'intégration et la communication avec nos microservices.
+
+\subsection{Delta Lake}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/delta-lake-dossier.png}
+\caption{Parquet Data}\label{fig:delta-lake-dossier}
+\end{figure}
+
+Nous avons les fichiers de données au format Parquet. Les fichiers Parquet sont optimisés pour le stockage et la récupération efficaces des données. Ils sont compressés et structurés de manière à permettre des requêtes rapides et une lecture sélective des données. Ces fichiers Parquet contiennent les données réelles de la table, organisées en colonnes et partitions, ce qui facilite la manipulation et l'analyse ultérieure des données.    
+
+\subsection{UI Izicap}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/izicap-portail.png}
+\caption{Portail Izicap}\label{fig:izicap-1}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/revenu.png}
+\caption{Revenu des clients}\label{fig:izicap-2}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/revenu.png}
+\caption{Custommer base evolution}\label{fig:izicap-3}
+\end{figure}
+    
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/data-2.png}
+\caption{Transactions by amount}\label{fig:izicap-4}
+\end{figure}
+        
+L'utilisation des microfrontends permet de découper l'interface utilisateur en plusieurs modules indépendants, chacun étant responsable d'une fonctionnalité spécifique. Cela permet une séparation claire des responsabilités et facilite le développement, la maintenance et l'évolution de l'application.
+
 \section*{Conclusion}
 L'étude de faisabilité des connecteurs pour manipuler Delta Lake nous a permis de prendre des décisions éclairées sur l'implémentation de la solution. Bien que Spark soit largement utilisé et intégré à l'écosystème Big Data, Trino offre des avantages significatifs en termes de flexibilité et de performances pour les requêtes SQL. En fonction de nos besoins spécifiques et des contraintes techniques, nous avons opté pour l'utilisation de Trino comme connecteur pour manipuler Delta Lake dans notre solution.

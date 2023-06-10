@@ -11,3 +11,8 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.8}Autres statistiques}{\reset@font\mtcSSfont 36}{subsection.4.2.8}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Schématisation de la Solution}{\reset@font\mtcSfont 36}{section.4.3}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Avantages}{\reset@font\mtcSfont 37}{section.4.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Visualisation}{\reset@font\mtcSfont 38}{section.4.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.1}Console de Trino}{\reset@font\mtcSSfont 39}{subsection.4.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.2}Micro services}{\reset@font\mtcSSfont 41}{subsection.4.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.3}Delta Lake}{\reset@font\mtcSSfont 45}{subsection.4.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.4}UI Izicap}{\reset@font\mtcSSfont 46}{subsection.4.5.4}}

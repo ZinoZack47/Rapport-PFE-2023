@@ -1,153 +1,107 @@
-\addcontentsline{toc}{section}{Introduction}
-
 \section*{Introduction}
+In this chapter, we will examine in detail the key technologies that are used in our solution to provide advanced features and meet the specific needs of our project. The three main technologies we will cover are Delta Lake, Trino, and Microfrontends.
 
-\section{Définition}
-Trino is an open source distributed SQL query engine. It is a hard fork of the original Presto project created by Facebook. It lets developers run interactive analytics against large volumes of data. With Trino, organizations can easily use their existing SQL skills to query data without having to learn new complex languages. The architecture is quite similar to traditional online analytical processing (OLAP) systems using distributed computing architectures, in which one controller node coordinates multiple worker nodes.
+\section{Delta Lake}
 
-\section{How it works}
-Trino is a distributed system that runs on Hadoop, and uses an architecture similar to massively parallel processing (MPP) databases. It has one coordinator node working with multiple worker nodes. Users submit SQL to the coordinator which uses query and execution engine to parse, plan, and schedule a distributed query plan across the worker nodes. It supports standard ANSI SQL, including complex queries, joins aggregations, and outer joins.
+Delta Lake is a data management technology that enables efficient and reliable storage, management, and analysis of massive volumes of data. It is built on a file-based Parquet architecture and offers advanced features such as ACID (Atomicity, Consistency, Isolation, Durability) transaction management and compatibility with popular analytics tools. Delta Lake also ensures data integrity, query consistency, and supports replication and recovery in case of failures.
 
-Leveraging this architecture, the Trino query engine is able to process SQL queries on large amounts of data in parallel across a cluster of computers, or nodes. Trino runs as a single-server process on each node. Multiple nodes running Trino, which are configured to collaborate with each other, make up a Trino cluster.
+The concept of a `lakehouse' is made possible by Delta Lake. It is a data architecture that combines the benefits of data warehouses and data lakes, providing a unique and consistent approach to data management. Data is stored in Parquet format in the data lake, enabling continuous and batch processing.
+\begin{itemize}
+\item \textbf{Enables Lakehouse architecture:} Delta Lake enables a continuous and streamlined data architecture that allows organizations to manage and process massive volumes of data in a continuous and batch manner without the hassle of separately managing and operating streaming, data warehouses, and data lakes.
+\item \textbf{Enables intelligent data management for data lakes:} Delta Lake provides efficient and scalable metadata management, which provides insights into massive data volumes in data lakes. With this information, data governance and management tasks can be performed more effectively.
+\item \textbf{Schema enforcement for improved data quality:} Since data lakes don't have a defined schema, it becomes easy for bad/incompatible data to enter the data systems. Data quality is improved through automatic schema validation, which validates DataFrame and table compatibility before writes.
+\item \textbf{Enables ACID transactions:} Most organizational data architectures involve numerous ETL and ELT movements in and out of data storage, which opens it up to more complexity and failure points. Delta Lake ensures data durability and persistence during ETL and other data operations. Delta Lake captures all data changes during data operations in a transaction log, ensuring data integrity and reliability during data operations.
+\end{itemize}
 
-The following figure displays a high-level overview of a Trino cluster composed of one coordinator and multiple worker nodes. A Trino user connects to the coordinator with a client, such as a tool using the JDBC driver or the Trino CLI. The coordinator then collaborates with the workers, which access the data sources.
+\section{Key Benefits and Features of Delta Lake}
+\begin{flushleft}
+With Delta Lake, data is stored in an optimized format, such as Parquet, in a data lake. This format enables efficient query processing regardless of the mode of data access, whether it is streaming or batch processing.
+\end{flushleft}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{images/trino_architecture.png}
-\caption{Trino architecture overview with coordinator and workers}\label{fig:trino-architecture}
+\includegraphics[width=\linewidth]{images/delta_lake_architecture.png}
+\caption{Delta Lake multi-hop architecture}\label{fig:delta-lake-architecture}
+\end{figure}
+
+\begin{itemize}
+\item[\textbullet] \textbf{Audit trails and history:} In Delta Lake, each write exists as a transaction and is sequentially recorded in a transaction log. Therefore, all modifications or validations made to the transaction log are recorded, leaving a complete trail to be used for historical audits, versioning, or time travel purposes. This Delta Lake feature ensures data integrity and reliability for enterprise data operations.
+\item[\textbullet] \textbf{Time travel and data versioning:} Since each write creates a new version and stores the old version in the transaction log, users can view/restore old versions of data by providing the timestamp or version number of an existing table or directory to the Spark read API. Using the provided version number, Delta Lake then constructs a complete snapshot of the version with the information provided by the transaction log. Rollbacks and version management play a crucial role in machine learning experimentation, where data scientists iteratively modify hyperparameters to train models and can revert to previous changes if necessary.
+\item[\textbullet] \textbf{Unifies batch and stream processing:} Each table in a Delta Lake is both a batch and stream sink. With Structured Streaming in Spark, organizations can efficiently stream and process data. Additionally, with efficient metadata management, scalability, and ACID quality for each transaction, near-real-time analytics becomes possible without using a more complicated two-tier data architecture.
+\item[\textbullet] \textbf{Efficient and scalable metadata management:} Delta Lake stores metadata information in the transaction log and leverages the distributed processing power of Spark to quickly process, read, and manage large volumes of data metadata, thereby enhancing data governance.
+\item[\textbullet] \textbf{ACID transactions:} Delta Lake ensures that users always see a consistent view of data in a table or directory. It achieves this by capturing every modification made in a transaction log and isolating it at the strongest isolation level, the serializable level. At the serializable level, every existing operation has and follows a serial sequence that, when executed one by one, provides the same result as stated in the table.
+\item[\textbullet] \textbf{Data Manipulation Language (DML) operations:} Delta Lake supports DML operations such as updates, deletes, and merges, which play a role in complex data operations such as Change Data Capture (CDC), continuous upserts, and Slowly Changing Dimensions (SCD). Operations like CDC ensure data synchronization across all data systems and minimize time and resources spent on ELT operations. For example, using CDC, instead of ETL-ing all available data, only the recently updated data since the last operation undergoes transformation.
+\item[\textbullet] \textbf{Schema enforcement:} Delta Lake performs automatic schema validation by checking a set of rules to determine the compatibility of a DataFrame write to a table. One such rule is the existence of all DataFrame columns in the target table. An occurrence of an extra or missing column in the DataFrame raises an error exception. Another rule is that the DataFrame and the target table must have the same column types, which, if not, triggers an exception. Delta Lake also uses Data Definition Language (DDL) to explicitly add new columns. This data lake feature helps avoid the ingestion of incorrect data, ensuring high data quality.
+\item[\textbullet] \textbf{Compatibility with Spark API:} Delta Lake is built on Apache Spark and is fully compatible with the Spark API, enabling the creation of efficient and reliable large-scale data pipelines.
+\item[\textbullet] \textbf{Flexibility and integration:} Delta Lake is an open-source storage layer and utilizes the Parquet format for storing data files, which promotes data sharing and facilitates integration with other technologies, fostering innovation.
+\end{itemize}
+
+\section{Trino}
+
+Trino, formerly known as Presto, is a distributed, open-source SQL query engine. It is designed to execute interactive and analytical queries at a large scale on heterogeneous and distributed data. Trino offers great versatility by allowing access to various types of data sources, whether they are relational databases, file systems, real-time data sources, or cloud storage services. With its distributed design, Trino enables high performance and horizontal scalability, making it an essential tool for data analysis in our solution.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{images/trino_architecture.png}
+\caption{Overview of Trino architecture with coordinator and workers}\label{fig:trino-architecture}
 \end{figure}
 
 \begin{enumerate}
-	\item A coordinator is a Trino server that handles incoming queries and manages the workers to execute the queries.
-	\item A worker is a Trino server responsible for executing tasks and processing data.
-	\item The discovery service typically runs on the coordinator and allows workers to register to participate in the cluster.
-	\item All communication and data transfer between clients, coordinator, and workers uses REST-based interactions over HTTP/HTTPS.
+\item A coordinator is a Trino server that handles incoming queries and manages workers to execute the queries.
+\item A worker is a Trino server responsible for executing tasks and processing data.
+\item The discovery service typically runs on the coordinator and allows workers to register to participate in the cluster.
+\item All communications and data transfers between clients, the coordinator, and workers use REST-based interactions over HTTP/HTTPS.
 \end{enumerate}
 
-The following figure shows how the communication within the cluster happens between the coordinator and the workers, as well as from one worker to another. The coordinator talks to workers to assign work, update status, and fetch the top-level result set to return to the users. The workers talk to each other to fetch data from upstream tasks, running on other workers. And the workers retrieve result sets from the data source.
+\section{Spring Boot}
 
+Spring Boot is an open-source framework for Java application development. It provides a simplified and opinionated approach to creating standalone, production-ready Java applications without the need for complex configuration.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{images/trino_communication.png}
-\caption{Communication between coordinator and workers in a Trino cluster}\label{fig:trino-communication}
-\end{figure}
+One of the main advantages of Spring Boot is its ability to reduce boilerplate configuration and simplify application development by providing smart default configuration definitions and automating many development tasks. It also embeds an application server, making it easy to deploy and run the application without requiring an external application server.
 
-\section{Coordinator}
-The Trino coordinator is the server responsible for receiving SQL statements from the users, parsing these statements, planning queries, and managing worker nodes. It’s the brain of a Trino installation and the node to which a client connects. Users interact with the coordinator via the Trino CLI, applications using the JDBC or ODBC drivers, or any other available client libraries for a variety of languages. The coordinator accepts SQL statements from the client such as SELECT queries for execution.
+Spring Boot follows the annotation-driven programming paradigm, where annotations are used to configure and orchestrate different parts of the application. It offers a wide range of features, such as dependency injection, externalized configuration, error handling, security, data access, etc. These features are bundled into starters, which are pre-defined dependencies that facilitate adding specific functionality to the application.
 
-Every Trino installation must have a coordinator alongside one or more workers. For development or testing purposes, a single instance of Trino can be configured to perform both roles.
+With its simplified approach, Spring Boot allows developers to focus more on the business logic of their application rather than tedious configuration tasks. It also promotes good development practices, such as separation of concerns and modularity, making applications more maintainable and scalable.
 
-The coordinator keeps track of the activity on each worker and coordinates the execution of a query. The coordinator creates a logical model of a query involving a series of stages.
+\section{Keycloak}
 
-Once it receives a SQL statement, the coordinator is responsible for parsing, analyzing, planning, and scheduling the query execution across the Trino worker nodes. The statement is translated into a series of connected tasks running on a cluster of workers. As the workers process the data, the results are retrieved by the coordinator and exposed to the clients on an output buffer. Once an output buffer is completely read by the client, the coordinator requests more data from the workers on behalf of the client. The workers, in turn, interact with the data sources to get the data from them. As a result, data is continuously requested by the client and supplied by the workers from the data source until the query execution is completed.
+Keycloak is an open-source Identity and Access Management (IAM) solution developed by Red Hat. It provides comprehensive features for user management, authentication, authorization, and securing applications.
 
-Coordinators communicate with workers and clients by using an HTTP-based protocol.
+Keycloak helps centralize and simplify identity management within an IT infrastructure. It offers features such as user registration, multi-factor authentication, role and permission management, session management, and integration with common authentication and authorization protocols like OAuth 2.0 and OpenID Connect.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{images/trino_communication_processing.png}
-\caption{Client, coordinator, and worker communication processing a SQL statement}\label{fig:trino-communication-precessing}
-\end{figure}
+Keycloak provides functionality for managing roles, administrators, users, and passwords. Here's how Keycloak addresses these aspects:
 
-\section{Workers}
-A Trino worker is a server in a Trino installation. It is responsible for executing tasks assigned by the coordinator and for processing data. Worker nodes fetch data from data sources by using connectors and then exchange intermediate data with each other. The final resulting data is passed on to the coordinator. The coordinator is responsible for gathering the results from the workers and providing the final results to the client.
-
-During installation, workers are configured to know the hostname or IP address of the discovery service for the cluster. When a worker starts up, it advertises itself to the discovery service, which makes it available to the coordinator for task execution.
-
-Workers communicate with other workers and the coordinator by using an HTTP-based protocol.
-
-The following figure shows how multiple workers retrieve data from the data sources and collaborate to process the data, until one worker can provide the data to the coordinator.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{images/trino_workers.png}
-\caption{Workers in a cluster collaborate to process SQL statements and data}\label{fig:trino-workers}
-\end{figure}
-
-\section{Connector-Based Architecture}
-At the heart of the separation of storage and compute in Trino is the connector-based architecture. A connector provides Trino an interface to access an arbitrary data source.
-
-Each connector provides a table-based abstraction over the underlying data source. As long as data can be expressed in terms of tables, columns, and rows by using the data types available to Trino, a connector can be created and the query engine can use the data for query processing.
-
-Trino provides a service provider interface (SPI), which is a type of API used to implement a connector. By implementing the SPI in a connector, Trino can use standard operations internally to connect to any data source and perform operations on any data source. The connector takes care of the details relevant to the specific data source.
-
-At the heart of the separation of storage and compute in Trino is the connector-based architecture. A connector provides Trino an interface to access an arbitrary data source.
-
-Each connector provides a table-based abstraction over the underlying data source. As long as data can be expressed in terms of tables, columns, and rows by using the data types available to Trino, a connector can be created and the query engine can use the data for query processing.
-
-Trino provides a service provider interface (SPI), which is a type of API used to implement a connector. By implementing the SPI in a connector, Trino can use standard operations internally to connect to any data source and perform operations on any data source. The connector takes care of the details relevant to the specific data source.
 \begin{enumerate}
-	\item[$\bullet$] Operations to fetch table/view/schema metadata
-	\item[$\bullet$] Operations to produce logical units of data partitioning, so that Trino can parallelize reads and writes
-	\item[$\bullet$] Data sources and sinks that convert the source data to/from the in-memory format expected by the query engine 
+\item Keycloak allows defining roles at the realm or application level. Roles can be created and assigned to users to define their permissions and access.
+\item Keycloak administrators can create, manage, and assign roles to users through the administration interface or management API.
+\item Roles can be used to control access to features, pages, and resources within the application.
+\item Keycloak provides specific administration roles like "admin" or "superadmin" that allow users to perform administrative tasks such as managing clients, users, roles, etc.
+\item Users can log in using their credentials (username and password) or other supported authentication methods like two-factor authentication, OAuth 2.0, etc.
+\item Keycloak supports user-based authentication and provides a registration interface to allow users to create their accounts.
+\item Keycloak also offers advanced authentication features such as two-factor authentication, social authentication (via identity providers like Google, Facebook, etc.), and certificate-based authentication.
 \end{enumerate}
 
-Trino provides many connectors to systems, here are the list of connects as of the writing of this report:
+\section{Kafka}
 
-% chktex-file 44
-\begin{table}[ht]
+Kafka is a distributed and scalable data streaming platform designed to efficiently handle the transmission and processing of real-time data streams. It was developed by Apache Software Foundation.
+
+Kafka is based on a distributed log architecture, where data is stored as streams of messages in "topics". Data producers send messages to specific "topics," while consumers subscribe to those "topics" to retrieve the messages. This allows for asynchronous communication and clear separation between data producers and consumers.
+
+The key features of Kafka include:
+
+\begin{enumerate}
+\item Scalability: Kafka is designed to handle large volumes of data and can be horizontally scaled to meet growing performance needs. It can handle high workloads and process thousands of messages per second.
+\item Fault tolerance: Kafka ensures high availability and fault tolerance by replicating data across multiple nodes in the cluster. This ensures data reliability and availability even in case of node failures.
+\item Data durability: Messages stored in Kafka are persistent and can be retained for a defined period. This allows for message replay and data recovery when needed, which is crucial for use cases requiring long-term data retention.
+\item Stream processing: Kafka is designed for real-time stream processing. It enables applications to consume continuous data streams and process them in real-time, which is critical for use cases requiring real-time analysis, data pipelines, etc.
+\item Integration with other tools: Kafka easily integrates with other tools and frameworks such as Spark, Hadoop, Flink, etc. This enables seamless integration with the Big Data ecosystem and facilitates data ingestion, processing, and streaming.
+\end{enumerate}
+
+\begin{figure}[H]
 \centering
-	\begin{tabular}{|c|c|}
-	\hline
-	\textbf{Connector Name} & \textbf{Documentation Link} \\ \hline
-	Accumulo & \href{https://trino.io/docs/current/connector/accumulo.html}{https://trino.io/docs/current/connector/accumulo.html} \\ \hline
-	Atop & \href{https://trino.io/docs/current/connector/atop.html}{https://trino.io/docs/current/connector/atop.html} \\ \hline
-	BigQuery & \href{https://trino.io/docs/current/connector/bigquery.html}{https://trino.io/docs/current/connector/bigquery.html} \\ \hline
-	Black Hole & \href{https://trino.io/docs/current/connector/blackhole.html}{https://trino.io/docs/current/connector/blackhole.html} \\ \hline
-	Cassandra & \href{https://trino.io/docs/current/connector/cassandra.html}{https://trino.io/docs/current/connector/cassandra.html} \\ \hline
-	ClickHouse & \href{https://trino.io/docs/current/connector/clickhouse.html}{https://trino.io/docs/current/connector/clickhouse.html} \\ \hline
-	Delta Lake & \href{https://trino.io/docs/current/connector/delta-lake.html}{https://trino.io/docs/current/connector/delta-lake.html} \\ \hline
-	Druid & \href{https://trino.io/docs/current/connector/druid.html}{https://trino.io/docs/current/connector/druid.html} \\ \hline
-	Elasticsearch & \href{https://trino.io/docs/current/connector/elasticsearch.html}{https://trino.io/docs/current/connector/elasticsearch.html} \\ \hline
-	Google Sheets & \href{https://trino.io/docs/current/connector/googlesheets.html}{https://trino.io/docs/current/connector/googlesheets.html} \\ \hline
-	Hive & \href{https://trino.io/docs/current/connector/hive.html}{https://trino.io/docs/current/connector/hive.html} \\ \hline
-	Hudi & \href{https://trino.io/docs/current/connector/hudi.html}{https://trino.io/docs/current/connector/hudi.html} \\ \hline
-	Iceberg & \href{https://trino.io/docs/current/connector/iceberg.html}{https://trino.io/docs/current/connector/iceberg.html} \\ \hline
-	Ignite & \href{https://trino.io/docs/current/connector/ignite.html}{https://trino.io/docs/current/connector/ignite.html} \\ \hline
-	JMX & \href{https://trino.io/docs/current/connector/jmx.html}{https://trino.io/docs/current/connector/jmx.html} \\ \hline
-	Kafka & \href{https://trino.io/docs/current/connector/kafka.html}{https://trino.io/docs/current/connector/kafka.html} \\ \hline
-	Kinesis & \href{https://trino.io/docs/current/connector/kinesis.html}{https://trino.io/docs/current/connector/kinesis.html} \\ \hline
-	Kudu & \href{https://trino.io/docs/current/connector/kudu.html}{https://trino.io/docs/current/connector/kudu.html} \\ \hline
-	Local File & \href{https://trino.io/docs/current/connector/localfile.html}{https://trino.io/docs/current/connector/localfile.html} \\ \hline
-	MariaDB & \href{https://trino.io/docs/current/connector/mariadb.html}{https://trino.io/docs/current/connector/mariadb.html} \\ \hline
-	Memory & \href{https://trino.io/docs/current/connector/memory.html}{https://trino.io/docs/current/connector/memory.html} \\ \hline
-	MongoDB & \href{https://trino.io/docs/current/connector/mongodb.html}{https://trino.io/docs/current/connector/mongodb.html} \\ \hline
-	MySQL & \href{https://trino.io/docs/current/connector/mysql.html}{https://trino.io/docs/current/connector/mysql.html} \\ \hline
-	Oracle & \href{https://trino.io/docs/current/connector/oracle.html}{https://trino.io/docs/current/connector/oracle.html} \\ \hline
-	Phoenix & \href{https://trino.io/docs/current/connector/phoenix.html}{https://trino.io/docs/current/connector/phoenix.html} \\ \hline
-	Pinot & \href{https://trino.io/docs/current/connector/pinot.html}{https://trino.io/docs/current/connector/pinot.html} \\ \hline
-	PostgreSQL & \href{https://trino.io/docs/current/connector/postgresql.html}{https://trino.io/docs/current/connector/postgresql.html} \\ \hline
-	Prometheus & \href{https://trino.io/docs/current/connector/prometheus.html}{https://trino.io/docs/current/connector/prometheus.html} \\ \hline
-	Redis & \href{https://trino.io/docs/current/connector/redis.html}{https://trino.io/docs/current/connector/redis.html} \\ \hline
-	Redshift & \href{https://trino.io/docs/current/connector/redshift.html}{https://trino.io/docs/current/connector/redshift.html} \\ \hline
-	SingleStore & \href{https://trino.io/docs/current/connector/singlestore.html}{https://trino.io/docs/current/connector/singlestore.html} \\ \hline
-	SQL Server & \href{https://trino.io/docs/current/connector/sqlserver.html}{https://trino.io/docs/current/connector/sqlserver.html} \\ \hline
-	System & \href{https://trino.io/docs/current/connector/system.html}{https://trino.io/docs/current/connector/system.html} \\ \hline
-	Thrift & \href{https://trino.io/docs/current/connector/thrift.html}{https://trino.io/docs/current/connector/thrift.html} \\ \hline
-	TPCDS & \href{https://trino.io/docs/current/connector/tpcds.html}{https://trino.io/docs/current/connector/tpcds.html} \\ \hline
-	TPCH & \href{https://trino.io/docs/current/connector/tpch.html}{https://trino.io/docs/current/connector/tpch.html} \\ \hline
-\end{tabular}
-\caption{List of Trino Connectors and their documentation}
-\end{table}
-
-Trino’s SPI also gives you the ability to create your own custom connectors. This may be needed if you need to access a data source without a compatible connector. If you end up creating a connector, we strongly encourage you to learn more about the Trino open source community, use our help, and contribute your connector. Check out “Trino Resources” for more information. A custom connector may also be needed if you have a unique or proprietary data source within your organization. This is what allows Trino users to query any data source by using SQL—truly SQL-on-Anything.
-
-The following figure shows how the Trino SPI includes separate interfaces for metadata, data statistics, and data location used by the coordinator, and for data streaming used by the workers
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{images/trino_connector.png}
-\caption{Overview of the Trino service provider interface (SPI)}\label{fig:trino-connector}
+\includegraphics[width=\linewidth]{images/kafka.jpg}
+\caption{Kafka Architecture}\label{fig:kafka}
 \end{figure}
 
-Trino connectors are plug-ins loaded by each server at startup. They are configured by specific parameters in the catalog properties files and loaded from the plug-ins directory. 
-
-\section{Catalogs, Schemas, and Tables}
-The Trino cluster processes all queries by using the connector-based architecture described earlier. Each catalog configuration uses a connector to access a specific data source. The data source exposes one or more schemas in the catalog. Each schema contains tables that provide the data in table rows with columns using different data types. You can find out more about catalogs, schemas, tables. Specifically in “Catalogs”, “Schemas”, and “Tables”.
-
-
-\addcontentsline{toc}{section}{Conclusion}
 \section*{Conclusion}
-The Trino architecture has a coordinator receiving user requests and then using workers to assemble all the data from the data sources. Each query is translated into a distributed query plan of tasks in numerous stages. The data is returned by the connectors in splits and processed in multiple stages until the final result is available and provided to the user by the coordinator.
+these technologies, developers and data professionals can leverage their strengths to build powerful and scalable applications. Trino enables fast and flexible data querying, Spring Boot simplifies application development, Keycloak provides robust IAM capabilities, and Kafka enables real-time data streaming and processing.

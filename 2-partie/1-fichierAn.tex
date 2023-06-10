@@ -1,123 +1,196 @@
 \addcontentsline{toc}{section}{Introduction}
+
 \section*{Introduction}
 
-Data warehouses and data lakes are the most common central data repositories employed by most data-driven organizations today, each with its own strengths and tradeoffs. For one, while data warehouses allow businesses to organize historical datasets for use in business intelligence (BI) and analytics, they quickly become more cost-intensive as datasets grow because of the combined use of compute and storage resources. Additionally, data warehouses can’t handle the varied nature of data (structured, unstructured, and semi-structured) seen today.
+Business Intelligence (BI), also known as decision support, encompasses the processes, technologies, and tools used to collect, store, analyze, and present data in order to support decision-making and help businesses gain actionable insights. Business Intelligence involves transforming raw data into meaningful information and actionable knowledge for decision-makers. In this chapter, we will explore why we have chosen to adopt Delta Lake instead of its counterparts, as well as microservices and microfrontends.
 
-In this chapter, we will explore the key features of Delta Lake, how it works, and why it is a good choice for big data processing. We will also provide examples of how to use Delta Lake with other big data tools, such as Spark and Trino later on in this report.
-\section{Definition}
-Delta Lake is an open-source storage layer built atop a data lake that confers reliability and ACID (Atomicity, Consistency, Isolation, and Durability) transactions. It enables a continuous and simplified data architecture for organizations. A data lake stores data in Parquet formats and enables a lakehouse data architecture, which helps organizations achieve a single, continuous data system that combines the best features of both the data warehouse and data lake while supporting streaming and batch processing.
-
-\section{How Delta Lake Works}
-A Delta Lake enables the building of a data lakehouse. Common lakehouses include the Databricks Lakehouse and Azure Databricks. This continuous data architecture allows organizations to harness the benefits of data warehouses and data lakes with reduced management complexity and cost. Here are some ways Delta Lake improves the use of data warehouses and lakes:
-\begin{itemize}
-    \item \textbf{Enables a lakehouse architecture:} Delta Lake enables a continuous and simplified data architecture that allows organizations to handle and process massive volumes of streaming and batch data without the management and operational hassles involved in managing streaming, data warehouses, and data lakes separately.
-    \item \textbf{Enables intelligent data management for data lakes:} Delta Lake offers efficient and scalable metadata handling, which provides information about the massive data volumes in data lakes. With this information, data governance and management tasks proceed more efficiently.
-    \item \textbf{Schema enforcement for improved data quality:} Because data lakes lack a defined schema, it becomes easy for bad/incompatible data to enter data systems. There is improved data quality thanks to automatic schema validation, which validates DataFrame and table compatibility before writes.
-    \item \textbf{Enables ACID transactions:} Most organizational data architectures involve a lot of ETL and ELT movement in and out of data storage, which opens it up to more complexity and failure at node entry points. Delta Lake ensures the durability and persistence of data during ETL and other data operations. Delta lake captures all changes made to data during data operations in a transaction log, thereby ensuring data integrity and reliability during data operations.
-\end{itemize}
-
-\section{Delta Lake Architecture Diagram}
-\begin{flushleft}
-Delta Lake is an improvement from the lambda architecture whereby streaming and batch processing occur parallel, and results merge to provide a query response. However, this method means more complexity and difficulty maintaining and operating both the streaming and batch processes. Unlike the lambda architecture, Delta Lake is a continuous data architecture that combines streaming and batch workflows in a shared file store through a connected pipeline.
-\end{flushleft}
-
-The stored data file has three layers, with the data getting more refined as it progresses downstream in the dataflow:
-
+\section{Difference between a data warehouse, a data lake, a datalakehouse, and Delta Lake}
 \begin{enumerate}
-\item[$\bullet$] \textbf{Bronze tables:} This table contains the raw data ingested from multiple sources like the Internet of Things (IoT) systems, CRM, RDBMS, and JSON files.
-\item[$\bullet$] \textbf{Silver tables:} This layer contains a more refined view of our data after undergoing transformation and feature engineering processes.
-\item[$\bullet$] \textbf{Gold tables:} This final layer is often made available for end users in BI reporting and analysis or use in machine learning processes.
+\item[$\bullet$] \textbf{Data Warehouse:} A data warehouse is a centralized database specifically designed for reporting and analysis. It stores structured data from different sources, organizes it according to a predefined data model, and optimizes it for analytical queries. Data in a data warehouse is typically consistent, integrated, and historical. However, building and maintaining a data warehouse can be complex and costly.
+\item[$\bullet$] \textbf{Data Lake:} A data lake is a centralized data repository that stores large amounts of raw, structured, and unstructured data. Unlike a data warehouse, a data lake does not require prior data modeling. It offers great flexibility and scalability for storing heterogeneous data. However, data integration and data quality can be challenging in a data lake.
+\item[$\bullet$] \textbf{Datalakehouse:} Datalakehouse is an emerging architecture that combines the benefits of a data warehouse and a data lake. It enables storing and processing both raw and structured data in a centralized environment. This hybrid approach provides the flexibility of a data lake and the analytical capabilities of a data warehouse. However, implementing a datalakehouse may require additional efforts to ensure data quality and query efficiency.
+\item[$\bullet$] \textbf{Delta Lake:} Delta Lake is a technology that integrates with existing data lakes to provide additional features such as ACID (Atomicity, Consistency, Isolation, Durability) transaction management, incremental updates, and data consistency guarantees. Delta Lake is built on Apache Parquet and Apache Arrow, which accelerate analytical queries and improve overall performance. However, using Delta Lake may require additional technical skills and may impact the complexity of the data architecture.
 \end{enumerate}
 
-\begin{figure}[htbp]
+% \subsection{Advantages and disadvantages of each architecture}
+
+\subsection{Data Warehouse}
+\textbf{Advantages:}
+\begin{enumerate}
+\item Consistent and integrated data
+\item Predefined data modeling for optimized analysis
+\item High performance for analytical queries
+\end{enumerate}
+
+\textbf{Disadvantages:}
+\begin{enumerate}
+\item High construction and maintenance costs
+\item Complexity of data modeling
+\item Limitations for integrating unstructured data
+\end{enumerate}
+
+\subsection{Data Lake}
+\textbf{Advantages:}
+\begin{enumerate}
+\item Economical storage of large amounts of data
+\item Flexibility to integrate raw and unstructured data
+\item Ability to process data from different sources
+\end{enumerate}
+
+\textbf{Disadvantages:}
+\begin{enumerate}
+\item Difficulty in maintaining data quality and governance
+\item Need for advanced tools for data analysis and processing
+\item Requires technical skills for efficient data exploitation
+\end{enumerate}
+
+\subsection{Datalakehouse}
+\textbf{Advantages:}
+\begin{enumerate}
+\item Combines the benefits of a data warehouse and a data lake
+\item Flexibility to store and analyze raw and structured data
+\item Ability to evolve based on evolving needs
+\end{enumerate}
+
+\textbf{Disadvantages:}
+\begin{enumerate}
+\item Requires additional efforts for data quality
+\item Increased complexity of the data architecture
+\item Requires technical skills for setup and management
+\end{enumerate}
+
+\subsection{Delta Lake (Datalakehouse)}
+\textbf{Advantages:}
+\begin{enumerate}
+\item ACID transaction management for data consistency
+\item Support for incremental updates and stream processing
+\item High performance for analytical queries
+\end{enumerate}
+
+\textbf{Disadvantages:}
+\begin{enumerate}
+\item Requires specific technical skills
+\item Impact on the complexity of the existing data architecture
+\item May require adaptations for seamless integration with existing tools
+
+\end{enumerate}
+
+\begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{images/delta_lake_architecture.png}
-\caption{Delta Lake multi-hop architecture}\label{fig:delta-lake-architecture}
+\includegraphics[width=\linewidth]{images/data-warehouse-data-lake-datalakehouse.png}
+\caption{Data Warehouse vs Data Lake vs Data Lakehouse}\label{fig:data-warehouse-data-lake-datalakehouse}
 \end{figure}
 
-\section{Key benefits and features of Delta Lake}
-\begin{itemize}
-    \item[\textbullet] \textbf{Audit trails and history:} In Delta Lake, every write exists as a transaction and is serially recorded in a transaction log. Therefore, any changes or commits made to the transaction log are recorded, leaving a complete trail for use in historical audits, versioning, or for time traveling purposes. This Delta Lake feature helps ensure data integrity and reliability for business data operations.
-    \item[\textbullet] \textbf{Time traveling and data versioning:} Because each write creates a new version and stores the older version in the transaction log, users can view/revert to older data versions by providing the timestamp or version number of an existing table or directory to the Sparks read API\@. Using the version number provided, the Delta Lake then constructs a full snapshot of the version with the information provided by the transaction log. Rollbacks and versioning play a vital role in machine learning experimentation, whereby data scientists iteratively change hyperparameters to train models and can revert to changes if needed.
-    \item[\textbullet] \textbf{Unifies batch and stream processing:} Every table in a Delta Lake is a batch and streaming sink. With Sparks structured streaming, organizations can efficiently stream and process streaming data. Additionally, with the efficient metadata handling, ease of scale, and ACID quality of each transaction, near-real-time analytics become possible without utilizing a more complicated two-tiered data architecture.
-    \item[\textbullet] \textbf{Efficient and scalable metadata handling:} Delta Lakes store metadata information in the transaction log and leverages Spark's distributed processing power to quickly process and efficiently read and handle large volumes of data metadata, thus improving data governance.
-    \item[\textbullet] \textbf{ACID transactions:} Delta Lakes ensure that users always see a consistent data view in a table or directory. It guarantees this by capturing every change made in a transaction log and isolating it at the strongest isolation level, the serializable level. In the serializable level, every existing operation has and follows a serial sequence that, when executed one by one, provides the same result as seen in the table.
-    \item[\textbullet] \textbf{Data Manipulation Language operations:} Delta Lakes supports DML operations like updates, deletes, and merges, which play a role in complex data operations like change-data-capture (CDC), streaming upserts, and slowly-changing-dimension (SCD). Operations like CDC ensure data synchronization in all data systems and minimizes the time and resources spent on ELT operations. For instance, using the CDC, instead of ETL-ing all the available data, only the recently updated data since the last operation undergoes a transformation.
-    \item[\textbullet] \textbf{Schema enforcement:} Delta Lakes perform automatic schema validation by checking against a set of rules to determine the compatibility of a write from a DataFrame to a table. One such rule is the existence of all DataFrame columns in the target table. An occurrence of an extra or missing column in the DataFrame raises an exception error. Another rule is that the DataFrame and target table must contain the same column types, which otherwise will raise an exception. Delta Lake also use DDL (Data Definition Language) to add new columns explicitly. This data lake feature helps prevent the ingestion of incorrect data, thereby ensuring high data quality.
-    \item[\textbullet] \textbf{Compatibility with Spark's API:} Delta Lake is built on Apache Spark and is fully compatible with Spark API, which helps build efficient and reliable big data pipelines.
-    \item[\textbullet] \textbf{Flexibility and integration:} Delta lake is an open-source storage layer and utilizes the Parquet format to store data files, which promotes data sharing and makes it easier to integrate with other technologies and drive innovation.
-\end{itemize}
-
-\section{Implementation}
-To use Delta Lake interactively within the Spark SQL, Scala, or Python shell, we need a local installation of Apache Spark. Depending on whether we want to use SQL, Python, or Scala, we can set up either the SQL, PySpark, or Spark shell, respectively.
-
-\subsection*{Spark SQL Shell:}
-
-\begin{lstlisting}[language=bash]
-    bin/spark-sql --packages io.delta:delta-core_2.12:2.3.0
-    --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension"
-    --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"
-\end{lstlisting}
-
-\subsection*{PySpark Shell:}
+\section{Difference between Microservices Architecture and Monolithic Architecture}
 \begin{enumerate}
-    \item Install the PySpark version that is compatible with the Delta Lake version by running the following:
-    \begin{lstlisting}[language=bash]
-    pip install pyspark==<compatible-spark-version>
-    \end{lstlisting}
-    \item Run PySpark with the Delta Lake package and additional configurations:
-    \begin{lstlisting}[language=bash]
-    pyspark --packages io.delta:delta-core_2.12:2.3.0 
-    --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" 
-    --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"
-    \end{lstlisting}
+\item[$\bullet$] \textbf{Monolithic:} A monolith is an application that is designed as a single, indivisible entity. All the application's functionalities are grouped together in a single code base, sharing the same resources, databases, and deployments. In a monolithic architecture, there is no clear separation of functionalities into independent services. Any modification or evolution of the application requires changes at a global level.
+\item[$\bullet$] \textbf{Microservice:} A microservice is an architectural approach in which an application is built as a set of independent and autonomous services, each focusing on a specific function of the application. Each microservice is developed, deployed, and managed independently, allowing for easier scalability, flexibility, and maintenance. Microservices communicate with each other through well-defined interfaces, typically based on REST APIs or messaging.
 \end{enumerate}
 
-\subsection*{Scala Shell:}
-Download the compatible version of Apache Spark by following instructions from Downloading Spark, either using pip or by downloading and extracting the archive and running spark-shell in the extracted directory.
-
-\begin{lstlisting}[language=bash]
-    bin/spark-shell --packages io.delta:delta-core_2.12:2.3.0 
-    --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" 
-    --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"
-\end{lstlisting}
-
-\subsection*{Create Table:}
-To create a Delta table, write a DataFrame out in the delta format. We can use existing Spark SQL code and change the format from parquet, csv, json, and so on, to delta.
-
+\subsection{Advantages and Disadvantages of Monolithic Architecture}
+\textbf{Advantages:}
 \begin{enumerate}
-    \item \textbf{SQL:}
-    \begin{lstlisting}[language=sql]
-    CREATE TABLE delta.`/tmp/delta-table` USING DELTA AS SELECT col1 as id FROM VALUES 0,1,2,3,4;
-    \end{lstlisting}
-    \item \textbf{Python:}
-    \begin{lstlisting}[language=python]
-    data = spark.range(0, 5)
-    data.write.format("delta").save("/tmp/delta-table")
-    \end{lstlisting}
-    \item \textbf{Scala:}
-    \begin{lstlisting}[language=scala]
-    val data = spark.range(0, 5)
-    data.write.format("delta").save("/tmp/delta-table")
-    \end{lstlisting}
-    \item \textbf{Java:}
-    \begin{lstlisting}[language=java]
-    import org.apache.spark.sql.SparkSession;
-    import org.apache.spark.sql.Dataset;
-    import org.apache.spark.sql.Row;
-    
-    SparkSession spark = ...   // create SparkSession
-    
-    Dataset<Row> data = spark.range(0, 5);
-    data.write().format("delta").save("/tmp/delta-table");
-    \end{lstlisting}
+\item \textbf{Simplicity of initial development:} The monolithic approach allows for rapid development of an application by grouping all functionalities into a single code base. This simplifies dependency management and coordination of different parts of the application.
+\item \textbf{Less operational complexity:} With a monolithic architecture, there are fewer components and services to manage, simplifying deployment, monitoring, and management operations. Everything is bundled within a single deployment, which can be easier to handle for operational teams.
+\item \textbf{Faster internal communications:} In a monolithic architecture, communications between different parts of the application are faster as they typically occur through internal method calls. This can be beneficial in terms of performance and reduced latency.
 \end{enumerate}
 
-These operations create a new Delta table using the schema that was inferred from your DataFrame
+\textbf{Disadvantages:}
+\begin{enumerate}
+\item \textbf{Difficulty in scaling and maintaining:} With a monolithic architecture, scaling and updates can be more complex since every change needs to be made to the entire application. This can slow down the development process and pose risks of errors during deployments.
+\item \textbf{Technological rigidity:} A monolithic architecture can result in technological rigidity as all parts of the application must use the same technologies and programming languages. This can limit the opportunities to adopt new technologies or independently evolve specific parts of the application.
+\item \textbf{Difficulty in isolating issues:} In case of issues or bugs, it can be more challenging to isolate and resolve them in a monolithic architecture. Since all functionalities are grouped in a single code base, pinpointing the exact origin of the problem can be complex.
+\item \textbf{Less flexibility in terms of scalability:} Monolithic architecture can pose challenges in terms of scalability. If a part of the application requires more resources to handle high load, adjusting that specific part without increasing the overall resources of the application can be difficult.
+\end{enumerate}
+
+\subsection{Advantages and Disadvantages of Microservices Architecture}
+\textbf{Advantages:}
+\begin{enumerate}
+\item \textbf{Scalability and evolvability:} Microservices allow breaking down the application into several autonomous and independent services, facilitating horizontal scalability. Each microservice can be deployed, scaled, and updated independently, efficiently managing load variations and ensuring easy scalability according to business needs.
+\item \textbf{Technological flexibility:} Microservices offer the ability to use different technologies and programming languages for each service. In our case, using Spring Boot allows us to leverage its rich ecosystem and advanced features for rapid application development. It also enables adopting specific technologies based on the needs of each microservice, promoting technological flexibility.
+\item \textbf{Independence and autonomy:} Each microservice is designed to operate autonomously, allowing better isolation of functionalities and responsibilities. This facilitates maintenance, testing, and independent deployment of services, reducing the risks of impacting the entire system in case of changes or issues.
+\item \textbf{Rapid development and deployment:} Microservices enable an agile development approach by emphasizing shorter development cycles. Teams can focus on specific features and develop them independently, accelerating the overall system development. Additionally, microservices can be continuously deployed through the use of automated deployment techniques, facilitating frequent and rapid updates.
+\item \textbf{Ease of maintenance and debugging:} Due to their modular nature, microservices facilitate system maintenance and debugging. In case of problems or errors, it's easier to identify the specific service involved and resolve the issue without impacting the entire system.
+\end{enumerate}
+
+\textbf{Disadvantages:}
+\begin{enumerate}
+\item \textbf{Complexity in managing communications:} Microservices involve communication between different services, typically through REST APIs or messaging. Managing these communications can become complex, especially when numerous services are involved. Issues such as latency, data consistency, and error handling may arise.
+\item \textbf{Increased initial development overhead:} Developing microservices requires additional effort to properly decompose functionalities, define interfaces, and set up appropriate infrastructure for service deployment and communication. This can increase the initial workload and require specific skills in distributed architecture.
+\item \textbf{Managing data consistency:} With microservices, each service can have its own database or data storage. This can make managing data consistency more complex, particularly when simultaneous updates involving multiple services occur. Techniques such as distributed transactions or asynchronous events may be required to maintain data consistency.
+\item \textbf{Deployment and management of multiple services:} With microservices, there is an increased number of services to deploy, manage, and monitor. This may require additional skills in automated deployments, container management, or cluster management. Monitoring the performance and behavior of each service can also become more complex.
+\item \textbf{Infrastructure cost:} Microservices may require more complex infrastructure and additional resources to operate effectively. Each service needs to be deployed and run independently, which can result in increased costs related to computing resources and infrastructure management.
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{images/monolithicvsmicroservice.jpg}
+\caption{Monolithic Architecture vs Microservices Architecture}\label{fig:monolithicvsmicroservice}
+\end{figure}
+
+\section{Difference between Microfrontends Architecture and Monolithic Frontend Architecture}
+\begin{enumerate}
+\item[$\bullet$] \textbf{Monolithic Frontend:} A monolithic frontend architecture is an architectural approach where the frontend application is developed as a single entity, typically using a specific framework such as AngularJS. All the features, views, and user interface logic are grouped together in a single code base.
+\item[$\bullet$] \textbf{Microfrontends:} Microfrontends are an architectural approach where a frontend application is divided into multiple independent micro-applications, each responsible for a specific part of the user interface. Each micro-application can be developed, deployed, and evolved independently, using different frameworks, languages, and technologies.
+\end{enumerate}
+
+\subsection{Advantages and Disadvantages of Monolithic Frontend Architecture}
+\textbf{Advantages:}
+\begin{enumerate}
+\item \textbf{Simplicity of initial development:} The monolithic architecture with AngularJS provides a straightforward approach for the initial development of the frontend application. All the features are grouped together in a single code base, making it easier to coordinate and manage the development.
+\item \textbf{Ease of communication between components:} In a monolithic architecture, AngularJS components can communicate with each other easily through the AngularJS directives and services system. This allows for quick and efficient communication between different parts of the application.
+\item \textbf{Interoperability of features:} Since all the features are developed using AngularJS, it is easier to share features and modules between different parts of the application. This promotes code reuse and simplifies maintenance.
+\end{enumerate}
+
+\textbf{Disadvantages:}
+\begin{enumerate}
+\item \textbf{Difficulty in maintenance and scalability:} As the frontend application becomes more complex, maintaining and evolving the monolithic architecture with AngularJS can become challenging. Changes to one part of the application can have implications on the entire code base, making the development process slower and riskier.
+\item \textbf{Performance limitations:} In a monolithic architecture, all the features are loaded together, which can lead to performance issues if the application becomes large. Loading times can be longer, and the application may be less responsive for the user.
+\item \textbf{Limited flexibility:} The monolithic architecture with AngularJS can limit technological flexibility. Since all parts of the application are developed using AngularJS, it can be difficult to introduce new technologies or independently evolve specific parts of the application.
+\end{enumerate}
+
+\subsection{Advantages and Disadvantages of Microfrontends Architecture}
+\textbf{Advantages:}
+\begin{enumerate}
+\item \textbf{Independence of development teams:} Each micro-application can be developed by a separate team, promoting greater autonomy and better collaboration among development teams. Each team can choose the technologies that best suit their needs.
+\item \textbf{Scalability and ease of maintenance:} Microfrontends architecture allows for independent scaling and maintenance of different parts of the application. Changes to one micro-application do not impact others, making maintenance easier and enabling rapid deployment of new features.
+\item \textbf{Technological flexibility:} Each micro-application can use the technology, framework, or programming language that best suits its specific domain. This allows for the introduction of new technologies and leveraging the benefits of the latest developments in software engineering.
+\end{enumerate}
+
+\textbf{Disadvantages:}
+\begin{enumerate}
+\item \textbf{Increased complexity:} Microfrontends architecture introduces some complexity in the development and deployment of the application. Managing interactions and communication between different micro-applications may require additional planning and coordination.
+\item \textbf{Higher initial development cost:} Developing a microfrontends architecture may require a higher initial investment in terms of resources and time. Developing multiple separate micro-applications and setting up the necessary infrastructure can be more costly than developing a monolithic application.
+\item \textbf{Network overhead:} Using microfrontends architecture can result in increased network overhead as each micro-application requires separate requests and resource loading. This can impact application performance and require efficient network management.
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/micro-frontend-vs-monolith-frontend.png}
+\caption{Monolithic Frontend Architecture vs Microfrontends Architecture}\label{fig:monolithfrontendvsmicrofrontends}
+\end{figure}
+
+\section{Solution Approach}
+\subsection{Data Part}
+In the context of our solution, we have chosen to replace the existing exporter worker and MariaDB databases with the use of a data lakehouse architecture. A data lakehouse is a hybrid approach that combines the benefits of a data warehouse and a data lake, providing a more flexible and scalable solution for data management.
+
+\subsection{Backend Part}
+For the implementation of microservices, we have chosen to use Spring Boot, a popular Java framework for application development. By using Spring Boot, we can create standalone microservices that are independent of each other and can be developed, deployed, and scaled individually. Spring Boot also provides features such as data persistence management, security, and REST API creation, making it easier to develop microservices.
+
+\subsection{Frontend Part}
+For the implementation of microfrontends, we have primarily chosen to use React. The development team can benefit from the rich and mature React ecosystem, as well as its increasing popularity in the frontend development industry. However, it is also mentioned that Angular can be used later if needed, providing additional flexibility in the choice of technologies.
 
 \section*{Conclusion}
-\addcontentsline{toc}{section}{Conclusion}
+When evaluating different data architectures for Izicap, it is important to understand the specific needs related to the management of bank files, transaction receipts, and aggregation operations.
 
-Delta Lake is an important tool for big data processing, providing reliable data management and ensuring data integrity at scale. Its ACID transactions, schema enforcement, and data versioning features make it a popular choice for companies that need to process large amounts of data with high accuracy and reliability.
+A data warehouse could have been a viable option, offering structured and optimized data structures for analytical queries. However, the main drawback of a data warehouse lies in its static nature, which requires pre-modeling of data and rigid transformation before loading. This can pose challenges when integrating new file types or evolving aggregation requirements.
 
-By using Delta Lake, data engineers and data scientists can easily manage data quality, track data lineage, and collaborate on data analysis projects. With its seamless integration with other big data tools. Delta Lake provides a powerful solution for big data processing that can help companies gain insights from their data faster and more efficiently.
+On the other hand, a data lake has advantages in terms of cost-effective storage and flexibility to integrate raw and unstructured data. However, maintaining data quality and governance can be more complex, and specific technical skills are required to effectively leverage data from the data lake.
+
+Therefore, Delta Lake was favored due to its ability to meet Izicap's specific needs for managing bank files, transaction receipts, and aggregation operations. It provides the necessary flexibility and performance while maintaining data integrity, making it a solid choice for the company's data architecture.
+
+By adopting a microservices-based approach, Izicap can improve the flexibility, scalability, and maintenance of its frontend application. This will enable the company to better meet the changing needs of its users, facilitate collaboration between development teams, and adopt innovative technologies to deliver an optimal user experience.
+
+Microfrontends offer several advantages for Izicap. Firstly, the modularity inherent in microfrontends allows for the development, deployment, and maintenance of different parts of the user interface independently. This promotes collaboration between development teams and enables rapid and efficient evolution. Each micro-application can be developed using the framework and technologies that best suit its specific needs, providing essential technological flexibility for Izicap.
+
+In contrast, the monolithic approach has limitations in terms of scalability and technological flexibility. Changes made to one part of the application can impact the entire system, making evolutions more complex and risky. Additionally, introducing new technologies or frameworks can be challenging in a monolithic architecture, limiting opportunities for innovation and modernization.
