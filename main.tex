@@ -2,7 +2,7 @@
 % Les étudiants  qui disposent de plus de 3 chapitres dans leurs travaux peuvent en complèter
 % Les Membres doivent figurer dans la dernière version finale du mémoire pour dépôt de mémoire
 
-\newcommand{\lang}{1}
+\newcommand{\lang}{0}
 
 \ifnum\lang=1
     \documentclass{iid}
@@ -37,7 +37,6 @@
 
 
 
-
 \pageDeGarde%\pageTitre
 
 \pagecolor{white}
@@ -51,7 +50,13 @@
 
 \setcounter{tocdepth}{0}
 \startlist{toc}
+
+\ifnum\lang=1
 \printlist{toc}{}{\chapter*{Sommaire}}
+\else
+\printlist{toc}{}{\chapter*{Summary}}
+\fi
+
 \setcounter{tocdepth}{5}
 
 \ifnum\lang=1

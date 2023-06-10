@@ -1,17 +1,16 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Introduction}{\reset@font\mtcSfont 13}{section*.18}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Différence entre un data warehouse, un data lake, un datalakehouse et un delta lake}{\reset@font\mtcSfont 13}{section.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.1}Data Warehouse}{\reset@font\mtcSSfont 14}{subsection.2.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.2}Data Lake}{\reset@font\mtcSSfont 14}{subsection.2.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.3}Datalakehouse}{\reset@font\mtcSSfont 15}{subsection.2.1.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.4}Delta Lake (Datalakehouse)}{\reset@font\mtcSSfont 15}{subsection.2.1.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Différence entre une architecture microservices et une architecture monolithique}{\reset@font\mtcSfont 16}{section.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Avantages et Inconvénients de l'architecture monolithique}{\reset@font\mtcSSfont 16}{subsection.2.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Avantages et Inconvénients de l'architecture microservices}{\reset@font\mtcSSfont 17}{subsection.2.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Différence entre une architecture microfrontends et une architecture monolithique frontend}{\reset@font\mtcSfont 19}{section.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Avantages et Inconvénients du monolithe frontend}{\reset@font\mtcSSfont 19}{subsection.2.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Avantages et Inconvénients de l'architecture microfrontends}{\reset@font\mtcSSfont 20}{subsection.2.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Cheminement de la solution}{\reset@font\mtcSfont 21}{section.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Partie Data}{\reset@font\mtcSSfont 21}{subsection.2.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Partie Backend}{\reset@font\mtcSSfont 21}{subsection.2.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}Partie Frontend}{\reset@font\mtcSSfont 22}{subsection.2.4.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Conclusion}{\reset@font\mtcSfont 22}{figure.caption.23}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Introduction}{\reset@font\mtcSfont 11}{section*.15}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Difference between a data warehouse, a data lake, a datalakehouse, and Delta Lake}{\reset@font\mtcSfont 11}{section.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.1}Data Warehouse}{\reset@font\mtcSSfont 12}{subsection.2.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.2}Data Lake}{\reset@font\mtcSSfont 12}{subsection.2.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.3}Datalakehouse}{\reset@font\mtcSSfont 12}{subsection.2.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.4}Delta Lake (Datalakehouse)}{\reset@font\mtcSSfont 13}{subsection.2.1.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Difference between Microservices Architecture and Monolithic Architecture}{\reset@font\mtcSfont 13}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Advantages and Disadvantages of Monolithic Architecture}{\reset@font\mtcSSfont 14}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Advantages and Disadvantages of Microservices Architecture}{\reset@font\mtcSSfont 15}{subsection.2.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Difference between Microfrontends Architecture and Monolithic Frontend Architecture}{\reset@font\mtcSfont 16}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Advantages and Disadvantages of Monolithic Frontend Architecture}{\reset@font\mtcSSfont 16}{subsection.2.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Advantages and Disadvantages of Microfrontends Architecture}{\reset@font\mtcSSfont 17}{subsection.2.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Solution Approach}{\reset@font\mtcSfont 18}{section.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Data Part}{\reset@font\mtcSSfont 18}{subsection.2.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Backend Part}{\reset@font\mtcSSfont 18}{subsection.2.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}Frontend Part}{\reset@font\mtcSSfont 18}{subsection.2.4.3}}
