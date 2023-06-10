@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.6)  10 JUN 2023 18:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.6)  10 JUN 2023 18:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **/home/zinozack47/Dropbox/Documents/Scripts/LaTex/Rapport-PFE-2023/main.tex
 (/home/zinozack47/Dropbox/Documents/Scripts/LaTex/Rapport-PFE-2023/main.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-05-15> (iidEn.cls (/usr/local/share/miktex-texmf/tex/latex/base/report.cls
+L3 programming layer <2023-05-15> (iid.cls (/usr/local/share/miktex-texmf/tex/latex/base/report.cls
 Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
 (/usr/local/share/miktex-texmf/tex/latex/base/size11.clo
 File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
@@ -1114,7 +1114,7 @@ Package glossaries Info: Writing glossary file main.acn on input line 481.
 ) (/home/zinozack47/.miktex/texmfs/install/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2021/07/05 v2.14 TOC entries
 \ttl@leftsep=\dimen357
-) (frontpageAn.tex) (glossaire_reduit.tex)
+) (frontpageFR.tex) (glossaire_reduit.tex)
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 36.
  (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1122,7 +1122,7 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count440
 \l__pdf_internal_box=\box101
-) (main.aux (0-dedication.aux) (1-acknowledgements.aux) (2-resume.aux) (2-2-resumeAn.aux) (2-3-resumeAr.aux) (2-4-listedessigles.aux) (3-introductionAn.aux) (4-conclusionAn.aux))
+) (main.aux (0-dedicace.aux) (1-remerciements.aux) (2-resume.aux) (2-2-resumeAn.aux) (2-3-resumeAr.aux) (2-4-listedessigles.aux) (3-introduction.aux) (4-conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -1286,17 +1286,23 @@ LaTeX Font Info:    Trying to load font information for T1+phv on input line 40.
  (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-<images/logo_univ_D_usms.png, id=271, 135.8676pt x 148.3944pt>
+<images/logo_univ_D_usms.png, id=279, 135.8676pt x 148.3944pt>
 File: images/logo_univ_D_usms.png Graphic file (type png)
 <use images/logo_univ_D_usms.png>
 Package pdftex.def Info: images/logo_univ_D_usms.png  used on input line 40.
 (pdftex.def)             Requested size: 81.52116pt x 89.03731pt.
-<images/logo_univ_G_ensa.png, id=273, 135.8676pt x 148.3944pt>
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
+)
+<images/logo_univ_G_ensa.png, id=281, 135.8676pt x 148.3944pt>
 File: images/logo_univ_G_ensa.png Graphic file (type png)
 <use images/logo_univ_G_ensa.png>
 Package pdftex.def Info: images/logo_univ_G_ensa.png  used on input line 40.
 (pdftex.def)             Requested size: 81.52116pt x 89.03731pt.
-<images/logoIID.png, id=274, 505.89pt x 313.17pt>
+ (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2022/08/07 UCS: Unicode data U+2000..U+20FF
+)
+<images/logoIID.png, id=282, 505.89pt x 313.17pt>
 File: images/logoIID.png Graphic file (type png)
 <use images/logoIID.png>
 Package pdftex.def Info: images/logoIID.png  used on input line 40.
@@ -1332,21 +1338,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.45 \thispagestyle{empty}\ \clearpage
                                        [1]
 \c@ttl@toc@default=\count455
- (main.ptc (/home/zinozack47/.miktex/texmfs/install/tex/latex/ucs/data/uni-0.def
-File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
-)) [1
+ (main.ptc) [1
 
 
 ]
-\openout2 = `0-dedication.aux'.
+\openout2 = `0-dedicace.aux'.
 
- (0-dedication.tex [2
+ (0-dedicace.tex [2
 
 
 ])
-\openout2 = `1-acknowledgements.aux'.
+\openout2 = `1-remerciements.aux'.
 
- (1-acknowledgements.tex) [3
+ (1-remerciements.tex) [3
 
 
 
@@ -1463,175 +1467,205 @@ Package minitoc Info: I0033
  (main.toc [7
 
 
-])
+]
+Overfull \hbox (3.0342pt too wide) in paragraph at lines 36--36
+ [][] [][][]\T1/ppl/m/n/10.95 Différence entre une ar-chi-tec-ture mi-cro-fron-tends et une ar-chi-tec-ture mo-no-li-thique fron- 
+ []
+
+[8])
 \tf@toc=\write12
 \openout12 = `main.toc'.
 
- [8] (main.lof)
+ [9] (main.lof)
 \tf@lof=\write13
 \openout13 = `main.lof'.
 
- [9] (main.lot)
+ [10] (main.lot)
 \tf@lot=\write14
 \openout14 = `main.lot'.
 
- [10]
+ [11]
 \openout2 = `2-4-listedessigles.aux'.
 
- (2-4-listedessigles.tex) [11
+ (2-4-listedessigles.tex) [12
 
 ]
-\openout2 = `3-introductionAn.aux'.
+\openout2 = `3-introduction.aux'.
 
- (3-introductionAn.tex)
+ (3-introduction.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.147     \include{3-introductionAn}
-                                     [1
+l.145     \include{3-introduction}
+                                   [1
 
 
 
 
 ]
-Chapter 1.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 174.
+Chapitre 1.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 161.
 (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 174.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 161.
  (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (1-partie/1-fichierAn.tex
+)
+Package minitoc Info: I0006
+(minitoc)             main.mtc1 is empty on input line 162.
+ (1-partie/1-fichier.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1.
+(hyperref)                be the same. Added a new anchor on input line 2.
 
 [2
 
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 19.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 23.
  (/home/zinozack47/.miktex/texmfs/install/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<images/partenaires.png, id=492, 1126.2075pt x 621.07031pt>
+<images/partenaires.png, id=513, 1126.2075pt x 621.07031pt>
 File: images/partenaires.png Graphic file (type png)
 <use images/partenaires.png>
-Package pdftex.def Info: images/partenaires.png  used on input line 28.
+Package pdftex.def Info: images/partenaires.png  used on input line 32.
 (pdftex.def)             Requested size: 483.69687pt x 266.7423pt.
  [3]
-<images/organigram.png, id=497, 1145.27875pt x 858.20625pt>
+<images/organigram.png, id=519, 1145.27875pt x 858.20625pt>
 File: images/organigram.png Graphic file (type png)
 <use images/organigram.png>
-Package pdftex.def Info: images/organigram.png  used on input line 35.
+Package pdftex.def Info: images/organigram.png  used on input line 38.
 (pdftex.def)             Requested size: 362.77264pt x 271.84235pt.
- [4 <./images/partenaires.png> <./images/organigram.png>]
-<images/smart-data-izicap.png, id=504, 943.525pt x 1190.4475pt>
+ [4 <./images/partenaires.png> <./images/organigram.png>] [5]
+<images/smart-data-izicap.png, id=537, 943.525pt x 1190.4475pt>
 File: images/smart-data-izicap.png Graphic file (type png)
 <use images/smart-data-izicap.png>
-Package pdftex.def Info: images/smart-data-izicap.png  used on input line 59.
+Package pdftex.def Info: images/smart-data-izicap.png  used on input line 63.
 (pdftex.def)             Requested size: 290.22107pt x 366.16489pt.
- [5]
-<images/archi-globale.png, id=516, 1725.44624pt x 999.735pt>
+<images/archi-globale.png, id=538, 1725.44624pt x 999.735pt>
 File: images/archi-globale.png Graphic file (type png)
 <use images/archi-globale.png>
-Package pdftex.def Info: images/archi-globale.png  used on input line 69.
+Package pdftex.def Info: images/archi-globale.png  used on input line 74.
 (pdftex.def)             Requested size: 483.69687pt x 280.24423pt.
  [6 <./images/smart-data-izicap.png>] [7 <./images/archi-globale.png>] [8] [9]
-<images/scrum.png, id=552, 965.10562pt x 462.22687pt>
+<images/scrum.png, id=572, 965.10562pt x 462.22687pt>
 File: images/scrum.png Graphic file (type png)
 <use images/scrum.png>
-Package pdftex.def Info: images/scrum.png  used on input line 132.
+Package pdftex.def Info: images/scrum.png  used on input line 136.
 (pdftex.def)             Requested size: 483.69687pt x 231.663pt.
- [10 <./images/scrum.png>]
-<images/gantt.png, id=564, 992.20688pt x 192.72pt>
+ [10]
+<images/gantt.png, id=585, 992.20688pt x 192.72pt>
 File: images/gantt.png Graphic file (type png)
 <use images/gantt.png>
-Package pdftex.def Info: images/gantt.png  used on input line 147.
+Package pdftex.def Info: images/gantt.png  used on input line 151.
 (pdftex.def)             Requested size: 483.69687pt x 93.95134pt.
-) [11 <./images/gantt.png>]
-Chapter 2.
-(2-partie/1-fichierAn.tex
+ [11 <./images/scrum.png> <./images/gantt.png>]) [12]
+Chapitre 2.
+(2-partie/1-fichier.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 1.
 
-[12
+[13
 
-] [13]
-<images/data-warehouse-data-lake-datalakehouse.png, id=594, 1204.5pt x 632.3625pt>
+] [14]
+<images/data-warehouse-data-lake-datalakehouse.png, id=617, 1204.5pt x 632.3625pt>
 File: images/data-warehouse-data-lake-datalakehouse.png Graphic file (type png)
 <use images/data-warehouse-data-lake-datalakehouse.png>
-Package pdftex.def Info: images/data-warehouse-data-lake-datalakehouse.png  used on input line 80.
+Package pdftex.def Info: images/data-warehouse-data-lake-datalakehouse.png  used on input line 79.
 (pdftex.def)             Requested size: 483.69687pt x 253.94402pt.
- [14 <./images/data-warehouse-data-lake-datalakehouse.png>] [15] [16]
-<images/monolithicvsmicroservice.jpg, id=632, 602.25pt x 313.17pt>
+ [15 <./images/data-warehouse-data-lake-datalakehouse.png>] [16] [17]
+<images/monolithicvsmicroservice.jpg, id=656, 602.25pt x 313.17pt>
 File: images/monolithicvsmicroservice.jpg Graphic file (type jpg)
 <use images/monolithicvsmicroservice.jpg>
-Package pdftex.def Info: images/monolithicvsmicroservice.jpg  used on input line 127.
+Package pdftex.def Info: images/monolithicvsmicroservice.jpg  used on input line 126.
 (pdftex.def)             Requested size: 290.22107pt x 150.92198pt.
-
-Overfull \hbox (2.38599pt too wide) in paragraph at lines 131--131
-|[]\T1/ppl/b/n/14.4 Difference be-tween Mi-crofron-tends Ar-chi-tec-ture and Mono-lithic Fron-
+ [18 <./images/monolithicvsmicroservice.jpg>]
+Overfull \hbox (5.35748pt too wide) in paragraph at lines 133--134
+\T1/ppl/m/n/10.95 tend est di-vi-sée en plu-sieurs micro-applications in-dé-pen-dantes, cha-cune étant res-pon-sable d'une
  []
 
-[17 <./images/monolithicvsmicroservice.jpg>] [18]
-<images/micro-frontend-vs-monolith-frontend.png, id=654, 903.375pt x 299.1175pt>
+[19]
+<images/micro-frontend-vs-monolith-frontend.png, id=676, 903.375pt x 299.1175pt>
 File: images/micro-frontend-vs-monolith-frontend.png Graphic file (type png)
 <use images/micro-frontend-vs-monolith-frontend.png>
-Package pdftex.def Info: images/micro-frontend-vs-monolith-frontend.png  used on input line 169.
+Package pdftex.def Info: images/micro-frontend-vs-monolith-frontend.png  used on input line 170.
 (pdftex.def)             Requested size: 483.69687pt x 160.16092pt.
- [19 <./images/micro-frontend-vs-monolith-frontend.png>]) [20]
-Chapter 3.
-(3-partie/1-fichierAn.tex [21
-
-]
-<images/delta_lake_architecture.png, id=672, 1027.84pt x 458.71375pt>
-File: images/delta_lake_architecture.png Graphic file (type png)
-<use images/delta_lake_architecture.png>
-Package pdftex.def Info: images/delta_lake_architecture.png  used on input line 27.
-(pdftex.def)             Requested size: 483.69687pt x 215.86847pt.
- [22 <./images/delta_lake_architecture.png>] [23]
-<images/trino_architecture.png, id=684, 219.9417pt x 157.5486pt>
-File: images/trino_architecture.png Graphic file (type png)
-<use images/trino_architecture.png>
-Package pdftex.def Info: images/trino_architecture.png  used on input line 51.
-(pdftex.def)             Requested size: 386.95897pt x 277.1902pt.
- [24 <./images/trino_architecture.png (PNG copy)>]
-Overfull \hbox (0.44675pt too wide) in paragraph at lines 80--81
-[]\T1/ppl/m/n/10.95 Keycloak pro-vides func-tion-al-ity for man-ag-ing roles, ad-min-is-tra-tors, users, and pass-words. Here's
- []
-
-[25]
-<images/kafka.jpg, id=707, 1862.96pt x 961.5925pt>
-File: images/kafka.jpg Graphic file (type jpg)
-<use images/kafka.jpg>
-Package pdftex.def Info: images/kafka.jpg  used on input line 114.
-(pdftex.def)             Requested size: 483.69687pt x 249.656pt.
- [26]) [27 <./images/kafka.jpg>]
-Chapter 4.
-(4-partie/1-fichierAn.tex
+ [20]
+<images/delta-lake-microservices.png, id=689, 743.77875pt x 312.16624pt>
+File: images/delta-lake-microservices.png Graphic file (type png)
+<use images/delta-lake-microservices.png>
+Package pdftex.def Info: images/delta-lake-microservices.png  used on input line 183.
+(pdftex.def)             Requested size: 483.69687pt x 203.0152pt.
+ [21 <./images/micro-frontend-vs-monolith-frontend.png>]
+<images/microfrontends.png, id=695, 1129.21875pt x 529.98pt>
+File: images/microfrontends.png Graphic file (type png)
+<use images/microfrontends.png>
+Package pdftex.def Info: images/microfrontends.png  used on input line 192.
+(pdftex.def)             Requested size: 483.69687pt x 227.01357pt.
+ [22 <./images/delta-lake-microservices.png> <./images/microfrontends.png>]) [23]
+Chapitre 3.
+(3-partie/1-fichier.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 1.
 
-[28
+[24
 
 ]
-<images/trino_microservice.png, id=734, 790.955pt x 639.38875pt>
+<images/delta_lake_architecture.png, id=713, 1027.84pt x 458.71375pt>
+File: images/delta_lake_architecture.png Graphic file (type png)
+<use images/delta_lake_architecture.png>
+Package pdftex.def Info: images/delta_lake_architecture.png  used on input line 29.
+(pdftex.def)             Requested size: 483.69687pt x 215.86847pt.
+ [25 <./images/delta_lake_architecture.png>] [26]
+<images/trino_architecture.png, id=725, 219.9417pt x 157.5486pt>
+File: images/trino_architecture.png Graphic file (type png)
+<use images/trino_architecture.png>
+Package pdftex.def Info: images/trino_architecture.png  used on input line 53.
+(pdftex.def)             Requested size: 386.95897pt x 277.1902pt.
+ [27 <./images/trino_architecture.png (PNG copy)>] [28]
+<images/Keycloak-overview-screenshot.png, id=742, 722.7pt x 371.88937pt>
+File: images/Keycloak-overview-screenshot.png Graphic file (type png)
+<use images/Keycloak-overview-screenshot.png>
+Package pdftex.def Info: images/Keycloak-overview-screenshot.png  used on input line 100.
+(pdftex.def)             Requested size: 483.69687pt x 248.90355pt.
+ [29]
+Overfull \hbox (1.76991pt too wide) in paragraph at lines 115--116
+\T1/ppl/m/n/10.95 ho-ri-zon-ta-le-ment pour ré-pondre aux be-soins de per-for-mance crois-sants. Il peut gé-rer des charges
+ []
+
+[30 <./images/Keycloak-overview-screenshot.png>]
+<images/kafka.jpg, id=766, 1862.96pt x 961.5925pt>
+File: images/kafka.jpg Graphic file (type jpg)
+<use images/kafka.jpg>
+Package pdftex.def Info: images/kafka.jpg  used on input line 124.
+(pdftex.def)             Requested size: 483.69687pt x 249.656pt.
+) [31 <./images/kafka.jpg>]
+Chapitre 4.
+(4-partie/1-fichier.tex
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 1.
+
+[32
+
+]
+<images/trino_microservice.png, id=781, 790.955pt x 639.38875pt>
 File: images/trino_microservice.png Graphic file (type png)
 <use images/trino_microservice.png>
 Package pdftex.def Info: images/trino_microservice.png  used on input line 26.
 (pdftex.def)             Requested size: 483.69687pt x 391.01195pt.
-<images/archi-spark.png, id=735, 735.74875pt x 445.665pt>
+<images/archi-spark.png, id=782, 735.74875pt x 445.665pt>
 File: images/archi-spark.png Graphic file (type png)
 <use images/archi-spark.png>
 Package pdftex.def Info: images/archi-spark.png  used on input line 32.
 (pdftex.def)             Requested size: 483.69687pt x 292.99736pt.
- [29 <./images/trino_microservice.png>] [30 <./images/archi-spark.png>] [31]
-<images/image3.png, id=753, 20.367pt x 20.367pt>
+ [33 <./images/trino_microservice.png>] [34 <./images/archi-spark.png>] [35]
+<images/image3.png, id=801, 20.367pt x 20.367pt>
 File: images/image3.png Graphic file (type png)
 <use images/image3.png>
 Package pdftex.def Info: images/image3.png  used on input line 142.
@@ -1640,11 +1674,6 @@ File: images/image3.png Graphic file (type png)
 <use images/image3.png>
 Package pdftex.def Info: images/image3.png  used on input line 142.
 (pdftex.def)             Requested size: 20.23703pt x 20.23703pt.
-
-Underfull \hbox (badness 1038) in paragraph at lines 142--143
-\T1/ppl/m/n/10.95 Spark's syn-tax re-quires SMEs to
- []
-
 File: images/image3.png Graphic file (type png)
 <use images/image3.png>
 Package pdftex.def Info: images/image3.png  used on input line 144.
@@ -1657,7 +1686,7 @@ File: images/image3.png Graphic file (type png)
 <use images/image3.png>
 Package pdftex.def Info: images/image3.png  used on input line 144.
 (pdftex.def)             Requested size: 20.23703pt x 20.23703pt.
-<images/image4.jpg, id=754, 61.22874pt x 64.24pt>
+<images/image4.jpg, id=802, 61.22874pt x 64.24pt>
 File: images/image4.jpg Graphic file (type jpg)
 <use images/image4.jpg>
 Package pdftex.def Info: images/image4.jpg  used on input line 147.
@@ -1687,8 +1716,8 @@ File: images/image3.png Graphic file (type png)
 Package pdftex.def Info: images/image3.png  used on input line 152.
 (pdftex.def)             Requested size: 20.23703pt x 20.23703pt.
 
-Underfull \hbox (badness 2158) in paragraph at lines 152--153
-\T1/ppl/m/n/10.95 nally and sup-ported by Google
+Underfull \hbox (badness 1325) in paragraph at lines 152--153
+\T1/ppl/m/n/10.95 Produit ma-ture main-tenu en in-
  []
 
 File: images/image3.png Graphic file (type png)
@@ -1733,85 +1762,86 @@ Overfull \hbox (37.59995pt too wide) in alignment at lines 138--165
  [] [] [] 
  []
 
-[32 <./images/image3.png>]
-<images/architecture-solution.png, id=761, 2835.59375pt x 1667.22874pt>
+[36] [37 <./images/image3.png> <./images/image4.jpg>]
+<images/architecture-solution.png, id=813, 2835.59375pt x 1667.22874pt>
 File: images/architecture-solution.png Graphic file (type png)
 <use images/architecture-solution.png>
 Package pdftex.def Info: images/architecture-solution.png  used on input line 181.
 (pdftex.def)             Requested size: 483.69687pt x 284.39185pt.
- [33 <./images/image4.jpg>] [34 <./images/architecture-solution.png>]
-<images/trino-1.png, id=771, 590.205pt x 368.87813pt>
+ [38 <./images/architecture-solution.png>]
+<images/trino-1.png, id=819, 590.205pt x 368.87813pt>
 File: images/trino-1.png Graphic file (type png)
 <use images/trino-1.png>
-Package pdftex.def Info: images/trino-1.png  used on input line 208.
+Package pdftex.def Info: images/trino-1.png  used on input line 205.
 (pdftex.def)             Requested size: 483.69687pt x 302.31316pt.
-<images/trino-2.png, id=772, 1445.4pt x 751.30687pt>
+ [39]
+<images/trino-2.png, id=824, 1445.4pt x 751.30687pt>
 File: images/trino-2.png Graphic file (type png)
 <use images/trino-2.png>
-Package pdftex.def Info: images/trino-2.png  used on input line 214.
+Package pdftex.def Info: images/trino-2.png  used on input line 211.
 (pdftex.def)             Requested size: 483.69687pt x 251.41708pt.
- [35 <./images/trino-1.png>]
-<images/trino-3.png, id=778, 391.4625pt x 76.78688pt>
+<images/trino-3.png, id=825, 391.4625pt x 76.78688pt>
 File: images/trino-3.png Graphic file (type png)
 <use images/trino-3.png>
-Package pdftex.def Info: images/trino-3.png  used on input line 220.
+Package pdftex.def Info: images/trino-3.png  used on input line 217.
 (pdftex.def)             Requested size: 483.69687pt x 94.88432pt.
-<images/Swagger-UI-1.png, id=779, 1879.02pt x 2174.1225pt>
+ [40 <./images/trino-1.png> <./images/trino-2.png>]
+<images/Swagger-UI-1.png, id=832, 1879.02pt x 2174.1225pt>
 File: images/Swagger-UI-1.png Graphic file (type png)
 <use images/Swagger-UI-1.png>
-Package pdftex.def Info: images/Swagger-UI-1.png  used on input line 230.
+Package pdftex.def Info: images/Swagger-UI-1.png  used on input line 226.
 (pdftex.def)             Requested size: 483.69687pt x 559.65205pt.
- [36 <./images/trino-2.png> <./images/trino-3.png>]
-<images/Swagger-UI-2.png, id=787, 1882.03125pt x 2009.5075pt>
+ [41 <./images/trino-3.png>]
+<images/Swagger-UI-2.png, id=839, 1882.03125pt x 2009.5075pt>
 File: images/Swagger-UI-2.png Graphic file (type png)
 <use images/Swagger-UI-2.png>
-Package pdftex.def Info: images/Swagger-UI-2.png  used on input line 236.
+Package pdftex.def Info: images/Swagger-UI-2.png  used on input line 232.
 (pdftex.def)             Requested size: 483.69687pt x 516.44977pt.
- [37 <./images/Swagger-UI-1.png>]
-<images/Swagger-UI.png, id=793, 1901.1025pt x 2156.055pt>
+ [42 <./images/Swagger-UI-1.png>]
+<images/Swagger-UI.png, id=845, 1901.1025pt x 2156.055pt>
 File: images/Swagger-UI.png Graphic file (type png)
 <use images/Swagger-UI.png>
-Package pdftex.def Info: images/Swagger-UI.png  used on input line 242.
+Package pdftex.def Info: images/Swagger-UI.png  used on input line 238.
 (pdftex.def)             Requested size: 483.69687pt x 548.55305pt.
- [38 <./images/Swagger-UI-2.png>]
-<images/Swagger-UI-3.png, id=799, 1408.51219pt x 663.98062pt>
+ [43 <./images/Swagger-UI-2.png>]
+<images/Swagger-UI-3.png, id=851, 1408.51219pt x 663.98062pt>
 File: images/Swagger-UI-3.png Graphic file (type png)
 <use images/Swagger-UI-3.png>
-Package pdftex.def Info: images/Swagger-UI-3.png  used on input line 248.
+Package pdftex.def Info: images/Swagger-UI-3.png  used on input line 244.
 (pdftex.def)             Requested size: 483.69687pt x 228.00975pt.
- [39 <./images/Swagger-UI.png>]
-<images/delta-lake-dossier.png, id=805, 859.71187pt x 609.77812pt>
+ [44 <./images/Swagger-UI.png>]
+<images/delta-lake-dossier.png, id=857, 859.71187pt x 609.77812pt>
 File: images/delta-lake-dossier.png Graphic file (type png)
 <use images/delta-lake-dossier.png>
-Package pdftex.def Info: images/delta-lake-dossier.png  used on input line 258.
+Package pdftex.def Info: images/delta-lake-dossier.png  used on input line 254.
 (pdftex.def)             Requested size: 483.69687pt x 343.08308pt.
- [40 <./images/Swagger-UI-3.png>]
-<images/izicap-portail.png, id=811, 1927.2pt x 1084.05pt>
+ [45 <./images/Swagger-UI-3.png>]
+<images/izicap-portail.png, id=863, 1927.2pt x 1084.05pt>
 File: images/izicap-portail.png Graphic file (type png)
 <use images/izicap-portail.png>
-Package pdftex.def Info: images/izicap-portail.png  used on input line 268.
+Package pdftex.def Info: images/izicap-portail.png  used on input line 264.
 (pdftex.def)             Requested size: 483.69687pt x 272.07048pt.
- [41 <./images/delta-lake-dossier.png>]
-<images/revenu.png, id=817, 1927.2pt x 1084.05pt>
+ [46 <./images/delta-lake-dossier.png>]
+<images/revenu.png, id=869, 1927.2pt x 1084.05pt>
 File: images/revenu.png Graphic file (type png)
 <use images/revenu.png>
-Package pdftex.def Info: images/revenu.png  used on input line 274.
+Package pdftex.def Info: images/revenu.png  used on input line 271.
 (pdftex.def)             Requested size: 483.69687pt x 272.07048pt.
-<images/data-1.png, id=818, 1927.2pt x 1084.05pt>
+<images/data-1.png, id=870, 1927.2pt x 1084.05pt>
 File: images/data-1.png Graphic file (type png)
 <use images/data-1.png>
-Package pdftex.def Info: images/data-1.png  used on input line 280.
+Package pdftex.def Info: images/data-1.png  used on input line 278.
 (pdftex.def)             Requested size: 483.69687pt x 272.07048pt.
- [42 <./images/izicap-portail.png> <./images/revenu.png>]
-<images/data-2.png, id=826, 1927.2pt x 1084.05pt>
+ [47 <./images/izicap-portail.png> <./images/revenu.png>]
+<images/data-2.png, id=878, 1927.2pt x 1084.05pt>
 File: images/data-2.png Graphic file (type png)
 <use images/data-2.png>
-Package pdftex.def Info: images/data-2.png  used on input line 286.
+Package pdftex.def Info: images/data-2.png  used on input line 284.
 (pdftex.def)             Requested size: 483.69687pt x 272.07048pt.
-) [43 <./images/data-1.png> <./images/data-2.png>] [44]
-\openout2 = `4-conclusionAn.aux'.
+) [48 <./images/data-1.png> <./images/data-2.png>] [49]
+\openout2 = `4-conclusion.aux'.
 
- (4-conclusionAn.tex) [45
+ (4-conclusion.tex) [50
 
 
 ] (main.bbl)
@@ -1826,9 +1856,10 @@ Package minitoc Info: I0009
 \openout5 = `main.maf'.
 
 
-Package minitoc(hints) Warning: W0078
-(minitoc(hints))                You have used \dominitoc, 
-(minitoc(hints))                but not \minitoc.
+Package minitoc(hints) Warning: W0068
+(minitoc(hints))                You have used \minitoc but not 
+(minitoc(hints))                \tableofcontents
+(minitoc(hints))                nor \faketableofcontents.
 
 Package minitoc(hints) Info: I0053
 (minitoc(hints))             You have loaded the float package; 
@@ -1843,16 +1874,16 @@ Package minitoc(hints) Warning: W0024
 \tf@ptc=\write15
 \openout15 = `main.ptc'.
 
-[46
+[51
 
 
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(main.aux (0-dedication.aux) (1-acknowledgements.aux) (2-resume.aux) (2-2-resumeAn.aux) (2-3-resumeAr.aux) (2-4-listedessigles.aux) (3-introductionAn.aux) (4-conclusionAn.aux))
+(main.aux (0-dedicace.aux) (1-remerciements.aux) (2-resume.aux) (2-2-resumeAn.aux) (2-3-resumeAr.aux) (2-4-listedessigles.aux) (3-introduction.aux) (4-conclusion.aux))
 
  *File List*
-   iidEn.cls    
+     iid.cls    
   report.cls    2022/07/02 v1.4n Standard LaTeX document class
   size11.clo    2022/07/02 v1.4n Standard LaTeX file (size option)
  fontenc.sty    2021/04/29 v2.0v Standard LaTeX package
@@ -2054,7 +2085,7 @@ scrlfile.sty    2023/04/24 v3.40 KOMA-Script package (file load hooks)
 scrlfile-hook.sty    2023/04/24 v3.40 KOMA-Script package (using LaTeX hooks)
  scrlogo.sty    2023/04/24 v3.40 KOMA-Script package (logo)
 titletoc.sty    2021/07/05 v2.14 TOC entries
-frontpageAn.tex
+frontpageFR.tex
 glossaire_reduit.tex
    t1ppl.fd    2001/06/04 font definitions for T1/ppl.
 l3backend-pdftex.def    2023-04-19 L3 backend support: PDF output (pdfTeX)
@@ -2069,21 +2100,22 @@ epstopdf-sys.cfg    2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
     umsb.fd    2013/01/14 v3.01 AMS symbols B
    t1phv.fd    2020/03/25 scalable font definitions for T1/phv.
 images/logo_univ_D_usms.png
-images/logo_univ_G_ensa.png
-images/logoIID.png
    uni-0.def    2022/08/07 UCS: Unicode data U+0000..U+00FF
-0-dedication.tex
-1-acknowledgements.tex
+images/logo_univ_G_ensa.png
+  uni-32.def    2022/08/07 UCS: Unicode data U+2000..U+20FF
+images/logoIID.png
+0-dedicace.tex
+1-remerciements.tex
 2-resume.tex
    uni-1.def    2022/08/07 UCS: Unicode data U+0100..U+01FF
 2-2-resumeAn.tex
 2-3-resumeAr.tex
    Uxnsh.fd
 2-4-listedessigles.tex
-3-introductionAn.tex
+3-introduction.tex
   ot1phv.fd    2020/03/25 scalable font definitions for OT1/phv.
   ot1ptm.fd    2001/06/04 font definitions for OT1/ptm.
-1-partie/1-fichierAn.tex
+1-partie/1-fichier.tex
   ts1ppl.fd    2001/06/04 font definitions for TS1/ppl.
 images/partenaires.png
 images/organigram.png
@@ -2091,15 +2123,18 @@ images/smart-data-izicap.png
 images/archi-globale.png
 images/scrum.png
 images/gantt.png
-2-partie/1-fichierAn.tex
+2-partie/1-fichier.tex
 images/data-warehouse-data-lake-datalakehouse.png
 images/monolithicvsmicroservice.jpg
 images/micro-frontend-vs-monolith-frontend.png
-3-partie/1-fichierAn.tex
+images/delta-lake-microservices.png
+images/microfrontends.png
+3-partie/1-fichier.tex
 images/delta_lake_architecture.png
 images/trino_architecture.png
+images/Keycloak-overview-screenshot.png
 images/kafka.jpg
-4-partie/1-fichierAn.tex
+4-partie/1-fichier.tex
 images/trino_microservice.png
 images/archi-spark.png
 images/image3.png
@@ -2135,29 +2170,29 @@ images/izicap-portail.png
 images/revenu.png
 images/data-1.png
 images/data-2.png
-4-conclusionAn.tex
+4-conclusion.tex
     main.bbl
  ***********
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 286EC3F9B8A33F261CE87B928AD7862E;11249.
+(rerunfilecheck)             Checksum: 7AEDD7098C24AA1B382ED587CFEB6FB2;12259.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 36 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 42853 strings out of 476412
- 742631 string characters out of 5796211
+ 43166 strings out of 476412
+ 746689 string characters out of 5796211
  1910851 words of memory out of 5000000
- 61816 multiletter control sequences out of 15000+600000
- 559433 words of font info for 107 fonts, out of 8000000 for 9000
+ 62108 multiletter control sequences out of 15000+600000
+ 561683 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,14n,131p,2303b,3039s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,14n,131p,2305b,3154s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmr8a.pfb></home/zinozack47/.miktex/texmfs/install/fonts/type1/public/arabtex/xnsh14.pfb></home/zinozack47/.miktex/texmfs/install/fonts/type1/public/arabtex/xnsh14bf.pfb>
-Output written on main.pdf (59 pages, 3222892 bytes).
+Output written on main.pdf (65 pages, 3560988 bytes).
 PDF statistics:
- 948 PDF objects out of 1000 (max. 8388607)
- 267 named destinations out of 1000 (max. 500000)
- 697 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1002 PDF objects out of 1200 (max. 8388607)
+ 280 named destinations out of 1000 (max. 500000)
+ 728 words of extra memory for PDF output out of 10000 (max. 10000000)
 
