@@ -6,69 +6,66 @@
 \contentsline {chapter}{Abstract}{v}{chapter*.5}%
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Contents}{vii}{section*.7}%
-\contentsline {chapter}{List of Figures}{x}{section*.8}%
-\contentsline {chapter}{List of Tables}{xi}{section*.9}%
+\contentsline {chapter}{List of Figures}{ix}{section*.8}%
+\contentsline {chapter}{List of Tables}{x}{section*.9}%
 \contentsline {chapter}{Introduction}{1}{chapter*.10}%
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}General project context}{2}{chapter.1}%
 \contentsline {section}{Introduction}{2}{section*.11}%
-\contentsline {section}{\numberline {1.1}Difference between a data warehouse, a data lake, a datalakehouse, and Delta Lake}{2}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Data Warehouse}{3}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Data Lake}{3}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Datalakehouse}{3}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Delta Lake (Datalakehouse)}{4}{subsection.1.1.4}%
-\contentsline {section}{\numberline {1.2}Difference between Microservices Architecture and Monolithic Architecture}{4}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Advantages and Disadvantages of Monolithic Architecture}{5}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Advantages and Disadvantages of Microservices Architecture}{6}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Difference between Microfrontends Architecture and Monolithic Frontend Architecture}{7}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Advantages and Disadvantages of Monolithic Frontend Architecture}{7}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Advantages and Disadvantages of Microfrontends Architecture}{8}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Solution Approach}{9}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Data Part}{9}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Backend Part}{9}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Frontend Part}{9}{subsection.1.4.3}%
-\contentsline {chapter}{\numberline {2}Business Intelligence and Solution Choices}{11}{chapter.2}%
-\contentsline {section}{Introduction}{11}{section*.15}%
-\contentsline {section}{\numberline {2.1}Difference between a data warehouse, a data lake, a datalakehouse, and Delta Lake}{11}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Data Warehouse}{12}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Data Lake}{12}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Datalakehouse}{12}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Delta Lake (Datalakehouse)}{13}{subsection.2.1.4}%
-\contentsline {section}{\numberline {2.2}Difference between Microservices Architecture and Monolithic Architecture}{13}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Advantages and Disadvantages of Monolithic Architecture}{14}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Advantages and Disadvantages of Microservices Architecture}{15}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Difference between Microfrontends Architecture and Monolithic Frontend Architecture}{16}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Advantages and Disadvantages of Monolithic Frontend Architecture}{16}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Advantages and Disadvantages of Microfrontends Architecture}{17}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Solution Approach}{18}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Data Part}{18}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Backend Part}{18}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Frontend Part}{18}{subsection.2.4.3}%
-\contentsline {chapter}{\numberline {3}Technologies Used}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Delta Lake}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Key Benefits and Features of Delta Lake}{21}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Trino}{23}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Spring Boot}{24}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Keycloak}{24}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Kafka}{25}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Solution Implementation}{27}{chapter.4}%
-\contentsline {section}{Introduction}{27}{section*.22}%
-\contentsline {section}{\numberline {4.1}Feasibility Study}{27}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Benchmark between Trino and Spark}{28}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Architecture}{28}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Execution Time}{29}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Memory Management}{30}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Ecosystem and Integrations}{31}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Scalability}{31}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Support for Delta Lake Features}{31}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}Ease of Use}{31}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8}Other Statistics}{31}{subsection.4.2.8}%
-\contentsline {section}{\numberline {4.3}Solution Design}{32}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Advantages}{33}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Visualization}{34}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Trino Console}{34}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Microservices}{36}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Delta Lake}{40}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Izicap UI}{41}{subsection.4.5.4}%
-\contentsline {chapter}{Conclusion}{44}{chapter*.41}%
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Presentation of the Host Organization}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}IZICAP}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Strategic Partnerships}{3}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Organizational Structure}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Project Framework}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}System Architecture - Smart Data}{6}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Problem and Functional Needs}{8}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Internship Objectives}{9}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Project Implementation Process}{9}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Project Planning}{10}{section.1.9}%
+\contentsline {section}{Conclusion}{11}{figure.caption.17}%
+\contentsline {chapter}{\numberline {2}Business Intelligence and Solution Choices}{12}{chapter.2}%
+\contentsline {section}{Introduction}{12}{section*.18}%
+\contentsline {section}{\numberline {2.1}Difference between a data warehouse, a data lake, a datalakehouse, and Delta Lake}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Data Warehouse}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Data Lake}{13}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Datalakehouse}{13}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Delta Lake (Datalakehouse)}{14}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Difference between Microservices Architecture and Monolithic Architecture}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Advantages and Disadvantages of Monolithic Architecture}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Advantages and Disadvantages of Microservices Architecture}{16}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Difference between Microfrontends Architecture and Monolithic Frontend Architecture}{17}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Advantages and Disadvantages of Monolithic Frontend Architecture}{17}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Advantages and Disadvantages of Microfrontends Architecture}{18}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Solution Approach}{19}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Data Part}{19}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Backend Part}{19}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Frontend Part}{19}{subsection.2.4.3}%
+\contentsline {chapter}{\numberline {3}Technologies Used}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Delta Lake}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Key Benefits and Features of Delta Lake}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Trino}{24}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Spring Boot}{25}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Keycloak}{25}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Kafka}{26}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Solution Implementation}{28}{chapter.4}%
+\contentsline {section}{Introduction}{28}{section*.25}%
+\contentsline {section}{\numberline {4.1}Feasibility Study}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Benchmark between Trino and Spark}{29}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Architecture}{29}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Execution Time}{30}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Memory Management}{31}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Ecosystem and Integrations}{32}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Scalability}{32}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Support for Delta Lake Features}{32}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Ease of Use}{32}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8}Other Statistics}{32}{subsection.4.2.8}%
+\contentsline {section}{\numberline {4.3}Solution Design}{33}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Advantages}{34}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Visualization}{35}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Trino Console}{35}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Microservices}{37}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Delta Lake}{41}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Izicap UI}{42}{subsection.4.5.4}%
+\contentsline {chapter}{Conclusion}{45}{chapter*.44}%
 \contentsfinish 
