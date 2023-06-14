@@ -417,7 +417,7 @@ frame=leftline
 \hfill
 \begin{tabular}{p{8.5cm}}
 \begin{center}
-{\scriptsize \textsf{MMINISTRY OF HIGHER EDUCATION \\ SCIENTIFIC RESEARCH AND INNOVATION}\\}
+{\scriptsize \textsf{MINISTRY OF HIGHER EDUCATION \\ SCIENTIFIC RESEARCH AND INNOVATION}\\}
 \vspace{0.25cm}
 {\scriptsize \textbf{\textsf{SULTAN MOULAY SLIMANE UNIVERSITY}}\\}
 \vspace{0.25cm}

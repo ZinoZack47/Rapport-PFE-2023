@@ -81,13 +81,13 @@ Decision Support encompasses the processes, technologies, and tools used to coll
 \caption{Data Warehouse vs Data Lake vs Data Lakehouse}\label{fig:data-warehouse-data-lake-datalakehouse}
 \end{figure}
 
-\section{Difference between Microservices Architecture and Monolithic Architecture}
+\section{Difference between microservices architecture and monolithic architecture}
 \begin{enumerate}
 \item[$\bullet$] \textbf{Monolithic:} A monolith is an application that is designed as a single, indivisible entity. All the application's functionalities are grouped together in a single code base, sharing the same resources, databases, and deployments. In a monolithic architecture, there is no clear separation of functionalities into independent services. Any modification or evolution of the application requires changes at a global level.
 \item[$\bullet$] \textbf{Microservice:} A microservice is an architectural approach in which an application is built as a set of independent and autonomous services, each focusing on a specific function of the application. Each microservice is developed, deployed, and managed independently, allowing for easier scalability, flexibility, and maintenance. Microservices communicate with each other through well-defined interfaces, typically based on REST APIs or messaging.
 \end{enumerate}
 
-\subsection{Advantages and Disadvantages of Monolithic Architecture}
+\subsection{Advantages and disadvantages of monolithic architecture}
 \textbf{Advantages:}
 \begin{enumerate}
 \item \textbf{Simplicity of initial development:} The monolithic approach allows for rapid development of an application by grouping all functionalities into a single code base. This simplifies dependency management and coordination of different parts of the application.
@@ -103,7 +103,7 @@ Decision Support encompasses the processes, technologies, and tools used to coll
 \item \textbf{Less flexibility in terms of scalability:} Monolithic architecture can pose challenges in terms of scalability. If a part of the application requires more resources to handle high load, adjusting that specific part without increasing the overall resources of the application can be difficult.
 \end{enumerate}
 
-\subsection{Advantages and Disadvantages of Microservices Architecture}
+\subsection{Advantages and disadvantages of microservices architecture}
 \textbf{Advantages:}
 \begin{enumerate}
 \item \textbf{Scalability and evolvability:} Microservices allow breaking down the application into several autonomous and independent services, facilitating horizontal scalability. Each microservice can be deployed, scaled, and updated independently, efficiently managing load variations and ensuring easy scalability according to business needs.
@@ -128,13 +128,13 @@ Decision Support encompasses the processes, technologies, and tools used to coll
 \caption{Monolithic Architecture vs Microservices Architecture}\label{fig:monolithicvsmicroservice}
 \end{figure}
 
-\section{Difference between Microfrontends Architecture and Monolithic Frontend Architecture}
+\section{Difference between microfrontends architecture and monolithic frontend architecture}
 \begin{enumerate}
 \item[$\bullet$] \textbf{Monolithic Frontend:} A monolithic frontend architecture is an architectural approach where the frontend application is developed as a single entity, typically using a specific framework such as AngularJS. All the features, views, and user interface logic are grouped together in a single code base.
 \item[$\bullet$] \textbf{Microfrontends:} Microfrontends are an architectural approach where a frontend application is divided into multiple independent micro-applications, each responsible for a specific part of the user interface. Each micro-application can be developed, deployed, and evolved independently, using different frameworks, languages, and technologies.
 \end{enumerate}
 
-\subsection{Advantages and Disadvantages of Monolithic Frontend Architecture}
+\subsection{Advantages and disadvantages of monolithic frontend architecture}
 \textbf{Advantages:}
 \begin{enumerate}
 \item \textbf{Simplicity of initial development:} The monolithic architecture with AngularJS provides a straightforward approach for the initial development of the frontend application. All the features are grouped together in a single code base, making it easier to coordinate and manage the development.
@@ -149,7 +149,7 @@ Decision Support encompasses the processes, technologies, and tools used to coll
 \item \textbf{Limited flexibility:} The monolithic architecture with AngularJS can limit technological flexibility. Since all parts of the application are developed using AngularJS, it can be difficult to introduce new technologies or independently evolve specific parts of the application.
 \end{enumerate}
 
-\subsection{Advantages and Disadvantages of Microfrontends Architecture}
+\subsection{Advantages and disadvantages of microfrontends architecture}
 \textbf{Advantages:}
 \begin{enumerate}
 \item \textbf{Independence of development teams:} Each micro-application can be developed by a separate team, promoting greater autonomy and better collaboration among development teams. Each team can choose the technologies that best suit their needs.
@@ -170,14 +170,14 @@ Decision Support encompasses the processes, technologies, and tools used to coll
 \caption{Monolithic Frontend Architecture vs Microfrontends Architecture}\label{fig:monolithfrontendvsmicrofrontends}
 \end{figure}
 
-\section{Solution Approach}
-\subsection{Data Part}
+\section{Solution approach}
+\subsection{Data part}
 In the context of our solution, we have chosen to replace the existing exporter worker and MariaDB databases with the use of a data lakehouse architecture. A data lakehouse is a hybrid approach that combines the benefits of a data warehouse and a data lake, providing a more flexible and scalable solution for data management.
 
-\subsection{Backend Part}
+\subsection{Backend part}
 For the implementation of microservices, we have chosen to use Spring Boot, a popular Java framework for application development. By using Spring Boot, we can create standalone microservices that are independent of each other and can be developed, deployed, and scaled individually. Spring Boot also provides features such as data persistence management, security, and REST API creation, making it easier to develop microservices.
 
-\subsection{Frontend Part}
+\subsection{Frontend part}
 For the implementation of microfrontends, we have primarily chosen to use React. The development team can benefit from the rich and mature React ecosystem, as well as its increasing popularity in the frontend development industry. However, it is also mentioned that Angular can be used later if needed, providing additional flexibility in the choice of technologies.
 
 \section*{Conclusion}

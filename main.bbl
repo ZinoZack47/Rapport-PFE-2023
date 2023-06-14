@@ -8,14 +8,6 @@ Apache.
 Databrick.
 \newblock 2023.
 
-\bibitem{izicap}
-izicap.
-\newblock 2013.
-
-\bibitem{microfrontends}
-C.~Jackson.
-\newblock 2019.
-
 \bibitem{deltalake}
 M.~Kukreja.
 \newblock {\em Data Engineering with Apache Spark, Delta Lake, and Lakehouse}.

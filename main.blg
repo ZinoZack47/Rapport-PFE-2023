@@ -1,10 +1,10 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 15 items.
-A level-1 auxiliary file: 0-dedicace.aux
-Reallocating 'name_of_file' (item size: 1) to 20 items.
-A level-1 auxiliary file: 1-remerciements.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: 0-dedication.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: 1-acknowledgements.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: 2-resume.aux
 Reallocating 'name_of_file' (item size: 1) to 17 items.
@@ -13,10 +13,10 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: 2-3-resumeAr.aux
 Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: 2-4-listedessigles.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: 3-introductionAn.aux
 Reallocating 'name_of_file' (item size: 1) to 19 items.
-A level-1 auxiliary file: 3-introduction.aux
-Reallocating 'name_of_file' (item size: 1) to 17 items.
-A level-1 auxiliary file: 4-conclusion.aux
+A level-1 auxiliary file: 4-conclusionAn.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: abbrv.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
@@ -25,51 +25,47 @@ Warning--empty title in kafka
 Warning--empty journal in kafka
 Warning--empty title in databricksdelta
 Warning--empty journal in databricksdelta
-Warning--empty title in izicap
-Warning--empty journal in izicap
-Warning--empty title in microfrontends
-Warning--empty journal in microfrontends
 Warning--empty title in keycloak
 Warning--empty journal in keycloak
-You've used 8 entries,
+You've used 6 entries,
             2118 wiz_defined-function locations,
-            531 strings with 4257 characters,
-and the built_in function-call counts, 1655 in all, are:
-= -- 142
-> -- 56
+            526 strings with 4227 characters,
+and the built_in function-call counts, 1259 in all, are:
+= -- 108
+> -- 42
 < -- 0
-+ -- 24
-- -- 16
-* -- 81
-:= -- 303
-add.period$ -- 19
-call.type$ -- 8
-change.case$ -- 24
++ -- 18
+- -- 12
+* -- 59
+:= -- 231
+add.period$ -- 15
+call.type$ -- 6
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 86
-empty$ -- 152
-format.name$ -- 16
-if$ -- 329
+cite$ -- 12
+duplicate$ -- 66
+empty$ -- 118
+format.name$ -- 12
+if$ -- 253
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 11
-newline$ -- 38
-num.names$ -- 16
-pop$ -- 64
+int.to.str$ -- 6
+missing$ -- 9
+newline$ -- 30
+num.names$ -- 12
+pop$ -- 48
 preamble$ -- 1
-purify$ -- 24
+purify$ -- 18
 quote$ -- 0
-skip$ -- 48
+skip$ -- 36
 stack$ -- 0
-substring$ -- 40
+substring$ -- 30
 swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 26
-warning$ -- 10
-while$ -- 16
-width$ -- 9
-write$ -- 67
-(There were 10 warnings)
+type$ -- 18
+warning$ -- 6
+while$ -- 12
+width$ -- 7
+write$ -- 53
+(There were 6 warnings)

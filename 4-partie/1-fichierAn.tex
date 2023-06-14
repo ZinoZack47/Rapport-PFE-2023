@@ -4,7 +4,7 @@
 
 This chapter focuses on the implementation of the solution, with an emphasis on choosing the connector to manipulate Delta Lake. We will discuss the feasibility study of different connectors and their impact on modularity, performance, and security.
 
-\section{Feasibility Study}
+\section{Feasibility study}
 During our feasibility study, we examined several connector options to manipulate Delta Lake. Here is an overview of the connectors we explored:
 
 \begin{enumerate}
@@ -33,7 +33,7 @@ The following diagrams represent the respective architectures of the two Proof o
 \caption{SPARK Architecture}\label{fig:arch-spark}
 \end{figure}
 
-\subsection{Execution Time}
+\subsection{Execution time}
 \begin{enumerate}
 \item[$\bullet$] \textbf{Trino:} Trino is known for its high execution speed. It uses an optimized architecture to perform SQL queries very quickly by leveraging query parallelization and optimization. Trino can provide short execution times for queries on Delta Lake.
 \item[$\bullet$] \textbf{Spark:} Spark is also designed to deliver high performance, but it may require more time to read data from disk. However, Spark can offer high performance when used with complex transformation operations, thanks to its disk-based distributed computing model.
@@ -103,13 +103,13 @@ Sorting & 2.2 & 0.8 \\ \hline
 \caption{Technical Specifications of `ASUS ROG G752 VT' PC}
 \end{table}
 
-\subsection{Memory Management}
+\subsection{Memory management}
 \begin{enumerate}
 \item[$\bullet$] \textbf{Trino:} Trino primarily utilizes memory to accelerate query processing. It has an in-memory query engine that optimizes data access and minimizes access times. However, this means that Trino may require a significant amount of memory to process large datasets.
 \item[$\bullet$] \textbf{Spark:} Spark uses a disk-based distributed computing model, which means data is typically stored on disk and loaded into memory as needed. This allows Spark to handle much larger datasets than what can fit in memory.
 \end{enumerate}
 
-\subsection{Ecosystem and Integrations}
+\subsection{Ecosystem and integrations}
 \begin{enumerate}
 \item[$\bullet$] \textbf{Trino:} Trino has a growing ecosystem with a wide range of connectors and integrations, allowing access to different data sources, including Delta Lake. It is compatible with various data visualization and processing tools.
 \item[$\bullet$] \textbf{Spark:} Spark is a mature project with a rich ecosystem of tools, libraries, and connectors. It benefits from a large developer community and numerous learning resources. Spark also supports both stream processing and batch processing of data.
@@ -121,19 +121,19 @@ Sorting & 2.2 & 0.8 \\ \hline
 \item[$\bullet$] \textbf{Spark:} Spark is also designed for scalability and can process massive datasets. It has a distributed processing system that can adapt to different cluster configurations and resources.
 \end{enumerate}
 
-\subsection{Support for Delta Lake Features}
+\subsection{Support for Delta Lake features}
 \begin{enumerate}
 \item[$\bullet$] \textbf{Trino:} Trino has an official connector for Delta Lake, allowing it to read and write data in Delta Lake. It supports essential Delta Lake features such as ACID transaction management, incremental updates, and merge operations.
 \item[$\bullet$] \textbf{Spark:} Spark also has built-in support for Delta Lake. It offers advanced Delta data management features, including support for ACID transactions, efficient merge operations, and data versioning mechanisms.
 \end{enumerate}
 
-\subsection{Ease of Use}
+\subsection{Ease of use}
 \begin{enumerate}
 \item[$\bullet$] \textbf{Trino:} Trino provides a standard SQL interface, making it easy to use for users familiar with SQL. It also offers user-friendly interactive querying tools and flexible configuration options.
 \item[$\bullet$] \textbf{Spark:} Spark offers an SQL interface through Spark SQL, but it is also oriented towards data processing through a broader API. Spark may be more complex to use for users less familiar with distributed processing concepts.
 \end{enumerate}
 
-\subsection{Other Statistics}
+\subsection{Other statistics}
 
 \begin{longtable}{|p{0.23\linewidth}|p{0.35\linewidth}|p{0.42\linewidth}|}
 \hline
@@ -164,7 +164,7 @@ Has been supported by the open-source community since 2019. Shopify has made con
 \textasciitilde Approximately 200,000 queries/week \\ \hline
 \end{longtable}
 
-\section{Solution Design}
+\section{Solution design}
 
 For the solution design, we have chosen an architecture based on microservices, using the following technologies: Spring Data, JPA, Hibernate, JDBC, and Trino.
 
@@ -201,7 +201,7 @@ These advantages contribute to a scalable, modular, flexible, secure, and high-p
 
 In this section, we will present screenshots of the different microservices in our solution, including Swagger for the API, the Trino console for data exploration, and the Izicap website. These screenshots will illustrate the user interface and the functionalities offered by each service.
 
-\subsection{Trino Console}
+\subsection{Trino console}
 
 \begin{figure}[H]
 \centering

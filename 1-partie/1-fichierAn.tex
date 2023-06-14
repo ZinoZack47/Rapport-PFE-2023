@@ -2,7 +2,7 @@
 \section{Introduction}
 The objective of this section is to present the general context of the project, starting with the host organization, IZICAP, where I am completing my 5-month internship. We will describe their activities, strategy, values, as well as the organizational structure and profiles involved in my project. Then, we will address the work request that expresses the functional requirements on which I based the design and implementation of the solution, as well as the methodology followed to achieve the set objectives.
 
-\section{Presentation of the Host Organization}
+\section{Presentation of the host organization}
 \subsection{IZICAP}
 IZICAP is a unique and innovative company focused on data analysis, loyalty, and digital marketing for small and medium-sized enterprises (SMEs). Their user-friendly and easy-to-install solution is based on the SaaS model, allowing for the utilization of customers' transactional data from payment cards.
 
@@ -29,7 +29,7 @@ IZICAP has established strategic partnerships with several key players in the fi
 \caption{Strategic Partnerships}\label{fig:partnerships}
 \end{figure}
 
-\section{Organizational Structure}
+\section{Organizational structure}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.75\linewidth]{images/organigram.png}
@@ -38,7 +38,7 @@ IZICAP has established strategic partnerships with several key players in the fi
 
 Within the project team, I had the opportunity to work in a versatile manner across different domains. I actively contributed to backend development by participating in the design and implementation of microservices. I also collaborated with the frontend team, bringing my expertise in integrating microfrontends and improving the user experience. Additionally, I was involved in data management, contributing to the implementation of Delta Lake and optimizing data flows. This diverse experience allowed me to gain a holistic view of the project and effectively collaborate with different teams to achieve the set objectives.
 
-\section{Project Framework}
+\section{Project framework}
 
 The project involves the revamping of the "Smart data" application, which refers to the process of extracting valuable information from large amounts of data to make informed business decisions.
 
@@ -60,7 +60,7 @@ Smart data allows us to:
 \caption{Smart data Izicap}\label{fig:smart-data-Izicap}
 \end{figure}
 
-\section{System Architecture - Smart Data}
+\section{System architecture - Smart Data}
 
 The figure below visualizes the structure and key components of our system, as well as the interactions between them. It forms the foundation of our system and plays a crucial role in providing features and services to our users.
 
@@ -80,11 +80,11 @@ This diagram represents the functioning of the current monolithic architecture, 
 \item \textbf{Cohesion and responsibilities}: Monolithic architecture does not facilitate a clear separation of responsibilities and functionalities. Different modules of the system are often tightly coupled and may share common features. This makes isolating issues, module-specific maintenance, and code reuse specific to a domain challenging.
 \end{enumerate}
 
-\section{Problem and Functional Needs}
+\section{Problem and functional needs}
 
 The problem at hand lies in the currently used monolithic architecture, which presents limitations in terms of scalability, flexibility, and maintainability. The constraints imposed by this architecture make it complex to deploy new functionalities and can potentially disrupt the entire system. Additionally, the use of a traditional relational database such as MariaDB proves insufficient for efficiently handling large volumes of transactional data. It is worth noting that the Smart Data application has been in existence for 10 years and has been developed using the Groovy language. This long period of existence attests to the stability and maturity of our system. However, the use of Groovy may present certain constraints in terms of maintainability and scalability, especially when it comes to integrating new technologies and managing more modern architectures.
 
-\subsection*{Functional Needs}
+\subsection*{Functional needs}
 
 To address these challenges, different functional needs have been identified:
 
@@ -95,7 +95,7 @@ To address these challenges, different functional needs have been identified:
 \item[$\bullet$] \textbf{Separation of Responsibilities}: We aim for better separation of responsibilities between different components of our system. Microservices will allow us to decouple functionalities, assign them to specific teams, and promote more effective code management, simplified maintenance, and increased scalability.
 \end{enumerate}
 
-\section{Internship Objectives}
+\section{Internship objectives}
 
 The project falls within the scope of renewing the functionalities of the Smart Data application, aiming to improve its scalability, flexibility, and performance. In this context, the objectives of the internship are as follows:
 
@@ -111,7 +111,7 @@ The project falls within the scope of renewing the functionalities of the Smart 
 \item Collaborate closely with the existing team to facilitate the transition to the new architecture, providing technical support, guidance, and training on the new technologies used.
 \end{enumerate}
 
-\section{Project Implementation Process}
+\section{Project implementation process}
 
 The project implementation process followed several iterations called "sprints," typically lasting two weeks each. Each sprint focused on delivering functional increments of the application, enabling quick tangible results.
 
@@ -130,10 +130,10 @@ Here are the key steps of the project implementation process based on the Scrum 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{images/scrum.png}
-\caption{Scrum Methodology}\label{fig:scrum}
+\caption{Scrum methodology}\label{fig:scrum}
 \end{figure}
 
-\section{Project Planning}
+\section{Project planning}
 For the project planning, we used the method of modeling the network of task dependencies. This approach allowed us to break down the work into different structured tasks and establish dependency relationships between them.
 
 We also utilized the technique of Gantt chart to graphically represent the project's tasks and resources over time. In the horizontal axis, we listed the different tasks, and in the vertical axis, we defined the days, weeks, or months. Each task was represented by a bar whose length was proportional to the estimated duration of that task.
