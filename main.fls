@@ -2,17 +2,17 @@ PWD c:\Users\ziyad\OneDrive\Documents\00-IID_templte_latex
 INPUT C:\Users\ziyad\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT c:\Users\ziyad\OneDrive\Documents\00-IID_templte_latex\main.tex
 OUTPUT main.log
-INPUT .\iidEn.cls
-INPUT .\iidEn.cls
-INPUT iidEn.cls
-INPUT .\iidEn.cls
-INPUT .\iidEn.cls
-INPUT .\iidEn.cls
-INPUT .\iidEn.cls
-INPUT .\iidEn.cls
-INPUT iidEn.cls
-INPUT .\iidEn.cls
-INPUT iidEn.cls
+INPUT .\iid.cls
+INPUT .\iid.cls
+INPUT iid.cls
+INPUT .\iid.cls
+INPUT .\iid.cls
+INPUT .\iid.cls
+INPUT .\iid.cls
+INPUT .\iid.cls
+INPUT iid.cls
+INPUT .\iid.cls
+INPUT iid.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
@@ -2482,10 +2482,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\titlesec\titletoc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\titlesec\titletoc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\titlesec\titletoc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\titlesec\titletoc.sty
-INPUT .\frontpageAn.tex
-INPUT frontpageAn.tex
-INPUT .\frontpageAn.tex
-INPUT frontpageAn.tex
+INPUT .\frontpageFR.tex
+INPUT frontpageFR.tex
+INPUT .\frontpageFR.tex
+INPUT frontpageFR.tex
 INPUT .\glossaire_reduit.tex
 INPUT .\glossaire_reduit.tex
 INPUT .\glossaire_reduit.tex
@@ -2512,12 +2512,12 @@ INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\main.aux
 INPUT main.aux
 INPUT main.aux
-INPUT .\0-dedication.aux
-INPUT 0-dedication.aux
-INPUT 0-dedication.aux
-INPUT .\1-acknowledgements.aux
-INPUT 1-acknowledgements.aux
-INPUT 1-acknowledgements.aux
+INPUT .\0-dedicace.aux
+INPUT 0-dedicace.aux
+INPUT 0-dedicace.aux
+INPUT .\1-remerciements.aux
+INPUT 1-remerciements.aux
+INPUT 1-remerciements.aux
 INPUT .\2-resume.aux
 INPUT 2-resume.aux
 INPUT 2-resume.aux
@@ -2530,12 +2530,12 @@ INPUT 2-3-resumeAr.aux
 INPUT .\2-4-listedessigles.aux
 INPUT 2-4-listedessigles.aux
 INPUT 2-4-listedessigles.aux
-INPUT .\3-introductionAn.aux
-INPUT 3-introductionAn.aux
-INPUT 3-introductionAn.aux
-INPUT .\4-conclusionAn.aux
-INPUT 4-conclusionAn.aux
-INPUT 4-conclusionAn.aux
+INPUT .\3-introduction.aux
+INPUT 3-introduction.aux
+INPUT 3-introduction.aux
+INPUT .\4-conclusion.aux
+INPUT 4-conclusion.aux
+INPUT 4-conclusion.aux
 OUTPUT main.aux
 INPUT C:\Program Files\MiKTeX\tex\latex\ucs\ucsencs.def
 INPUT C:\Program Files\MiKTeX\tex\latex\ucs\ucsencs.def
@@ -2624,6 +2624,10 @@ INPUT .\images\logo_univ_D_usms.png
 INPUT .\images\logo_univ_D_usms.png
 INPUT .\images\logo_univ_D_usms.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-0.def
+INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-0.def
+INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-0.def
+INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-0.def
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplb8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
@@ -2640,6 +2644,10 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplb8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplb8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplb8t.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-32.def
+INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-32.def
+INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-32.def
+INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-32.def
 INPUT .\images\logoIID.png
 INPUT .\images\logoIID.png
 INPUT images\logoIID.png
@@ -2670,22 +2678,18 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
 INPUT .\main.ptc
 INPUT main.ptc
 INPUT main.ptc
-INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-0.def
-INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-0.def
-INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-0.def
-INPUT C:\Program Files\MiKTeX\tex\latex\ucs\data\uni-0.def
-INPUT .\0-dedication.tex
-INPUT .\0-dedication.tex
-INPUT .\0-dedication.tex
+INPUT .\0-dedicace.tex
+INPUT .\0-dedicace.tex
+INPUT .\0-dedicace.tex
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
-OUTPUT 0-dedication.aux
-INPUT .\0-dedication.tex
-INPUT .\0-dedication.tex
-INPUT .\0-dedication.tex
-INPUT 0-dedication.tex
-INPUT .\0-dedication.tex
-INPUT 0-dedication.tex
+OUTPUT 0-dedicace.aux
+INPUT .\0-dedicace.tex
+INPUT .\0-dedicace.tex
+INPUT .\0-dedicace.tex
+INPUT 0-dedicace.tex
+INPUT .\0-dedicace.tex
+INPUT 0-dedicace.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplri8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplri8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplbi8t.tfm
@@ -2694,16 +2698,16 @@ INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplri8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplbi8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplbi8r.tfm
-INPUT .\1-acknowledgements.tex
-INPUT .\1-acknowledgements.tex
-INPUT .\1-acknowledgements.tex
-OUTPUT 1-acknowledgements.aux
-INPUT .\1-acknowledgements.tex
-INPUT .\1-acknowledgements.tex
-INPUT .\1-acknowledgements.tex
-INPUT 1-acknowledgements.tex
-INPUT .\1-acknowledgements.tex
-INPUT 1-acknowledgements.tex
+INPUT .\1-remerciements.tex
+INPUT .\1-remerciements.tex
+INPUT .\1-remerciements.tex
+OUTPUT 1-remerciements.aux
+INPUT .\1-remerciements.tex
+INPUT .\1-remerciements.tex
+INPUT .\1-remerciements.tex
+INPUT 1-remerciements.tex
+INPUT .\1-remerciements.tex
+INPUT 1-remerciements.tex
 INPUT .\2-resume.tex
 INPUT .\2-resume.tex
 INPUT .\2-resume.tex
@@ -2763,12 +2767,12 @@ OUTPUT main.mtc14
 INPUT .\main.toc
 INPUT main.toc
 INPUT main.toc
-OUTPUT main.toc
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
+OUTPUT main.toc
 INPUT .\main.lof
 INPUT main.lof
 INPUT main.lof
@@ -2787,16 +2791,19 @@ INPUT .\2-4-listedessigles.tex
 INPUT 2-4-listedessigles.tex
 INPUT .\2-4-listedessigles.tex
 INPUT 2-4-listedessigles.tex
-INPUT .\3-introductionAn.tex
-INPUT .\3-introductionAn.tex
-INPUT .\3-introductionAn.tex
-OUTPUT 3-introductionAn.aux
-INPUT .\3-introductionAn.tex
-INPUT .\3-introductionAn.tex
-INPUT .\3-introductionAn.tex
-INPUT 3-introductionAn.tex
-INPUT .\3-introductionAn.tex
-INPUT 3-introductionAn.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplrc8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplrc8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT .\3-introduction.tex
+INPUT .\3-introduction.tex
+INPUT .\3-introduction.tex
+OUTPUT 3-introduction.aux
+INPUT .\3-introduction.tex
+INPUT .\3-introduction.tex
+INPUT .\3-introduction.tex
+INPUT 3-introduction.tex
+INPUT .\3-introduction.tex
+INPUT 3-introduction.tex
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ot1phv.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ot1phv.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ot1phv.fd
@@ -2807,13 +2814,16 @@ INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ot1ptm.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ot1ptm.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ot1ptm.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr7t.tfm
-INPUT .\1-partie\1-fichierAn.tex
-INPUT .\1-partie\1-fichierAn.tex
-INPUT .\1-partie\1-fichierAn.tex
-INPUT 1-partie\1-fichierAn.tex
-INPUT .\1-partie\1-fichierAn.tex
-INPUT .\1-partie\1-fichierAn.tex
-INPUT 1-partie\1-fichierAn.tex
+INPUT .\main.mtc1
+INPUT main.mtc1
+INPUT main.mtc1
+INPUT .\1-partie\1-fichier.tex
+INPUT .\1-partie\1-fichier.tex
+INPUT .\1-partie\1-fichier.tex
+INPUT 1-partie\1-fichier.tex
+INPUT .\1-partie\1-fichier.tex
+INPUT .\1-partie\1-fichier.tex
+INPUT 1-partie\1-fichier.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplb8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvr7t.vf
@@ -2871,13 +2881,13 @@ INPUT .\images\gantt.png
 INPUT .\images\gantt.png
 INPUT .\images\gantt.png
 INPUT .\images\gantt.png
-INPUT .\2-partie\1-fichierAn.tex
-INPUT .\2-partie\1-fichierAn.tex
-INPUT .\2-partie\1-fichierAn.tex
-INPUT 2-partie\1-fichierAn.tex
-INPUT .\2-partie\1-fichierAn.tex
-INPUT .\2-partie\1-fichierAn.tex
-INPUT 2-partie\1-fichierAn.tex
+INPUT .\2-partie\1-fichier.tex
+INPUT .\2-partie\1-fichier.tex
+INPUT .\2-partie\1-fichier.tex
+INPUT 2-partie\1-fichier.tex
+INPUT .\2-partie\1-fichier.tex
+INPUT .\2-partie\1-fichier.tex
+INPUT 2-partie\1-fichier.tex
 INPUT .\images\data-warehouse-data-lake-datalakehouse.png
 INPUT .\images\data-warehouse-data-lake-datalakehouse.png
 INPUT images\data-warehouse-data-lake-datalakehouse.png
@@ -2899,13 +2909,27 @@ INPUT .\images\micro-frontend-vs-monolith-frontend.png
 INPUT .\images\micro-frontend-vs-monolith-frontend.png
 INPUT .\images\micro-frontend-vs-monolith-frontend.png
 INPUT .\images\micro-frontend-vs-monolith-frontend.png
-INPUT .\3-partie\1-fichierAn.tex
-INPUT .\3-partie\1-fichierAn.tex
-INPUT .\3-partie\1-fichierAn.tex
-INPUT 3-partie\1-fichierAn.tex
-INPUT .\3-partie\1-fichierAn.tex
-INPUT .\3-partie\1-fichierAn.tex
-INPUT 3-partie\1-fichierAn.tex
+INPUT .\images\delta-lake-microservices.png
+INPUT .\images\delta-lake-microservices.png
+INPUT images\delta-lake-microservices.png
+INPUT .\images\delta-lake-microservices.png
+INPUT .\images\delta-lake-microservices.png
+INPUT .\images\delta-lake-microservices.png
+INPUT .\images\delta-lake-microservices.png
+INPUT .\images\microfrontends.png
+INPUT .\images\microfrontends.png
+INPUT images\microfrontends.png
+INPUT .\images\microfrontends.png
+INPUT .\images\microfrontends.png
+INPUT .\images\microfrontends.png
+INPUT .\images\microfrontends.png
+INPUT .\3-partie\1-fichier.tex
+INPUT .\3-partie\1-fichier.tex
+INPUT .\3-partie\1-fichier.tex
+INPUT 3-partie\1-fichier.tex
+INPUT .\3-partie\1-fichier.tex
+INPUT .\3-partie\1-fichier.tex
+INPUT 3-partie\1-fichier.tex
 INPUT .\images\delta_lake_architecture.png
 INPUT .\images\delta_lake_architecture.png
 INPUT images\delta_lake_architecture.png
@@ -2934,13 +2958,13 @@ INPUT .\images\kafka.jpg
 INPUT .\images\kafka.jpg
 INPUT .\images\kafka.jpg
 INPUT .\images\kafka.jpg
-INPUT .\4-partie\1-fichierAn.tex
-INPUT .\4-partie\1-fichierAn.tex
-INPUT .\4-partie\1-fichierAn.tex
-INPUT 4-partie\1-fichierAn.tex
-INPUT .\4-partie\1-fichierAn.tex
-INPUT .\4-partie\1-fichierAn.tex
-INPUT 4-partie\1-fichierAn.tex
+INPUT .\4-partie\1-fichier.tex
+INPUT .\4-partie\1-fichier.tex
+INPUT .\4-partie\1-fichier.tex
+INPUT 4-partie\1-fichier.tex
+INPUT .\4-partie\1-fichier.tex
+INPUT .\4-partie\1-fichier.tex
+INPUT 4-partie\1-fichier.tex
 INPUT .\images\trino_microservice.png
 INPUT .\images\trino_microservice.png
 INPUT images\trino_microservice.png
@@ -3135,16 +3159,16 @@ INPUT .\images\data-2.png
 INPUT .\images\data-2.png
 INPUT .\images\data-2.png
 INPUT .\images\data-2.png
-INPUT .\4-conclusionAn.tex
-INPUT .\4-conclusionAn.tex
-INPUT .\4-conclusionAn.tex
-OUTPUT 4-conclusionAn.aux
-INPUT .\4-conclusionAn.tex
-INPUT .\4-conclusionAn.tex
-INPUT .\4-conclusionAn.tex
-INPUT 4-conclusionAn.tex
-INPUT .\4-conclusionAn.tex
-INPUT 4-conclusionAn.tex
+INPUT .\4-conclusion.tex
+INPUT .\4-conclusion.tex
+INPUT .\4-conclusion.tex
+OUTPUT 4-conclusion.aux
+INPUT .\4-conclusion.tex
+INPUT .\4-conclusion.tex
+INPUT .\4-conclusion.tex
+INPUT 4-conclusion.tex
+INPUT .\4-conclusion.tex
+INPUT 4-conclusion.tex
 INPUT .\main.bbl
 INPUT main.bbl
 INPUT .\main.bbl
@@ -3166,12 +3190,12 @@ OUTPUT main.ptc
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplri8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
 INPUT main.aux
-INPUT .\0-dedication.aux
-INPUT 0-dedication.aux
-INPUT 0-dedication.aux
-INPUT .\1-acknowledgements.aux
-INPUT 1-acknowledgements.aux
-INPUT 1-acknowledgements.aux
+INPUT .\0-dedicace.aux
+INPUT 0-dedicace.aux
+INPUT 0-dedicace.aux
+INPUT .\1-remerciements.aux
+INPUT 1-remerciements.aux
+INPUT 1-remerciements.aux
 INPUT .\2-resume.aux
 INPUT 2-resume.aux
 INPUT 2-resume.aux
@@ -3184,12 +3208,12 @@ INPUT 2-3-resumeAr.aux
 INPUT .\2-4-listedessigles.aux
 INPUT 2-4-listedessigles.aux
 INPUT 2-4-listedessigles.aux
-INPUT .\3-introductionAn.aux
-INPUT 3-introductionAn.aux
-INPUT 3-introductionAn.aux
-INPUT .\4-conclusionAn.aux
-INPUT 4-conclusionAn.aux
-INPUT 4-conclusionAn.aux
+INPUT .\3-introduction.aux
+INPUT 3-introduction.aux
+INPUT 3-introduction.aux
+INPUT .\4-conclusion.aux
+INPUT 4-conclusion.aux
+INPUT 4-conclusion.aux
 INPUT .\main.out
 INPUT .\main.out
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb

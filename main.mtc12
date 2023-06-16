@@ -1,18 +1,18 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Introduction}{\reset@font\mtcSfont 28}{section*.26}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Feasibility study}{\reset@font\mtcSfont 28}{section.4.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Benchmark between Trino and Spark}{\reset@font\mtcSfont 29}{section.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Architecture}{\reset@font\mtcSSfont 29}{subsection.4.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Execution time}{\reset@font\mtcSSfont 30}{subsection.4.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}Memory management}{\reset@font\mtcSSfont 31}{subsection.4.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.4}Ecosystem and integrations}{\reset@font\mtcSSfont 32}{subsection.4.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.5}Scalability}{\reset@font\mtcSSfont 32}{subsection.4.2.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.6}Support for Delta Lake features}{\reset@font\mtcSSfont 32}{subsection.4.2.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.7}Ease of use}{\reset@font\mtcSSfont 32}{subsection.4.2.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.8}Other statistics}{\reset@font\mtcSSfont 32}{subsection.4.2.8}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Solution design}{\reset@font\mtcSfont 33}{section.4.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Advantages}{\reset@font\mtcSfont 34}{section.4.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Visualization}{\reset@font\mtcSfont 35}{section.4.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.1}Trino console}{\reset@font\mtcSSfont 35}{subsection.4.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.2}Microservices}{\reset@font\mtcSSfont 37}{subsection.4.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.3}Delta Lake}{\reset@font\mtcSSfont 41}{subsection.4.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.4}Izicap UI}{\reset@font\mtcSSfont 42}{subsection.4.5.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Introduction}{\reset@font\mtcSfont 32}{section*.29}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Étude de faisabilité}{\reset@font\mtcSfont 32}{section.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Benchmark entre Trino et Spark}{\reset@font\mtcSfont 33}{section.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Architecture}{\reset@font\mtcSSfont 33}{subsection.4.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Temps d'exécution}{\reset@font\mtcSSfont 34}{subsection.4.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}Gestion de la mémoire}{\reset@font\mtcSSfont 35}{subsection.4.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.4}Écosystème et intégrations}{\reset@font\mtcSSfont 36}{subsection.4.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.5}Évolutivité}{\reset@font\mtcSSfont 36}{subsection.4.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.6}Support des fonctionnalités Delta Lake}{\reset@font\mtcSSfont 36}{subsection.4.2.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.7}Facilité d'utilisation}{\reset@font\mtcSSfont 36}{subsection.4.2.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.8}Autres statistiques}{\reset@font\mtcSSfont 37}{subsection.4.2.8}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Schématisation de la Solution}{\reset@font\mtcSfont 37}{section.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Avantages}{\reset@font\mtcSfont 38}{section.4.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Visualisation}{\reset@font\mtcSfont 39}{section.4.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.1}Console de Trino}{\reset@font\mtcSSfont 40}{subsection.4.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.2}Micro services}{\reset@font\mtcSSfont 42}{subsection.4.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.3}Delta Lake}{\reset@font\mtcSSfont 46}{subsection.4.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.4}UI Izicap}{\reset@font\mtcSSfont 47}{subsection.4.5.4}}
